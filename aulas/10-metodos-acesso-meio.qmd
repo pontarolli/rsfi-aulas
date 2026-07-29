@@ -17,12 +17,7 @@ Gancho: comparar o meio sem fio a uma sala de aula onde todos falam ao mesmo tem
 
 ## Por que controlar o acesso ao meio?
 
-```{mermaid}
-flowchart TB
-  A((A)) -->|"transmite"| AP["Access Point"]
-  B((B)) -->|"transmite → colisão"| AP
-  C((C)) -.->|"aguarda"| AP
-```
+![Duas transmissões simultâneas colidindo em um Access Point compartilhado](../images/diagrama-colisao-meio-compartilhado.png){fig-alt="Dispositivos A e B transmitindo ao mesmo tempo para um Access Point, causando colisão; dispositivo C aguarda"}
 
 - Em redes sem fio, o meio de transmissão é o ar
 - O espectro de radiofrequência é compartilhado por vários dispositivos
@@ -31,20 +26,7 @@ flowchart TB
 
 ## CSMA/CA x CSMA/CD
 
-```{mermaid}
-flowchart LR
-  subgraph CD["CSMA/CD: detecta colisão"]
-    direction TB
-    HA["Host A"] --> COL{{"colisão"}}
-    HB["Host B"] --> COL
-    COL --> RET["detecta o erro\ne retransmite"]
-  end
-  subgraph CA["CSMA/CA: evita colisão"]
-    direction TB
-    A2["A"] -->|"escuta"| AP2["AP"]
-    B2["B"] -.->|"backoff"| AP2
-  end
-```
+![CSMA/CD detecta a colisão e retransmite; CSMA/CA evita a colisão com escuta e espera aleatória](../images/diagrama-csmacd-vs-csmaca.png){fig-alt="À esquerda, Host A e Host B colidem no meio cabeado e o CSMA/CD detecta o erro e retransmite; à direita, A escuta o canal, aguarda um backoff aleatório antes de transmitir para o AP, evitando a colisão com B"}
 
 - **CSMA/CD** (Ethernet cabeado): escuta o canal e, se detectar colisão, **reage** — detecta o erro e retransmite
 - **CSMA/CA** (Wi-Fi): como um rádio não consegue "ouvir" e "falar" ao mesmo tempo com confiabilidade, a estratégia é **evitar** a colisão antes que ela aconteça
@@ -62,16 +44,7 @@ flowchart LR
 
 ## OFDMA — dividindo o canal em Resource Units
 
-```{mermaid}
-flowchart TB
-  subgraph Canal["um envio do AP, vários clientes"]
-    direction TB
-    RU4["RU — Cliente 4"]
-    RU3["RU — Cliente 3"]
-    RU2["RU — Cliente 2"]
-    RU1["RU — Cliente 1"]
-  end
-```
+![Canal Wi-Fi dividido em Resource Units, atendendo 4 clientes em paralelo](../images/diagrama-ofdma-resource-units.png){fig-alt="Eixo frequência x tempo mostrando 4 blocos coloridos (Cliente 1 a 4) lado a lado, representando subcanais usados em paralelo em um único envio do AP"}
 
 - Presente no Wi-Fi 6 (IEEE 802.11ax) e aprimorado no Wi-Fi 7, além de usado em 4G/5G
 - O canal é dividido em partes menores chamadas **RUs (Resource Units)**
@@ -80,13 +53,7 @@ flowchart TB
 
 ## RTS/CTS — resolvendo o problema do nó oculto
 
-```{mermaid}
-flowchart LR
-  A((A)) -->|"RTS"| AP["Access Point"]
-  AP -->|"CTS"| B((B))
-```
-
-*A e B não se escutam diretamente, mas ambos alcançam o mesmo AP.*
+![Dois clientes que não se enxergam diretamente, mas ambos alcançam o mesmo AP](../images/diagrama-rts-cts-no-oculto.png){fig-alt="Cliente A e cliente B em círculos de alcance que não se sobrepõem, ambos conectados ao mesmo AP central, com setas RTS de A para o AP e CTS do AP para B"}
 
 - **Nó oculto**: dois clientes podem não se enxergar, mas ambos alcançam o mesmo AP
 - O cliente envia **RTS** (Request to Send)
@@ -105,38 +72,21 @@ Além do CSMA/CA e do OFDMA, existem métodos clássicos para organizar usuário
 
 ### TDMA — acesso por divisão de tempo
 
-```{mermaid}
-flowchart LR
-  U1["U1"] --> U2["U2"] --> U3["U3"] --> U4["U4"]
-```
+![Canal dividido em slots de tempo, um usuário por slot](../images/diagrama-tdma.png){fig-alt="Quatro blocos U1 a U4 em sequência ao longo do eixo tempo, um usuário por slot"}
 
-*Um usuário por slot de tempo, em sequência.* Cada usuário transmite apenas no seu horário; enquanto um fala, os outros aguardam. **Exemplos:** redes celulares legadas, rádio digital e redes industriais sem fio.
+Cada usuário transmite apenas no seu horário; enquanto um fala, os outros aguardam. **Exemplos:** redes celulares legadas, rádio digital e redes industriais sem fio.
 
 ### FDMA — acesso por divisão de frequência
 
-```{mermaid}
-flowchart TB
-  subgraph Espectro["faixas paralelas de frequência"]
-    direction TB
-    F4["Faixa 4 — U4"]
-    F3["Faixa 3 — U3"]
-    F2["Faixa 2 — U2"]
-    F1["Faixa 1 — U1"]
-  end
-```
+![Espectro dividido em faixas paralelas de frequência, uma por usuário](../images/diagrama-fdma.png){fig-alt="Quatro faixas horizontais U1 a U4 empilhadas no eixo frequência, todas avançando juntas no eixo tempo"}
 
 Cada usuário recebe uma frequência própria; vários usuários transmitem ao mesmo tempo, cada um na sua faixa. **Exemplos:** rádio FM, TV aberta, telefonia celular analógica e enlaces de rádio.
 
 ### CDMA — acesso por divisão de código
 
-```{mermaid}
-flowchart LR
-  U1((U1)) -->|"código A"| REC["Receptor"]
-  U2((U2)) -->|"código B"| REC
-  U3((U3)) -->|"código C"| REC
-```
+![Três usuários transmitindo com códigos diferentes na mesma faixa e ao mesmo tempo](../images/diagrama-cdma.png){fig-alt="U1, U2 e U3 enviando ao receptor usando código A, B e C respectivamente, todos no mesmo tempo e mesma frequência"}
 
-*Mesmo tempo + mesma frequência, códigos diferentes.* Usuários compartilham tempo e frequência, mas cada transmissão usa um **código diferente**; o receptor usa o código correto para separar o sinal desejado — os demais sinais aparecem como interferência controlada. **Exemplos:** redes 3G, GPS e sistemas com espalhamento espectral.
+Usuários compartilham tempo e frequência, mas cada transmissão usa um **código diferente**; o receptor usa o código correto para separar o sinal desejado — os demais sinais aparecem como interferência controlada. **Exemplos:** redes 3G, GPS e sistemas com espalhamento espectral.
 
 - Essas três técnicas são a base histórica das gerações celulares mais antigas (2G/3G), antes da adoção do OFDMA no 4G/5G
 
