@@ -27,6 +27,6 @@ format:
     chalkboard: true
     code-line-numbers: true
     highlight-style: github
-    footer: "IFSP Boituva · Redes sem Fio"
+    footer: "[🏠 IFSP Boituva · Redes sem Fio](../index.html)"
     toc: false
     embed-resources: false
