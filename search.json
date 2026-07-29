@@ -676,7 +676,70 @@
     "href": "index.html#aulas",
     "title": "Redes sem Fio",
     "section": "Aulas",
-    "text": "Aulas\n\nIntrodução às redes sem fio\nCategorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL\nTecnologias WPAN: Bluetooth, Zigbee, UWB, NFC e Infrared\nTecnologias WLAN: Wi-Fi, OFDM, CSMA/CA e MIMO\nEvolução do Wi-Fi: 802.11a, 802.11b e 802.11g\nWMAN: WiMAX e Wimesh\nWWAN: redes celulares (3G/4G/5G) e VANETs\nPrincípios de radiofrequência: propagação, reflexão e interferência\nTipos de antenas e ganho de sinal (dBi)\nMétodos de acesso ao meio: CSMA/CA, RTS/CTS, TDMA/FDMA/CDMA/OFDMA\nArquiteturas de redes wireless: IBSS, BSS, ESS e roaming\nSegurança em redes sem fio I: WEP e suas fraquezas\nSegurança em redes sem fio II: WPA, WPA2, PSK e EAP\nProjetos de redes sem fio: site survey e link budget\nRevisão geral e estudo de caso de projeto de rede sem fio\n\n\n\n\n\n\n\nNota\n\n\n\nNos slides, use as setas do teclado para navegar, S para abrir as notas do professor e O para visão geral dos slides."
+    "text": "Aulas\n\nApresentação da disciplina e critérios de avaliação\nIntrodução às redes sem fio\nCategorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL\nTecnologias WPAN: Bluetooth, Zigbee, UWB, NFC e Infrared\nTecnologias WLAN: Wi-Fi, OFDM, CSMA/CA e MIMO\nEvolução do Wi-Fi: 802.11a, 802.11b e 802.11g\nWMAN: WiMAX e Wimesh\nWWAN: redes celulares (3G/4G/5G) e VANETs\nPrincípios de radiofrequência: propagação, reflexão e interferência\nTipos de antenas e ganho de sinal (dBi)\nMétodos de acesso ao meio: CSMA/CA, RTS/CTS, TDMA/FDMA/CDMA/OFDMA\nArquiteturas de redes wireless: IBSS, BSS, ESS e roaming\nSegurança em redes sem fio I: WEP e suas fraquezas\nSegurança em redes sem fio II: WPA, WPA2, PSK e EAP\nProjetos de redes sem fio: site survey e link budget\nRevisão geral e estudo de caso de projeto de rede sem fio\n\n\n\n\n\n\n\nNota\n\n\n\nNos slides, use as setas do teclado para navegar, S para abrir as notas do professor e O para visão geral dos slides."
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#sobre-a-disciplina",
+    "href": "aulas/00-apresentacao-avaliacao.html#sobre-a-disciplina",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "Sobre a disciplina",
+    "text": "Sobre a disciplina\n\nComponente curricular: Redes sem Fio (sigla BTVRSFI)\nCurso: Técnico em Redes de Computadores Integrado ao Ensino Médio — 3º ano\nCâmpus: IFSP Boituva\nProfessor: Ricardo Pasquati Pontarolli (pasquati@ifsp.edu.br)\nCarga horária: 60h (2 aulas semanais)"
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#ementa",
+    "href": "aulas/00-apresentacao-avaliacao.html#ementa",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "Ementa",
+    "text": "Ementa\nO componente curricular conceitua e aplica os protocolos de redes sem fio e dos equipamentos de comunicação de dados. Estuda os sistemas de transmissão sem fio, terminologia, princípios de Radiofrequência e métodos de acesso em redes sem fio."
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#o-que-vamos-ver-no-curso",
+    "href": "aulas/00-apresentacao-avaliacao.html#o-que-vamos-ver-no-curso",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "O que vamos ver no curso",
+    "text": "O que vamos ver no curso\n\nCategorias e tecnologias de redes sem fio (WPAN, WLAN, WMAN, WWAN, WLL)\nEvolução do Wi-Fi e a família de padrões IEEE 802.11\nPrincípios de radiofrequência: propagação, reflexão, interferência e antenas\nMétodos de acesso ao meio e arquiteturas de rede sem fio\nSegurança: WEP, WPA, WPA2\nProjetos de redes sem fio: site survey e link budget"
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#como-as-aulas-funcionam",
+    "href": "aulas/00-apresentacao-avaliacao.html#como-as-aulas-funcionam",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "Como as aulas funcionam",
+    "text": "Como as aulas funcionam\n\nSlides no formato apresentação, disponíveis no site da disciplina\nAulas combinam teoria com discussões rápidas e atividades práticas em dupla\nUse as setas do teclado para navegar, S para abrir as notas do professor e O para visão geral dos slides"
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#como-a-nota-é-composta",
+    "href": "aulas/00-apresentacao-avaliacao.html#como-a-nota-é-composta",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "Como a nota é composta",
+    "text": "Como a nota é composta\n\n\n\n\n\n\nNota\n\n\nOs pesos abaixo são uma referência de trabalho para este planejamento e precisam ser confirmados com o regimento didático oficial do câmpus antes de valerem oficialmente para a turma.\n\n\n\n\n\n\nInstrumento\nPeso\n\n\n\n\nProva 1 (Aulas 01-07)\n25%\n\n\nProva 2 (Aulas 08-14)\n25%\n\n\nAtividade avaliativa 1 — Projeto de rede sem fio\n15%\n\n\nAtividade avaliativa 2 — Segurança em redes sem fio\n15%\n\n\nProjeto final / estudo de caso (Aula 15)\n20%"
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#critério-de-aprovação",
+    "href": "aulas/00-apresentacao-avaliacao.html#critério-de-aprovação",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "Critério de aprovação",
+    "text": "Critério de aprovação\n\nMédia final: soma ponderada dos instrumentos acima\nReferência a confirmar: média mínima de aprovação conforme regimento do câmpus (normalmente 6,0 em uma escala de 0 a 10)\nRecuperação, prazos de entrega e critérios de frequência seguem o regimento didático institucional vigente"
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#conduta-e-prazos",
+    "href": "aulas/00-apresentacao-avaliacao.html#conduta-e-prazos",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "Conduta e prazos",
+    "text": "Conduta e prazos\n\nAtividades avaliativas têm data de entrega definida em aula — combinar com antecedência qualquer necessidade de prazo estendido\nProvas são individuais; atividades avaliativas podem ser em dupla, conforme indicado em cada enunciado\nDúvidas sobre correção devem ser levantadas em até 1 semana após a devolutiva"
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#dúvidas",
+    "href": "aulas/00-apresentacao-avaliacao.html#dúvidas",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "Dúvidas?",
+    "text": "Dúvidas?\nQualquer dúvida sobre a composição da nota, calendário ou conteúdo pode ser trazida no início de qualquer aula."
+  },
+  {
+    "objectID": "aulas/00-apresentacao-avaliacao.html#próxima-aula",
+    "href": "aulas/00-apresentacao-avaliacao.html#próxima-aula",
+    "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
+    "section": "Próxima aula",
+    "text": "Próxima aula\nIntrodução às redes sem fio — o que são, por que existem e como se classificam"
   },
   {
     "objectID": "aulas/02-categorias-redes-sem-fio.html#objetivos-da-aula",

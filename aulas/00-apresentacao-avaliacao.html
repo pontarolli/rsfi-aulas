@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.38">
 
   <meta name="author" content="Ricardo Pasquati Pontarolli">
-  <title>Redes sem Fio – Aula 12 — Segurança em redes sem fio I: WEP e suas fraquezas</title>
+  <title>Redes sem Fio – Aula 00 — Apresentação da disciplina e critérios de avaliação</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -132,7 +132,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Aula 12 — Segurança em redes sem fio I: WEP e suas fraquezas</h1>
+  <h1 class="title">Aula 00 — Apresentação da disciplina e critérios de avaliação</h1>
   <p class="subtitle">Redes sem Fio</p>
 
 <div class="quarto-title-authors">
@@ -147,52 +147,41 @@ Ricardo Pasquati Pontarolli
 </div>
 
 </section>
-<section id="objetivos-da-aula" class="slide level2">
-<h2>Objetivos da aula</h2>
+<section id="sobre-a-disciplina" class="slide level2">
+<h2>Sobre a disciplina</h2>
 <ul>
-<li>Entender por que <strong>segurança é especialmente crítica</strong> em redes sem fio</li>
-<li>Conhecer o funcionamento do <strong>WEP</strong>, o primeiro protocolo de segurança do Wi-Fi</li>
-<li>Compreender <strong>por que o WEP é considerado quebrado</strong> e foi descontinuado</li>
-<li>Preparar terreno para os protocolos que o substituíram (WPA/WPA2, próxima aula)</li>
-</ul>
-<aside class="notes">
-<p>Enquadrar bem esta aula: o objetivo é entender historicamente por que o WEP falhou, como conhecimento de fundamentos de segurança de redes — não é uma aula de “como quebrar senha de Wi-Fi”. Evitar entrar em ferramentas específicas de ataque; o foco é o conceito criptográfico que falhou.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="por-que-redes-sem-fio-precisam-de-segurança-extra" class="slide level2">
-<h2>Por que redes sem fio precisam de segurança extra</h2>
-<ul>
-<li>Em uma rede cabeada, um invasor precisa de <strong>acesso físico ao cabo</strong> para capturar o tráfego</li>
-<li>Em uma rede sem fio, o sinal se propaga pelo ar e pode ser <strong>capturado por qualquer um dentro do alcance</strong>, sem acesso físico algum</li>
-<li>Por isso, desde o início do Wi-Fi, foi necessário um protocolo que <strong>criptografasse o tráfego</strong> e <strong>autenticasse</strong> os dispositivos — essa foi a proposta original do WEP</li>
+<li><strong>Componente curricular:</strong> Redes sem Fio (sigla BTVRSFI)</li>
+<li><strong>Curso:</strong> Técnico em Redes de Computadores Integrado ao Ensino Médio — 3º ano</li>
+<li><strong>Câmpus:</strong> IFSP Boituva</li>
+<li><strong>Professor:</strong> Ricardo Pasquati Pontarolli (<a href="mailto:pasquati@ifsp.edu.br">pasquati@ifsp.edu.br</a>)</li>
+<li><strong>Carga horária:</strong> 60h (2 aulas semanais)</li>
 </ul>
 </section>
-<section id="wep-wired-equivalent-privacy" class="slide level2">
-<h2>WEP — Wired Equivalent Privacy</h2>
+<section id="ementa" class="slide level2">
+<h2>Ementa</h2>
+<p>O componente curricular conceitua e aplica os protocolos de redes sem fio e dos equipamentos de comunicação de dados. Estuda os sistemas de transmissão sem fio, terminologia, princípios de Radiofrequência e métodos de acesso em redes sem fio.</p>
+</section>
+<section id="o-que-vamos-ver-no-curso" class="slide level2">
+<h2>O que vamos ver no curso</h2>
 <ul>
-<li>Lançado junto com o padrão 802.11 original, com o objetivo de oferecer uma privacidade “equivalente” à de uma rede cabeada</li>
-<li>Usa o algoritmo de criptografia <strong>RC4</strong> (cifra de fluxo)</li>
-<li>Cada pacote usa uma <strong>chave</strong> formada por uma <strong>chave estática compartilhada</strong> + um <strong>IV (Initialization Vector) de apenas 24 bits</strong></li>
-<li>Suporta dois modos de autenticação: <strong>aberta</strong> (sem verificação real) e <strong>chave compartilhada</strong> (o cliente prova conhecer a chave)</li>
+<li class="fragment"><strong>Categorias e tecnologias</strong> de redes sem fio (WPAN, WLAN, WMAN, WWAN, WLL)</li>
+<li class="fragment"><strong>Evolução do Wi-Fi</strong> e a família de padrões IEEE 802.11</li>
+<li class="fragment"><strong>Princípios de radiofrequência</strong>: propagação, reflexão, interferência e antenas</li>
+<li class="fragment"><strong>Métodos de acesso ao meio</strong> e arquiteturas de rede sem fio</li>
+<li class="fragment"><strong>Segurança</strong>: WEP, WPA, WPA2</li>
+<li class="fragment"><strong>Projetos de redes sem fio</strong>: site survey e link budget</li>
 </ul>
 </section>
-<section id="por-que-o-wep-falhou-o-problema-do-iv-curto" class="slide level2">
-<h2>Por que o WEP falhou: o problema do IV curto</h2>
+<section id="como-as-aulas-funcionam" class="slide level2">
+<h2>Como as aulas funcionam</h2>
 <ul>
-<li>O IV de <strong>24 bits</strong> permite pouco mais de <strong>16 milhões de combinações</strong> — em uma rede com tráfego moderado, esses valores <strong>se repetem rapidamente</strong></li>
-<li>Quando o mesmo IV é reutilizado com a mesma chave estática, um observador que capture tráfego suficiente pode <strong>analisar estatisticamente</strong> os pacotes repetidos e reconstruir a chave, sem precisar “adivinhar” nada por força bruta</li>
-<li>Esse é um problema <strong>estrutural do protocolo</strong>, não uma falha de configuração — nenhuma senha longa ou complexa resolve, porque a fraqueza está no tamanho do IV e no uso do RC4 dessa forma específica</li>
+<li>Slides no formato apresentação, disponíveis no site da disciplina</li>
+<li>Aulas combinam teoria com discussões rápidas e atividades práticas em dupla</li>
+<li>Use as setas do teclado para navegar, <strong>S</strong> para abrir as notas do professor e <strong>O</strong> para visão geral dos slides</li>
 </ul>
+</section>
+<section id="como-a-nota-é-composta" class="slide level2">
+<h2>Como a nota é composta</h2>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -202,60 +191,64 @@ Ricardo Pasquati Pontarolli
 <p><strong>Nota</strong></p>
 </div>
 <div class="callout-content">
-<p>É uma boa distinção pedagógica: existem falhas de <strong>configuração</strong> (senha fraca, sem troca de padrão) e falhas de <strong>protocolo</strong> (o próprio desenho é inseguro, independente da senha escolhida). O WEP é um exemplo clássico do segundo tipo.</p>
+<p>Os pesos abaixo são uma <strong>referência de trabalho</strong> para este planejamento e precisam ser confirmados com o regimento didático oficial do câmpus antes de valerem oficialmente para a turma.</p>
 </div>
 </div>
 </div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Instrumento</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Prova 1 (Aulas 01-07)</td>
+<td>25%</td>
+</tr>
+<tr class="even">
+<td>Prova 2 (Aulas 08-14)</td>
+<td>25%</td>
+</tr>
+<tr class="odd">
+<td>Atividade avaliativa 1 — Projeto de rede sem fio</td>
+<td>15%</td>
+</tr>
+<tr class="even">
+<td>Atividade avaliativa 2 — Segurança em redes sem fio</td>
+<td>15%</td>
+</tr>
+<tr class="odd">
+<td>Projeto final / estudo de caso (Aula 15)</td>
+<td>20%</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="outras-fragilidades-do-wep" class="slide level2">
-<h2>Outras fragilidades do WEP</h2>
+<section id="critério-de-aprovação" class="slide level2">
+<h2>Critério de aprovação</h2>
 <ul>
-<li class="fragment"><strong>Chave estática compartilhada</strong> — todos os dispositivos da rede usam a mesma chave, sem rotação automática</li>
-<li class="fragment"><strong>Sem verificação de integridade robusta</strong> — o mecanismo de checagem (CRC-32) não foi desenhado para resistir a manipulação maliciosa dos pacotes</li>
-<li class="fragment"><strong>Autenticação de chave compartilhada vulnerável</strong> — o próprio processo de autenticação pode vazar informação útil para quem está escutando</li>
+<li>Média final: soma ponderada dos instrumentos acima</li>
+<li><strong>Referência a confirmar:</strong> média mínima de aprovação conforme regimento do câmpus (normalmente 6,0 em uma escala de 0 a 10)</li>
+<li>Recuperação, prazos de entrega e critérios de frequência seguem o regimento didático institucional vigente</li>
 </ul>
 </section>
-<section id="o-desfecho-por-que-o-wep-foi-descontinuado" class="slide level2">
-<h2>O desfecho: por que o WEP foi descontinuado</h2>
+<section id="conduta-e-prazos" class="slide level2">
+<h2>Conduta e prazos</h2>
 <ul>
-<li>Pesquisadores demonstraram publicamente, já nos anos 2000, que a chave do WEP podia ser recuperada <strong>em minutos</strong> com tráfego suficiente capturado, independentemente de a senha ser “forte”</li>
-<li>A indústria reconheceu que o problema era estrutural e criou o <strong>WPA</strong> como correção emergencial, seguido do <strong>WPA2</strong> como substituto definitivo (tema da próxima aula)</li>
-<li>Hoje, o WEP é considerado <strong>obsoleto e inseguro</strong>: roteadores modernos nem sequer oferecem mais essa opção, ou a marcam como não recomendada</li>
+<li class="fragment">Atividades avaliativas têm data de entrega definida em aula — combinar com antecedência qualquer necessidade de prazo estendido</li>
+<li class="fragment">Provas são individuais; atividades avaliativas podem ser em dupla, conforme indicado em cada enunciado</li>
+<li class="fragment">Dúvidas sobre correção devem ser levantadas em até 1 semana após a devolutiva</li>
 </ul>
 </section>
-<section id="discussão-rápida" class="slide level2" data-background-color="#eaf5ec">
-<h2>Discussão rápida</h2>
-<p><strong>Senha forte não basta</strong></p>
-<div class="fragment">
-<p>Em duplas (5 min): um colega diz “minha rede WEP é segura porque uso uma senha de 20 caracteres aleatórios”. Expliquem por que essa lógica não se sustenta, considerando onde está de fato a fraqueza do WEP.</p>
-</div>
-</section>
-<section id="atividade-da-aula" class="slide level2">
-<h2>Atividade da aula</h2>
-<div class="callout-lab">
-<p><strong>Em duplas (10 min):</strong></p>
-<p>Montem um quadro comparando: (1) uma falha de <strong>configuração</strong> de segurança sem fio (ex.: senha padrão de fábrica não trocada) e (2) uma falha de <strong>protocolo</strong> como a do WEP. Para cada uma, indiquem se trocar a senha resolveria o problema ou não, e por quê.</p>
-</div>
-</section>
-<section id="síntese-da-aula" class="slide level2">
-<h2>Síntese da aula</h2>
-<ul>
-<li>Redes sem fio exigem segurança extra porque o sinal se propaga pelo ar, sem necessidade de acesso físico</li>
-<li><strong>WEP</strong> usa RC4 com um <strong>IV de 24 bits</strong> — curto demais, leva à reutilização e permite reconstruir a chave estatisticamente</li>
-<li>A fraqueza do WEP é <strong>estrutural (de protocolo)</strong>, não uma questão de senha fraca</li>
-<li>Por isso foi descontinuado e substituído por WPA/WPA2</li>
-</ul>
+<section id="dúvidas" class="slide level2">
+<h2>Dúvidas?</h2>
+<p>Qualquer dúvida sobre a composição da nota, calendário ou conteúdo pode ser trazida no início de qualquer aula.</p>
 </section>
 <section id="próxima-aula" class="slide level2">
 <h2>Próxima aula</h2>
-<p><strong>Segurança em redes sem fio II</strong> — WPA, WPA2, PSK e EAP, modos personal e enterprise</p>
-</section>
-<section id="referências" class="slide level2">
-<h2>Referências</h2>
-<ul>
-<li>SILVA, F. R. et al.&nbsp;<em>Redes Sem Fio</em>. Editora Grupo A, 2021.</li>
-<li>MORAES, A. F. <em>Redes Sem Fio - Instalação, Configuração e Segurança</em>. Érica, 2010.</li>
-</ul>
+<p><strong>Introdução às redes sem fio</strong> — o que são, por que existem e como se classificam</p>
 
 
 </section>
