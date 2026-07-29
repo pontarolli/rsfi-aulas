@@ -126,6 +126,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -141,7 +144,7 @@
 Ricardo Pasquati Pontarolli 
 </div>
         <p class="quarto-title-affiliation">
-            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v3
+            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v5
           </p>
     </div>
 </div>
@@ -179,8 +182,22 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="wpan-wireless-personal-area-network" class="slide level2">
 <h2>WPAN — Wireless Personal Area Network</h2>
-
-<img data-src="../images/diagrama-wpan.png" alt="Pessoa no centro conectada por raio de alcance a relógio, fone de ouvido e celular, representando uma WPAN" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de rede WPAN: dispositivos pessoais conectados ao redor do usuário</p><ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  P((Pessoa)) ---|Bluetooth| R[Relógio]
+  P ---|Bluetooth| F[Fone de ouvido]
+  P ---|Bluetooth/NFC| C[Celular]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
 <li>Cobertura: <strong>curta (0 a 10 metros)</strong> — diferente do Wi-Fi, que foca em dar internet para um ambiente, a WPAN foca em conectar você e seus objetos</li>
 <li>Analogia: imagine uma <strong>“bolha” invisível ao seu redor</strong> — tudo o que entra nessa bolha (seu relógio, seu fone, seu celular) pode conversar entre si, com o objetivo principal de eliminar cabos</li>
 <li>Exemplos: <strong>Bluetooth</strong>, <strong>Zigbee</strong>, <strong>Z-Wave</strong>, <strong>NFC</strong></li>
@@ -190,8 +207,23 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="wlan-wireless-local-area-network" class="slide level2">
 <h2>WLAN — Wireless Local Area Network</h2>
-
-<img data-src="../images/diagrama-wlan.png" alt="Planta baixa de um escritório com mesas e um roteador Wi-Fi central irradiando cobertura em formato oval sobre todos os ambientes" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de rede WLAN: escritório coberto pelo sinal de um roteador Wi-Fi central</p><ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+  AP((Access Point)) --- D1[Sala 1]
+  AP --- D2[Sala 2]
+  AP --- D3[Recepção]
+  AP --- D4[Copa]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
 <li>Cobertura: <strong>100 a 300 metros</strong>, comumente usada como alternativa ou extensão de redes cabeadas</li>
 <li>Diferente da WPAN (focada em você e seus objetos), a WLAN foca em fornecer infraestrutura e banda larga para um ambiente inteiro</li>
 <li>Uso: escritórios, residências, aeroportos, shopping centers e instituições de ensino</li>
@@ -214,8 +246,20 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="wman-wireless-metropolitan-area-network" class="slide level2">
 <h2>WMAN — Wireless Metropolitan Area Network</h2>
-
-<img data-src="../images/diagrama-wman.png" alt="Skyline de cidade com dois prédios altos conectados por um enlace de rádio de 4 a 10 km, padrão IEEE 802.16 WiMAX" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de rede WMAN: enlace de rádio entre dois prédios distantes cobrindo uma área metropolitana</p><ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Prédio A] &lt;--&gt;|"enlace de rádio\n4 a 10 km · WiMAX"| B[Prédio B]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
 <li>Cobertura: <strong>4 a 10 km</strong>, o “degrau” intermediário entre a rede local (Wi-Fi) e a rede de longa distância (celular)</li>
 <li>Resolve o problema de levar internet de alta velocidade para casas ou empresas onde cabeamento de fibra óptica é caro ou difícil de instalar</li>
 <li>Tecnologia central: <strong>WiMAX</strong>, padrão <strong>IEEE 802.16</strong>, conexão entre pontos de distribuição de provedores de acesso</li>
@@ -236,8 +280,24 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="wwan-wireless-wide-area-network" class="slide level2">
 <h2>WWAN — Wireless Wide Area Network</h2>
-
-<img data-src="../images/diagrama-wwan.png" alt="Mapa do Brasil com pontos e setas representando cobertura de rede celular nacional, ao lado de tabela com serviços de voz e dados e padrão IEEE 802.20" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de rede WWAN: cobertura celular sobre o mapa do Brasil, conectando voz, dados e rádio-enlace</p><ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  ERB1((ERB)) --- NUC[Núcleo da operadora]
+  ERB2((ERB)) --- NUC
+  ERB3((ERB)) --- NUC
+  NUC --- SAT[Satélite]
+  NUC --- INT[Internet / voz]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
 <li>Cobertura: <strong>nacional ou global</strong> (“rede continental”) — é o nível mais alto de abrangência em redes sem fio</li>
 <li>Depende de uma infraestrutura massiva de operadoras de telecomunicações e satélites</li>
 <li>Enquanto as outras categorias (WPAN, WLAN, WMAN) ficam limitadas a uma sala, um prédio ou uma cidade, a WWAN é projetada para cobrir países, continentes e até o globo</li>
@@ -270,8 +330,7 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="comparativo-geral" class="slide level2">
 <h2>Comparativo geral</h2>
-
-<img data-src="../images/comparativo-wpan-wlan-wman-wwan.png" alt="Tabela comparando WPAN (10-100m, 802.15, pessoal/baixo consumo), WLAN (100-300m, 802.11, extensão de rede local), WMAN (4-10km, 802.16, conexão corporativa) e WWAN (continental, 802.20, voz e dados móveis)" class="r-stretch quarto-figure-center"><p class="caption">Tabela comparativa: WPAN, WLAN, WMAN e WWAN por alcance, padrão IEEE e foco</p><table class="caption-top">
+<table class="caption-top">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 20%">

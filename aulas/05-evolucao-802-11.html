@@ -126,6 +126,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -141,7 +144,7 @@
 Ricardo Pasquati Pontarolli 
 </div>
         <p class="quarto-title-affiliation">
-            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v3
+            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v5
           </p>
     </div>
 </div>
@@ -270,8 +273,23 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="e-depois-disso" class="slide level2">
 <h2>E depois disso?</h2>
-
-<img data-src="../images/evolucao-geracoes-wifi.png" alt="Ícones em linha do tempo: Legacy/802.11b-g (o passado, 11-54 Mbps), Wi-Fi 4/802.11n (introduziu o MIMO, até 600 Mbps), Wi-Fi 5/802.11ac (padrão para streaming, 5GHz, acima de 1 Gbps), Wi-Fi 6/802.11ax (feito para densidade de aparelhos, até 9.6 Gbps) e Wi-Fi 7/802.11be (o futuro, banda de 6GHz, até 46 Gbps teóricos)" class="r-stretch quarto-figure-center"><p class="caption">Linha do tempo das gerações de Wi-Fi: Legacy, Wi-Fi 4, 5, 6 e 7</p><ul>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  L["Legacy\n802.11b/g\n11-54 Mbps"] --&gt; N["Wi-Fi 4\n802.11n\nMIMO · 600 Mbps"]
+  N --&gt; AC["Wi-Fi 5\n802.11ac\n5GHz · 1+ Gbps"]
+  AC --&gt; AX["Wi-Fi 6\n802.11ax\nOFDMA · 9.6 Gbps"]
+  AX --&gt; BE["Wi-Fi 7\n802.11be\n6GHz · 46 Gbps"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<ul>
 <li class="fragment"><strong>802.11n / Wi-Fi 4 (2009)</strong> — introduz <strong>MIMO</strong>, opera em 2,4 GHz e 5 GHz simultaneamente, até ~600 Mbps</li>
 <li class="fragment"><strong>802.11ac / Wi-Fi 5 (2013)</strong> — o padrão que virou referência para streaming, foco em 5 GHz, MU-MIMO, acima de 1 Gbps</li>
 <li class="fragment"><strong>802.11ax / Wi-Fi 6 (2019)</strong> — OFDMA, feito para densidade (muitos aparelhos ao mesmo tempo), até 9,6 Gbps</li>
