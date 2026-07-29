@@ -17,16 +17,20 @@ Retomar a Aula 08: as antenas são a "última peça" que interage diretamente co
 
 ## Antenas onidirecionais
 
-- Irradiam o sinal **igualmente em todas as direções** no plano horizontal (formato de "rosca"/toro)
-- **Vantagens:** cobertura ampla e uniforme, simples de instalar, ideal quando os clientes estão espalhados ao redor
-- **Desvantagens:** menor alcance em uma direção específica comparado a uma antena direcional de mesmo ganho — a energia é "diluída" em todas as direções
-- **Exemplos de uso:** AP central de uma casa ou escritório, hotspot em ambiente aberto
+- A antena é o elemento responsável por irradiar ou receber energia eletromagnética
+- Irradiam o sinal **em várias direções ao redor da antena**, geralmente 360° no plano horizontal
+- **Analogia:** imagine uma lâmpada no centro de uma sala, iluminando todos os lados de forma relativamente uniforme
+- **Pontos positivos:** cobertura ampla, instalação simples e bom atendimento para vários usuários ao redor — excelente escolha para casas, escritórios e salas de aula
+- **Pontos negativos:** o sinal é distribuído em muitas direções, o que reduz o alcance útil em uma direção específica e pode captar mais interferência do ambiente por cobrir uma área maior
+- **Exemplos práticos:** o roteador Wi-Fi de uma residência, posicionado no centro da casa para atender vários cômodos; um access point no centro de uma sala ou corredor
 
 ## Antenas direcionais
 
-- Concentram o sinal em **uma direção específica**, formando um feixe mais estreito
-- **Vantagens:** maior alcance na direção apontada, menos interferência para os lados (útil em ambientes com muitas redes vizinhas)
-- **Desvantagens:** exige **apontamento preciso**, cobertura muito ruim fora do feixe
+- Concentram a maior parte da energia em **uma direção específica**, formando um feixe mais estreito — em vez de espalhar o sinal para todos os lados, elas "apontam" a energia para um alvo ou setor
+- **Analogia:** a de uma lanterna — a luz é concentrada para iluminar uma região específica
+- **Pontos positivos:** maior alcance em uma direção, menor dispersão de energia e melhor resistência a interferências laterais — mas exigem alinhamento mais preciso entre transmissor e receptor
+- **Pontos negativos:** não são ideais quando os usuários estão espalhados ao redor da antena
+- **Exemplos práticos:** enlace Wi-Fi ponto a ponto entre dois prédios usando antenas tipo painel ou parabólicas; antenas setoriais em torres de operadoras cobrindo setores de 60°, 90° ou 120°; antenas usadas em links rurais para levar internet a locais distantes
 - **Exemplos de uso:** enlaces ponto a ponto (ex.: WLL, backhaul entre prédios), cobertura de um corredor longo, last mile rural
 
 ---

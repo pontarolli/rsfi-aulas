@@ -30,7 +30,10 @@ Gancho: perguntar por que às vezes o Wi-Fi de casa "engasga" quando muita gente
 
 - Opera principalmente nas faixas **2,4 GHz e 5 GHz**, parte do espectro **ISM (Industrial, Scientific and Medical)** — não licenciado
 - **2,4 GHz**: maior alcance, atravessa obstáculos melhor, mas **mais interferência** (compartilhada com Bluetooth, micro-ondas, etc.) e só 3 canais não sobrepostos (1, 6, 11)
+
+![Comparação 2,4 GHz x 5 GHz: alcance/interferência x velocidade](../images/comparativo-2-4ghz-5ghz.png){fig-alt="Analogia visual: 2,4 GHz como um jipe todo-o-terreno (alcance maior, atravessa paredes e objetos sólidos, mas sofre interferência de micro-ondas e Bluetooth) e 5 GHz como um carro de corrida (alta velocidade acima de 1 Gbps, menos interferência, mas alcance curto e dificuldade em atravessar paredes grossas)"}
 - **5 GHz**: menos alcance e penetração em paredes, porém **muito menos interferência** e mais canais disponíveis
+- **6 GHz (Wi-Fi 6E e 7)**: uma "autoestrada" recém-aberta, livre de dispositivos antigos, permitindo velocidades gigabit reais sem a disputa histórica das outras duas faixas
 
 ---
 

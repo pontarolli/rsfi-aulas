@@ -17,35 +17,48 @@ Gancho: comparar o meio sem fio a uma sala de aula onde todos falam ao mesmo tem
 
 ## Por que controlar o acesso ao meio?
 
-- O ar é um **meio compartilhado**: todos os dispositivos próximos disputam a mesma frequência
-- Sem regras, duas transmissões simultâneas **colidem** e os dados se perdem
-- A camada **MAC (Medium Access Control)** define essas regras de "quem fala e quando"
+![Duas transmissões simultâneas colidindo em um Access Point compartilhado](../images/diagrama-colisao-meio-compartilhado.png){fig-alt="Dispositivos A e B transmitindo ao mesmo tempo para um Access Point, causando colisão; dispositivo C aguarda"}
+
+- Em redes sem fio, o meio de transmissão é o ar
+- O espectro de radiofrequência é compartilhado por vários dispositivos
+- Transmissões simultâneas no mesmo canal podem causar colisões e perda de dados
+- Protocolos MAC organizam quem transmite e em qual momento
 
 ## CSMA/CA x CSMA/CD
 
-- **CSMA/CD** (Ethernet cabeado): o dispositivo transmite e, se detectar colisão, para e tenta de novo
-- **CSMA/CA** (Wi-Fi): como não é possível detectar colisão de forma confiável no ar enquanto se transmite, o foco é **evitar** a colisão antes que ela aconteça
+![CSMA/CD detecta a colisão e retransmite; CSMA/CA evita a colisão com escuta e espera aleatória](../images/diagrama-csmacd-vs-csmaca.png){fig-alt="À esquerda, Host A e Host B colidem no meio cabeado e o CSMA/CD detecta o erro e retransmite; à direita, A escuta o canal, aguarda um backoff aleatório antes de transmitir para o AP, evitando a colisão com B"}
+
+- **CSMA/CD** (Ethernet cabeado): escuta o canal e, se detectar colisão, **reage** — detecta o erro e retransmite
+- **CSMA/CA** (Wi-Fi): como um rádio não consegue "ouvir" e "falar" ao mesmo tempo com confiabilidade, a estratégia é **evitar** a colisão antes que ela aconteça
 - Passos do CSMA/CA no Wi-Fi:
-  1. O dispositivo **escuta o canal** (carrier sense)
-  2. Se livre, espera um **tempo de backoff aleatório**
-  3. Se continuar livre após o backoff, **transmite**
-  4. Aguarda confirmação (ACK) do receptor
+  1. **Carrier sense** — o dispositivo escuta o canal
+  2. **Multiple access** — vários dispositivos disputam o mesmo meio
+  3. **Collision avoidance** — se livre, espera um tempo aleatório de **backoff** antes de transmitir
+  4. **Confirmação** — aguarda um ACK do receptor quando o pacote chega corretamente
+
+::: {.callout-note}
+**Diferença essencial:** CSMA/CD reage à colisão; CSMA/CA tenta impedir que ela aconteça — por isso é mais adequado ao meio sem fio, onde detectar colisão em tempo real não é confiável.
+:::
 
 ---
 
 ## OFDMA — dividindo o canal em Resource Units
 
-- Usado no Wi-Fi 6 (802.11ax) e nas redes 4G/5G
-- Diferente do OFDM "puro" (que usa todas as subportadoras para 1 usuário por vez), o **OFDMA** divide o canal em **Resource Units (RUs)** menores
-- Vários dispositivos podem ser atendidos **simultaneamente**, cada um em sua RU, em vez de esperar a vez um do outro
-- Reduz a espera e melhora a eficiência em cenários com **muitos dispositivos conectados ao mesmo tempo**
+![Canal Wi-Fi dividido em Resource Units, atendendo 4 clientes em paralelo](../images/diagrama-ofdma-resource-units.png){fig-alt="Eixo frequência x tempo mostrando 4 blocos coloridos (Cliente 1 a 4) lado a lado, representando subcanais usados em paralelo em um único envio do AP"}
+
+- Presente no Wi-Fi 6 (IEEE 802.11ax) e aprimorado no Wi-Fi 7, além de usado em 4G/5G
+- O canal é dividido em partes menores chamadas **RUs (Resource Units)**
+- Cada RU pode atender um cliente diferente — o AP transmite para vários dispositivos no mesmo intervalo
+- Resultado: menor espera e maior eficiência em redes lotadas (salas, auditórios, empresas)
 
 ## RTS/CTS — resolvendo o problema do nó oculto
 
-- **Nó oculto**: dois dispositivos (A e C) não conseguem se "ouvir" diretamente, mas ambos enxergam o mesmo AP (B) — A não sabe que C está transmitindo, e pode colidir sem perceber
-- Solução: troca de mensagens de controle antes da transmissão de dados
-  - **RTS (Request to Send)** — o transmissor pede permissão ao AP
-  - **CTS (Clear to Send)** — o AP responde autorizando, e **todos os dispositivos ao alcance do AP** (inclusive o nó oculto) ouvem esse CTS e sabem que devem aguardar
+![Dois clientes que não se enxergam diretamente, mas ambos alcançam o mesmo AP](../images/diagrama-rts-cts-no-oculto.png){fig-alt="Cliente A e cliente B em círculos de alcance que não se sobrepõem, ambos conectados ao mesmo AP central, com setas RTS de A para o AP e CTS do AP para B"}
+
+- **Nó oculto**: dois clientes podem não se enxergar, mas ambos alcançam o mesmo AP
+- O cliente envia **RTS** (Request to Send)
+- O AP responde **CTS** (Clear to Send)
+- Os demais aguardam o tempo reservado, reduzindo colisões — A e B não se escutam diretamente, mas o CTS do AP alcança os dois
 
 ::: {.callout-note}
 RTS/CTS tem um custo: adiciona overhead (mensagens extras antes de cada transmissão). Por isso costuma ser ativado só em redes com muitos dispositivos ou histórico de colisões, não em todo cenário.
@@ -55,11 +68,25 @@ RTS/CTS tem um custo: adiciona overhead (mensagens extras antes de cada transmis
 
 ## TDMA, FDMA e CDMA: três formas de dividir o meio
 
-| Técnica | Como divide o meio | Analogia |
-|---|---|---|
-| **TDMA** (Time Division) | Cada usuário fala em um **intervalo de tempo** diferente, na mesma frequência | Fila de pessoas revezando o microfone |
-| **FDMA** (Frequency Division) | Cada usuário recebe uma **fatia de frequência** exclusiva, ao mesmo tempo | Rádios em estações diferentes tocando ao mesmo tempo |
-| **CDMA** (Code Division) | Todos transmitem ao mesmo tempo, na mesma frequência, mas cada um usa um **código único** para "filtrar" sua própria mensagem | Várias conversas simultâneas na mesma sala, cada dupla em um idioma diferente que só ela entende |
+Além do CSMA/CA e do OFDMA, existem métodos clássicos para organizar usuários no mesmo sistema de comunicação — a ideia geral é sempre a mesma: permitir que vários usuários compartilhem um recurso limitado sem misturar suas transmissões.
+
+### TDMA — acesso por divisão de tempo
+
+![Canal dividido em slots de tempo, um usuário por slot](../images/diagrama-tdma.png){fig-alt="Quatro blocos U1 a U4 em sequência ao longo do eixo tempo, um usuário por slot"}
+
+Cada usuário transmite apenas no seu horário; enquanto um fala, os outros aguardam. **Exemplos:** redes celulares legadas, rádio digital e redes industriais sem fio.
+
+### FDMA — acesso por divisão de frequência
+
+![Espectro dividido em faixas paralelas de frequência, uma por usuário](../images/diagrama-fdma.png){fig-alt="Quatro faixas horizontais U1 a U4 empilhadas no eixo frequência, todas avançando juntas no eixo tempo"}
+
+Cada usuário recebe uma frequência própria; vários usuários transmitem ao mesmo tempo, cada um na sua faixa. **Exemplos:** rádio FM, TV aberta, telefonia celular analógica e enlaces de rádio.
+
+### CDMA — acesso por divisão de código
+
+![Três usuários transmitindo com códigos diferentes na mesma faixa e ao mesmo tempo](../images/diagrama-cdma.png){fig-alt="U1, U2 e U3 enviando ao receptor usando código A, B e C respectivamente, todos no mesmo tempo e mesma frequência"}
+
+Usuários compartilham tempo e frequência, mas cada transmissão usa um **código diferente**; o receptor usa o código correto para separar o sinal desejado — os demais sinais aparecem como interferência controlada. **Exemplos:** redes 3G, GPS e sistemas com espalhamento espectral.
 
 - Essas três técnicas são a base histórica das gerações celulares mais antigas (2G/3G), antes da adoção do OFDMA no 4G/5G
 

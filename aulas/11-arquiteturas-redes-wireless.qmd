@@ -17,10 +17,16 @@ title: "Aula 11 — Arquiteturas de redes wireless: IBSS, BSS, ESS e roaming"
 
 ## IBSS — Independent Basic Service Set (rede ad-hoc)
 
-- Dispositivos se conectam **diretamente entre si**, sem um AP central
+![Notebook, celular e tablet conectados diretamente entre si, sem AP central](../images/diagrama-ibss-adhoc.png){fig-alt="Três dispositivos — notebook, celular e tablet — conectados entre si por setas bidirecionais, representando comunicação direta sem equipamento central"}
+
+- Dispositivos se conectam **diretamente entre si**, sem um AP central — comunicação direta, sem equipamento central
 - Cada dispositivo fala com os outros de igual para igual (*peer-to-peer*)
+- Cenários comuns: compartilhamento direto entre dispositivos, ambientes sem roteador ou AP disponível, redes temporárias para testes, campo ou emergência
 - Exemplos de uso: **Wi-Fi Direct**, conexões Bluetooth ponto a ponto, e — em um sentido mais amplo — a comunicação veicular direta das **VANETs** (Aula 07)
-- Vantagem: não depende de infraestrutura fixa · Desvantagem: mais difícil de escalar e gerenciar
+
+::: {.callout-note}
+**Atenção:** em geral, redes ad-hoc são menos indicadas para ambientes grandes, pois o gerenciamento, a segurança e a estabilidade ficam mais difíceis conforme o número de dispositivos cresce.
+:::
 
 ## BSS — Basic Service Set
 

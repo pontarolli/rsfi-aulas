@@ -17,11 +17,11 @@ Gancho: perguntar quantos já pareraram um fone de ouvido via Bluetooth ou aprox
 
 ## Bluetooth
 
-- Padrão **IEEE 802.15.1**, opera na faixa **2,4 GHz (ISM)**
-- Usa **FHSS (Frequency Hopping Spread Spectrum)** — salta entre 79 canais várias vezes por segundo para reduzir interferência
-- Organiza dispositivos em **piconets** (até 8 dispositivos, 1 mestre + até 7 escravos)
-- Várias piconets conectadas formam uma **scatternet**
-- **Bluetooth Low Energy (BLE)** — variante de baixíssimo consumo, usada em wearables, sensores e IoT
+- Padrão **IEEE 802.15.1**, a tecnologia WPAN mais difundida — opera na faixa **2,4 GHz (ISM)**
+- Usa **FHSS (Frequency Hopping Spread Spectrum)** — o Bluetooth "pula" entre 79 frequências diferentes na banda de 2,4 GHz, e faz isso cerca de **1.600 vezes por segundo**; isso evita que a interferência de um Wi-Fi ou micro-ondas próximo derrube a conexão
+- Organiza dispositivos em **piconets** — um dispositivo mestre pode conectar até 7 escravos ativos, formando um **piconet**
+- Quando vários piconets se interligam, temos uma **scatternet**
+- **Bluetooth Low Energy (BLE)** — introduzido no Bluetooth 4.0, é a base da IoT moderna: permite que dispositivos fiquem "dormindo" e acordem apenas para enviar pequenos pacotes de dados, fazendo pilhas de moedas durarem anos
 
 ::: {.callout-note}
 BLE não é "Bluetooth mais lento" — é um protocolo otimizado para transmitir **pouca informação, raramente, gastando o mínimo de bateria possível** (ex.: um sensor de batimento cardíaco).
@@ -29,26 +29,30 @@ BLE não é "Bluetooth mais lento" — é um protocolo otimizado para transmitir
 
 ## Zigbee
 
-- Padrão **IEEE 802.15.4**, também na faixa de 2,4 GHz
-- Focado em **baixíssimo consumo de energia** e **baixa taxa de dados**
-- Suporta topologia **mesh** — dispositivos retransmitem a mensagem uns dos outros, ampliando o alcance da rede sem precisar de mais potência
-- Muito usado em **automação residencial/industrial** (lâmpadas, sensores, fechaduras inteligentes)
+- Padrão **IEEE 802.15.4** — enquanto o Bluetooth é focado em voz e dados entre periféricos, o Zigbee foi pensado para automação industrial e residencial
+- **Baixa taxa de dados**: opera com taxas de 20 a 250 kbps — pouco para vídeo, mas perfeito para sensores de temperatura ou lâmpadas
+- **Rede Mesh (malha)** é sua principal característica técnica: cada dispositivo pode atuar como roteador, passando a mensagem adiante; se um dispositivo falhar, o sinal encontra outro caminho
+- **Capacidade:** uma única rede Zigbee pode suportar teoricamente mais de **65.000 nós**
+- Muito usado em **automação residencial/industrial** (lâmpadas, sensores, fechaduras inteligentes) — a "alma" da casa inteligente
 - Concorrente direto: **Z-Wave** (proprietário, mesma ideia de mesh de baixo consumo)
 
 ---
 
 ## UWB — Ultra-Wideband
 
-- Padrão **IEEE 802.15.3**
-- Transmite usando uma **largura de banda muito ampla** e potência muito baixa por Hz
-- Permite medir distância com precisão usando **ToF (Time of Flight)** — o tempo que o sinal leva para ir e voltar
+- Padrão **IEEE 802.15.3** — a "estrela em ascensão" das WPANs, presente hoje em smartphones modernos para localização de precisão
+- Tecnologia de impulsos: ao contrário de outras tecnologias que usam ondas portadoras contínuas, o UWB envia pulsos ultracurtos em um espectro de frequência muito largo (acima de 500 MHz)
+- **Precisão centimétrica:** graças à natureza dos seus pulsos, o sistema consegue medir o "tempo de voo" (ToF) do sinal com precisão, permitindo que o celular calcule exatamente onde está uma tag de rastreamento ao se aproximar
 - Aplicações: **localização de precisão** (chaveiros, AirTag-like), abertura de carros sem chave física, medição de proximidade em smartphones
 
 ## NFC — Near Field Communication
 
-- Alcance **extremamente curto** (poucos centímetros)
-- Baseado em indução eletromagnética entre duas bobinas próximas
-- Usos principais: **pagamentos por aproximação, controle de acesso, emparelhamento rápido de dispositivos**
+- Embora tenha um curtíssimo alcance (até 10 cm), é considerada uma tecnologia de rede pessoal — alcance **extremamente curto**, baseado em indução magnética (acoplamento entre duas bobinas de antena)
+- **Modos de operação:**
+  - **Leitura/escrita** — o celular lendo uma etiqueta ou cartão inteligente
+  - **Peer-to-peer** — dois celulares trocando dados por aproximação
+  - **Emulação de cartão** — o celular "vira" um cartão de pagamento nas carteiras digitais
+- Usos principais: **pagamentos por aproximação com o celular ou cartão na maquininha, controle de acesso, emparelhamento rápido de dispositivos**
 - Segurança "por design": o alcance mínimo dificulta interceptação a distância
 
 ## Infrared (Infravermelho / IrDA)

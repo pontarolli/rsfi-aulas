@@ -17,9 +17,10 @@ Gancho: perguntar por que o Wi-Fi de casa fica mais fraco em certos cômodos e m
 
 ## Propagação do sinal de rádio
 
-- O sinal se propaga como uma onda eletromagnética que **perde energia com a distância** (atenuação)
-- **LOS (Line of Sight / linha de visada)** — quando não há obstáculo direto entre transmissor e receptor, a propagação é mais previsível e eficiente
-- Obstáculos (paredes, móveis, corpos) **absorvem e atenuam** o sinal, reduzindo alcance e velocidade
+- Propagação é a forma como a onda de RF sai da antena transmissora e chega à antena receptora
+- **Analogia:** imagine jogar uma pedra em um lago calmo — as ondas se espalham em todas as direções a partir do ponto de impacto; na RF, a antena transmissora faz o papel da "pedra" e o espaço ao redor funciona como o "lago"
+- **LOS (Line of Sight / linha de visada)** — em condições ideais, a onda tende a viajar em linha reta entre transmissor e receptor; quanto menos barreiras houver no caminho, melhor tende a ser a recepção
+- No mundo real, atmosfera, distância, relevo e objetos no caminho alteram essa trajetória, e ao longo do percurso o sinal perde potência — fenômeno conhecido como **atenuação**
 - Quanto maior a frequência (ex.: 5 GHz vs 2,4 GHz), em geral **menor a penetração** em obstáculos — mas veremos no ganho de antena que isso pode ser compensado
 
 ## Atenuação
@@ -32,9 +33,10 @@ Gancho: perguntar por que o Wi-Fi de casa fica mais fraco em certos cômodos e m
 
 ## Reflexão e multipath
 
-- O sinal de rádio **reflete** em superfícies (paredes, móveis, chão, teto)
+- A reflexão acontece quando a onda de RF encontra uma superfície lisa e densa e muda de direção — comportamento semelhante ao de uma bola quicando em uma parede, ou à luz refletindo em um espelho
+- Superfícies metálicas, espelhos, concreto e grandes áreas de vidro costumam provocar reflexão
 - Isso faz com que o receptor receba **várias cópias do mesmo sinal**, chegando por caminhos diferentes e em instantes ligeiramente diferentes — fenômeno chamado **multipath**
-- Multipath pode causar **distorção e perda de qualidade** do sinal recebido
+- Dependendo do ambiente, a reflexão pode ajudar ou atrapalhar a cobertura; multipath pode causar **distorção e perda de qualidade** do sinal recebido
 - **Mitigação:** tecnologias como **OFDM** (que dividem o sinal em subportadoras mais resistentes a essas variações) e **MIMO** (que usa múltiplas antenas para aproveitar as reflexões a favor, em vez de sofrer com elas) — ambas vistas na Aula 04
 
 ::: {.callout-note}
@@ -45,9 +47,11 @@ Multipath nem sempre é só um problema: o MIMO moderno **usa deliberadamente** 
 
 ## Interferência
 
+- A interferência ocorre quando sinais de rádio ou ruídos eletromagnéticos se misturam no mesmo ambiente
+- **Analogia:** é como tentar conversar em uma sala cheia de gente falando ao mesmo tempo — quanto maior a interferência, maior a chance de lentidão, falhas ou perda de conexão
 - **Interferência co-canal** — dois transmissores usando a **mesma frequência** na mesma área competem e degradam o sinal um do outro (ex.: dois roteadores vizinhos no mesmo canal Wi-Fi)
-- **Ruído eletromagnético** — fontes externas não relacionadas à rede (motores, micro-ondas, outros eletrônicos) que "poluem" a mesma faixa de frequência
-- Redes em **2,4 GHz** sofrem mais interferência por ser uma faixa mais concorrida (Bluetooth, micro-ondas, outros Wi-Fis)
+- **Ruído eletromagnético** — fontes externas não relacionadas à rede (motores, micro-ondas, telefones sem fio antigos e alguns motores elétricos) que "poluem" a mesma faixa de frequência
+- Na faixa de **2,4 GHz**, o Wi-Fi divide espaço com vários outros equipamentos — ao ligar um micro-ondas próximo ao roteador, a conexão pode ficar instável
 
 ## Boas práticas de projeto
 
