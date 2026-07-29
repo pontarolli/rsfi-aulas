@@ -1,0 +1,110 @@
+---
+title: "Aula 14 — Projetos de redes sem fio: site survey e link budget"
+---
+
+## Objetivos da aula
+
+- Conhecer a **metodologia geral** de um projeto de rede sem fio
+- Entender o que é **site survey** (ativo e passivo) e por que ele é essencial
+- Ter uma noção de **link budget** — o cálculo que decide se um enlace vai funcionar
+- Praticar o planejamento de cobertura para um cenário real
+
+::: {.notes}
+Esta é a aula mais prática do curso até aqui — reúne tudo o que foi visto (categorias, tecnologias, RF, antenas, segurança) em um processo de projeto real.
+:::
+
+---
+
+## Metodologia de um projeto de rede sem fio
+
+::: {.incremental}
+1. **Levantamento de requisitos** — quantos usuários, que tipo de tráfego (dados, voz, vídeo), área a cobrir
+2. **Site survey** — avaliar o ambiente físico real antes de instalar qualquer equipamento
+3. **Escolha de tecnologia e equipamentos** — Wi-Fi, WiMAX, ponto a ponto etc., com base no que vimos nas aulas anteriores
+4. **Cálculo de enlace (link budget)** — verificar se o sinal vai chegar com qualidade suficiente
+5. **Instalação e validação** — instalar, medir a cobertura real e ajustar
+:::
+
+## Site survey: por que medir antes de instalar
+
+- Um projeto de rede sem fio **nunca** deveria começar comprando equipamento e instalando "no olho"
+- O site survey revela **obstáculos, fontes de interferência e áreas de sombra** que não são óbvias no papel
+- Sem essa etapa, é comum descobrir problemas de cobertura **só depois** da instalação, quando já é caro corrigir
+
+---
+
+## Site survey passivo x ativo
+
+| | **Passivo** | **Ativo** |
+|---|---|---|
+| O que faz | Apenas **escuta** o espectro, sem transmitir | Instala um AP de teste e **mede a cobertura real** gerada por ele |
+| Detecta | Redes vizinhas, canais ocupados, ruído de fundo | Força do sinal, taxa de dados, zonas de sombra reais |
+| Quando usar | Início do projeto, para entender o ambiente de RF existente | Antes de finalizar a posição definitiva dos APs |
+
+- Ferramentas de mercado (heatmap de sinal, medidores de espectro) ajudam a visualizar a cobertura sobre a planta baixa do local
+
+::: {.callout-note}
+Um erro comum de quem está começando é pular direto para o site survey ativo sem antes fazer o passivo — sem saber que canais os vizinhos já usam, o projeto corre o risco de escolher um canal congestionado.
+:::
+
+---
+
+## Link budget — o cálculo que decide se o enlace funciona
+
+- **Link budget** é a soma de todos os ganhos e perdas de um enlace de rádio, do transmissor ao receptor
+- Em termos simples: **potência de transmissão + ganho das antenas − perdas no caminho (atenuação, obstáculos, cabos) ≥ sensibilidade mínima do receptor**
+- Se o resultado ficar **abaixo** da sensibilidade mínima do receptor, o enlace **não vai funcionar de forma confiável**, mesmo que "no mapa" a distância pareça razoável
+- Fatores que entram na conta: potência do transmissor, ganho das antenas (dBi, Aula 09), perdas de propagação (distância, obstáculos, Aula 08), perdas em cabos e conectores
+
+::: {.notes}
+Não é necessário desenvolver a fórmula de Friis em detalhe matemático nesta aula — o objetivo é o raciocínio de engenharia: "quanto sinal sai, quanto se perde no caminho, quanto é preciso para o outro lado entender". Se a turma tiver base matemática forte, pode-se citar a fórmula de Friis como aprofundamento opcional.
+:::
+
+## Por que isso importa na prática
+
+- Um enlace ponto a ponto de 5 km com antenas de baixo ganho pode **parecer** viável no papel, mas falhar no link budget
+- Aumentar o ganho da antena (Aula 09) ou reduzir perdas (posicionamento, qualidade de cabo) são as formas de "fechar a conta" quando o link budget não fecha
+- Todo projeto sério de rede sem fio de longa distância passa por essa verificação **antes** da compra de equipamento
+
+---
+
+## Discussão rápida {background-color="#eaf5ec"}
+
+**Juntando as peças do curso**
+
+::: {.fragment}
+Em duplas (5 min): um projeto de Wi-Fi ponto a ponto entre duas fazendas está com o link budget "não fechando" — o sinal previsto chega mais fraco que a sensibilidade mínima do receptor. Citem 2 ajustes possíveis (antenas, Aula 09) que poderiam resolver isso sem trocar a tecnologia.
+:::
+
+## Atividade da aula
+
+::: {.callout-lab}
+**Em duplas (20 min):**
+
+Peguem a planta baixa de um cenário simples (uma escola de 2 andares, por exemplo — pode ser esboçada no papel). Façam um mini-projeto de cobertura Wi-Fi:
+
+1. Identifiquem possíveis obstáculos e fontes de interferência (site survey conceitual)
+2. Decidam quantos APs e onde posicioná-los
+3. Escolham o tipo de antena (onidirecional/direcional) e faixa de ganho para cada AP
+4. Apontem 1 risco de link budget que vocês verificariam antes de fechar o projeto
+:::
+
+---
+
+## Síntese da aula
+
+- Um projeto de rede sem fio segue uma metodologia: **requisitos → site survey → escolha de tecnologia → link budget → instalação/validação**
+- **Site survey passivo** mapeia o ambiente de RF existente; **site survey ativo** mede a cobertura real de um AP de teste
+- **Link budget** verifica se o sinal, depois de todos os ganhos e perdas, ainda chega com qualidade suficiente ao receptor
+- Essas etapas evitam surpresas caras depois da instalação
+
+## Próxima aula
+
+**Revisão geral** — estudo de caso integrando toda a ementa em um projeto de rede sem fio completo
+
+---
+
+## Referências
+
+- RAPPAPORT, T. S. *Comunicações Sem Fio: Princípios e Práticas*. 2ª ed. Pearson Universidades, 2008.
+- MORAES, A. F. *Redes Sem Fio - Instalação, Configuração e Segurança*. Érica, 2010.

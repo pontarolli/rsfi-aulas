@@ -1,0 +1,95 @@
+---
+title: "Aula 15 — Revisão geral e estudo de caso de projeto de rede sem fio"
+---
+
+## Objetivos da aula
+
+- Recapitular os grandes temas do curso, ligando as 14 aulas anteriores
+- Aplicar todo o conteúdo em um **estudo de caso completo** de projeto de rede sem fio
+- Consolidar a visão de ponta a ponta: da categoria de rede até a segurança e o projeto físico
+
+::: {.notes}
+Esta aula funciona como fechamento e, se aplicável, como base para uma avaliação prática — reservar boa parte do tempo para a atividade em grupo, não só para a revisão expositiva.
+:::
+
+---
+
+## Recapitulando: os 7 grandes temas da ementa
+
+::: {.incremental}
+1. **Introdução às redes sem fio** — mobilidade, escalabilidade, custo (Aula 01)
+2. **Categorias**: WPAN, WLAN, WMAN, WWAN, WLL (Aula 02)
+3. **Tecnologias**: Bluetooth, Zigbee, UWB, NFC, Infrared, Wi-Fi, WiMAX, Wimesh, celular, VANETs (Aulas 03, 04, 06, 07)
+4. **Evolução 802.11a/b/g** e a família Wi-Fi (Aula 05)
+5. **Segurança**: WEP, WPA/WPA2, PSK x EAP (Aulas 12, 13)
+6. **Antenas e ganho de sinal** (Aula 09), sobre a base de **RF, propagação e interferência** (Aula 08)
+7. **Projetos de redes sem fio**: site survey e link budget (Aula 14)
+:::
+
+## O fio condutor do curso
+
+- Começamos pelo **"o quê"** (categorias e tecnologias existentes)
+- Passamos para o **"como"** (física de RF, antenas, métodos de acesso ao meio, arquiteturas — Aulas 08-11)
+- Fechamos com o **"e agora, na prática?"** (segurança e projeto real — Aulas 12-14)
+- Um projeto de rede sem fio bem-feito usa **todas** essas camadas juntas, não uma isolada
+
+---
+
+## Estudo de caso: projetando uma rede sem fio completa
+
+**Cenário:** uma escola técnica de 2 andares vai reformular sua rede sem fio. Requisitos:
+
+- Cobertura para **300 alunos e 40 professores**, com laboratórios de informática e biblioteca
+- Um **enlace ponto a ponto** até um anexo a 800 metros, sem fibra disponível
+- Necessidade de **redes separadas** para alunos, professores/administração e visitantes
+- Preocupação da direção com **segurança** e **rastreabilidade de acesso**
+
+::: {.callout-lab}
+**Em grupos de 3-4 (25 min):** montem uma proposta de projeto respondendo:
+
+1. **Categorias/tecnologias** (Aulas 02-07): que categoria(s) resolvem a cobertura interna? E o enlace até o anexo?
+2. **RF e antenas** (Aulas 08-09): que tipo de antena (onidirecional/direcional) e faixa de dBi para cada parte do projeto?
+3. **Segurança** (Aulas 12-13): PSK ou EAP para cada uma das 3 redes (alunos, professores, visitantes)? Por quê?
+4. **Metodologia de projeto** (Aula 14): que etapa de site survey vocês fariam primeiro, e o que verificariam no link budget do enlace de 800m?
+:::
+
+---
+
+## Apresentação e discussão {background-color="#eaf5ec"}
+
+- Cada grupo apresenta sua proposta em até 3 minutos
+- Turma e professor discutem: houve alguma escolha tecnicamente arriscada? Alguma solução criativa que outros grupos não pensaram?
+
+## Erros comuns para evitar (checklist final)
+
+::: {.incremental}
+- Escolher **antena de alto ganho onidirecional** achando que "resolve tudo" (Aula 09 — ganho é uma troca, não potência extra)
+- Usar **PSK** em um cenário com centenas de usuários que precisam de revogação individual (Aula 13)
+- Ignorar o **site survey passivo** e escolher um canal Wi-Fi já congestionado pelos vizinhos (Aula 14)
+- Confundir **WMAN** com **WWAN** ao escolher tecnologia para um enlace de longa distância (Aula 02)
+- Assumir que um enlace vai funcionar só porque a distância "parece razoável", sem checar o **link budget** (Aula 14)
+:::
+
+---
+
+## Síntese do curso
+
+- Redes sem fio vão muito além do Wi-Fi doméstico: **WPAN → WLAN → WMAN → WWAN**, cada uma com tecnologias e padrões próprios
+- Entender a **física de RF** (propagação, reflexão, interferência) explica por que o sinal se comporta como se comporta
+- **Segurança** evoluiu de forma reativa (WEP → WPA → WPA2/WPA3), corrigindo falhas estruturais descobertas ao longo do tempo
+- Um **projeto de rede sem fio de verdade** integra categoria, tecnologia, RF, antenas, segurança e uma metodologia de verificação (site survey + link budget)
+
+## Encerramento
+
+Obrigado pela participação ao longo do curso! Dúvidas, revisão de qualquer tópico específico ou continuidade do estudo de caso ficam abertas para esta última aula.
+
+---
+
+## Referências (bibliografia completa do curso)
+
+- RAPPAPORT, T. S. *Comunicações Sem Fio: Princípios e Práticas*. 2ª ed. Pearson Universidades, 2008.
+- ROCHOL, J. *Sistemas de Comunicação Sem Fio - Conceitos e Aplicações*. Bookman, 2018.
+- SILVA, F. R. et al. *Redes Sem Fio*. Editora Grupo A, 2021.
+- KUMAR, C. N. *Redes de comunicação sem fio reconfiguráveis*. KS OmniScriptum, 2022.
+- LUGLI, A. B.; SANTOS, M. M. D. *Redes sem fio para automação industrial*. Érica, 2013.
+- MORAES, A. F. *Redes Sem Fio - Instalação, Configuração e Segurança*. Érica, 2010.

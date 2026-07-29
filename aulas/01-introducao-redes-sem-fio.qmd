@@ -1,0 +1,129 @@
+---
+title: "Aula 01 — Introdução às redes sem fio"
+---
+
+## Objetivos da aula
+
+- Entender **o que é** uma rede sem fio e o que a diferencia de uma rede cabeada
+- Conhecer as motivações: **mobilidade, escalabilidade e custo**
+- Ter uma primeira visão da **classificação por alcance** (WPAN, WLAN, WMAN, WWAN)
+- Discutir **vantagens e desafios** de se comunicar sem fio
+
+::: {.notes}
+Abrir perguntando: "quantas redes sem fio diferentes vocês já usaram hoje, sem perceber?" — Wi-Fi de casa, Bluetooth do fone, 4G do celular, talvez até o controle remoto por infravermelho da TV. Isso ancora a aula.
+:::
+
+---
+
+## O que é uma rede sem fio?
+
+> Comunicação de dados entre dispositivos **sem a necessidade de cabos físicos**, usando ondas eletromagnéticas (rádio, infravermelho) como meio de transmissão.
+
+- Em vez de um cabo de cobre ou fibra óptica ligando dois pontos...
+- ...a informação viaja **pelo ar**, como sinal de rádio
+
+## Por que usar redes sem fio?
+
+::: {.incremental}
+- **Mobilidade** — o dispositivo pode se mover livremente enquanto permanece conectado
+- **Escalabilidade** — adicionar um novo dispositivo não exige passar um cabo novo
+- **Custo de instalação** — evita obras, canaletas e infraestrutura física em ambientes difíceis
+- **Flexibilidade** — cobre áreas onde cabear seria caro ou impossível (zona rural, prédio tombado, terreno acidentado)
+:::
+
+## Como as redes sem fio se comunicam?
+
+- Usam faixas do **espectro eletromagnético** (rádio, micro-ondas, infravermelho)
+- Cada tecnologia opera em uma **faixa de frequência** e usa **regras (protocolos)** próprias de acesso ao meio
+- O meio (o ar) é **compartilhado** — diferente de um cabo dedicado, isso traz desafios de interferência e segurança
+
+::: {.callout-note}
+**Vamos aprofundar cada faixa de frequência e cada protocolo nas próximas aulas** — hoje o foco é o panorama geral.
+:::
+
+---
+
+## Uma primeira classificação: alcance
+
+As redes sem fio costumam ser classificadas pela **área de cobertura**:
+
+| Sigla | Nome | Alcance típico | Exemplo |
+|---|---|---|---|
+| WPAN | Wireless Personal Area Network | Poucos metros | Bluetooth, NFC |
+| WLAN | Wireless Local Area Network | Um prédio/casa | Wi-Fi |
+| WMAN | Wireless Metropolitan Area Network | Uma cidade | WiMAX |
+| WWAN | Wireless Wide Area Network | Regional/global | Redes celulares (3G/4G/5G) |
+
+::: {.notes}
+Não aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora desta tabela introdutória de propósito.
+:::
+
+## Evolução do hardware sem fio
+
+::: {.incremental}
+- **Décadas de 1980-90** — primeiros rádios digitais, alcance curto, velocidades baixas
+- **Anos 2000** — popularização do Wi-Fi doméstico e do Bluetooth em celulares
+- **Anos 2010** — redes 3G/4G tornam a internet móvel de banda larga um padrão
+- **Hoje** — Wi-Fi 6/6E/7, 5G, bilhões de dispositivos IoT conectados sem fio simultaneamente
+:::
+
+---
+
+## Vantagens das redes sem fio
+
+::: {.incremental}
+- **Mobilidade real** — usar o dispositivo andando, sem desconectar
+- **Instalação rápida** — sem obras estruturais
+- **Escalabilidade** — novos dispositivos entram na rede sem cabeamento novo
+- **Alcance em locais de difícil acesso** — zonas rurais, prédios históricos, terrenos irregulares
+:::
+
+## Desafios das redes sem fio
+
+::: {.incremental}
+- **Segurança** — o sinal se propaga pelo ar e pode ser capturado por qualquer um dentro do alcance
+- **Interferência** — outros equipamentos e redes competem pelo mesmo espectro
+- **Alcance e obstáculos** — paredes, distância e clima afetam o sinal
+- **Largura de banda compartilhada** — o meio (ar) é dividido entre todos os dispositivos próximos
+:::
+
+---
+
+## Discussão rápida {background-color="#eaf5ec"}
+
+**Redes sem fio no seu dia a dia**
+
+::: {.fragment}
+Em duplas (3 min): listem **3 redes sem fio diferentes** que vocês usaram hoje e classifiquem cada uma como WPAN, WLAN, WMAN ou WWAN.
+:::
+
+## Atividade da aula
+
+::: {.callout-lab}
+**Em duplas (10 min):**
+
+1. Escolham 1 dispositivo do dia a dia que se conecta sem fio (fone Bluetooth, roteador Wi-Fi, celular)
+2. Identifiquem: qual tipo de rede sem fio ele usa (WPAN/WLAN/WWAN)?
+3. Apontem 1 vantagem e 1 desafio real que vocês já perceberam usando esse dispositivo
+:::
+
+---
+
+## Síntese da aula
+
+- Rede sem fio = comunicação de dados **pelo ar**, sem cabos, usando ondas eletromagnéticas
+- Motivação central: **mobilidade, escalabilidade e custo**
+- Classificação por alcance: **WPAN, WLAN, WMAN, WWAN** (e WLL, que veremos na próxima aula)
+- Vantagens (mobilidade, custo, flexibilidade) vêm com desafios (segurança, interferência, alcance)
+
+## Próxima aula
+
+**Categorias de redes sem fio** — aprofundamento em WPAN, WLAN, WMAN, WWAN e WLL, com exemplos e comparativo completo
+
+---
+
+## Referências
+
+- RAPPAPORT, T. S. *Comunicações Sem Fio: Princípios e Práticas*. 2ª ed. Pearson Universidades, 2008.
+- ROCHOL, J. *Sistemas de Comunicação Sem Fio - Conceitos e Aplicações*. Bookman, 2018.
+- SILVA, F. R. et al. *Redes Sem Fio*. Editora Grupo A, 2021.

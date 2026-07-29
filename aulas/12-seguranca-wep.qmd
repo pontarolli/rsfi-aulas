@@ -1,0 +1,93 @@
+---
+title: "Aula 12 — Segurança em redes sem fio I: WEP e suas fraquezas"
+---
+
+## Objetivos da aula
+
+- Entender por que **segurança é especialmente crítica** em redes sem fio
+- Conhecer o funcionamento do **WEP**, o primeiro protocolo de segurança do Wi-Fi
+- Compreender **por que o WEP é considerado quebrado** e foi descontinuado
+- Preparar terreno para os protocolos que o substituíram (WPA/WPA2, próxima aula)
+
+::: {.notes}
+Enquadrar bem esta aula: o objetivo é entender historicamente por que o WEP falhou, como conhecimento de fundamentos de segurança de redes — não é uma aula de "como quebrar senha de Wi-Fi". Evitar entrar em ferramentas específicas de ataque; o foco é o conceito criptográfico que falhou.
+:::
+
+---
+
+## Por que redes sem fio precisam de segurança extra
+
+- Em uma rede cabeada, um invasor precisa de **acesso físico ao cabo** para capturar o tráfego
+- Em uma rede sem fio, o sinal se propaga pelo ar e pode ser **capturado por qualquer um dentro do alcance**, sem acesso físico algum
+- Por isso, desde o início do Wi-Fi, foi necessário um protocolo que **criptografasse o tráfego** e **autenticasse** os dispositivos — essa foi a proposta original do WEP
+
+## WEP — Wired Equivalent Privacy
+
+- Lançado junto com o padrão 802.11 original, com o objetivo de oferecer uma privacidade "equivalente" à de uma rede cabeada
+- Usa o algoritmo de criptografia **RC4** (cifra de fluxo)
+- Cada pacote usa uma **chave** formada por uma **chave estática compartilhada** + um **IV (Initialization Vector) de apenas 24 bits**
+- Suporta dois modos de autenticação: **aberta** (sem verificação real) e **chave compartilhada** (o cliente prova conhecer a chave)
+
+---
+
+## Por que o WEP falhou: o problema do IV curto
+
+- O IV de **24 bits** permite pouco mais de **16 milhões de combinações** — em uma rede com tráfego moderado, esses valores **se repetem rapidamente**
+- Quando o mesmo IV é reutilizado com a mesma chave estática, um observador que capture tráfego suficiente pode **analisar estatisticamente** os pacotes repetidos e reconstruir a chave, sem precisar "adivinhar" nada por força bruta
+- Esse é um problema **estrutural do protocolo**, não uma falha de configuração — nenhuma senha longa ou complexa resolve, porque a fraqueza está no tamanho do IV e no uso do RC4 dessa forma específica
+
+::: {.callout-note}
+É uma boa distinção pedagógica: existem falhas de **configuração** (senha fraca, sem troca de padrão) e falhas de **protocolo** (o próprio desenho é inseguro, independente da senha escolhida). O WEP é um exemplo clássico do segundo tipo.
+:::
+
+## Outras fragilidades do WEP
+
+::: {.incremental}
+- **Chave estática compartilhada** — todos os dispositivos da rede usam a mesma chave, sem rotação automática
+- **Sem verificação de integridade robusta** — o mecanismo de checagem (CRC-32) não foi desenhado para resistir a manipulação maliciosa dos pacotes
+- **Autenticação de chave compartilhada vulnerável** — o próprio processo de autenticação pode vazar informação útil para quem está escutando
+:::
+
+---
+
+## O desfecho: por que o WEP foi descontinuado
+
+- Pesquisadores demonstraram publicamente, já nos anos 2000, que a chave do WEP podia ser recuperada **em minutos** com tráfego suficiente capturado, independentemente de a senha ser "forte"
+- A indústria reconheceu que o problema era estrutural e criou o **WPA** como correção emergencial, seguido do **WPA2** como substituto definitivo (tema da próxima aula)
+- Hoje, o WEP é considerado **obsoleto e inseguro**: roteadores modernos nem sequer oferecem mais essa opção, ou a marcam como não recomendada
+
+## Discussão rápida {background-color="#eaf5ec"}
+
+**Senha forte não basta**
+
+::: {.fragment}
+Em duplas (5 min): um colega diz "minha rede WEP é segura porque uso uma senha de 20 caracteres aleatórios". Expliquem por que essa lógica não se sustenta, considerando onde está de fato a fraqueza do WEP.
+:::
+
+---
+
+## Atividade da aula
+
+::: {.callout-lab}
+**Em duplas (10 min):**
+
+Montem um quadro comparando: (1) uma falha de **configuração** de segurança sem fio (ex.: senha padrão de fábrica não trocada) e (2) uma falha de **protocolo** como a do WEP. Para cada uma, indiquem se trocar a senha resolveria o problema ou não, e por quê.
+:::
+
+## Síntese da aula
+
+- Redes sem fio exigem segurança extra porque o sinal se propaga pelo ar, sem necessidade de acesso físico
+- **WEP** usa RC4 com um **IV de 24 bits** — curto demais, leva à reutilização e permite reconstruir a chave estatisticamente
+- A fraqueza do WEP é **estrutural (de protocolo)**, não uma questão de senha fraca
+- Por isso foi descontinuado e substituído por WPA/WPA2
+
+## Próxima aula
+
+**Segurança em redes sem fio II** — WPA, WPA2, PSK e EAP, modos personal e enterprise
+
+---
+
+## Referências
+
+- SILVA, F. R. et al. *Redes Sem Fio*. Editora Grupo A, 2021.
+- MORAES, A. F. *Redes Sem Fio - Instalação, Configuração e Segurança*. Érica, 2010.

@@ -1,0 +1,108 @@
+---
+title: "Aula 07 — WWAN: redes celulares (3G/4G/5G) e VANETs"
+---
+
+## Objetivos da aula
+
+- Entender a arquitetura celular: **células, ERBs, backhaul e handoff**
+- Comparar as gerações **3G, 4G e 5G**
+- Conhecer a comunicação via **satélite** como alternativa WWAN
+- Compreender o conceito de **VANETs** (redes veiculares ad-hoc)
+
+::: {.notes}
+Gancho: perguntar o que acontece com a ligação de celular quando alguém está se movendo de carro em alta velocidade e a chamada não cai — a resposta é o handoff entre células, tema de hoje.
+:::
+
+---
+
+## A arquitetura celular
+
+- A cobertura é dividida em **células**, cada uma servida por uma **Estação Rádio Base (ERB)**
+- Células vizinhas usam **frequências diferentes** para evitar interferência entre si
+- O **backhaul** conecta cada ERB à rede principal da operadora (fibra, rádio ponto a ponto ou satélite)
+- **Handover (ou handoff)** — processo de transferir a conexão de uma célula para outra **sem interromper** a comunicação, essencial para manter chamadas e dados em movimento
+
+## Espectro licenciado
+
+- Diferente do Wi-Fi (banda ISM livre), as redes celulares operam em **espectro licenciado**
+- As operadoras compram o direito de uso de faixas específicas de frequência do governo
+- Isso garante **menos interferência de terceiros**, mas tem custo altíssimo — reflete no preço dos planos
+
+---
+
+## 3G, 4G e 5G: o que muda entre gerações
+
+| Geração | Foco principal | Técnica de acesso | Uso típico |
+|---|---|---|---|
+| 3G | Internet móvel básica, voz + dados | CDMA | Navegação web, primeiros smartphones |
+| 4G (LTE) | Banda larga móvel real | **OFDMA** | Streaming, vídeo chamadas, apps pesados |
+| 5G | Altíssima velocidade e baixíssima latência | OFDMA + mmWave | IoT massiva, automação, realidade aumentada |
+
+## 5G: os três pilares
+
+::: {.incremental}
+- **eMBB (Enhanced Mobile Broadband)** — banda larga móvel ainda mais rápida (streaming 4K/8K, VR)
+- **URLLC (Ultra-Reliable Low-Latency Communication)** — latência ultrabaixa e alta confiabilidade (carros autônomos, cirurgia remota)
+- **mMTC (Massive Machine-Type Communication)** — suporte a **milhões de dispositivos IoT** por km²
+:::
+
+- Tecnologias habilitadoras: **mmWave** (ondas milimétricas, muita banda mas curto alcance) e **Massive MIMO** (dezenas de antenas na ERB atendendo múltiplos usuários simultaneamente)
+
+---
+
+## Comunicação via satélite
+
+- Alternativa WWAN quando não há cobertura celular terrestre (oceano, zona rural remota, aviação)
+- **GEO (Geoestacionário)** — órbita alta (~36.000 km), cobertura fixa de uma grande área, porém **alta latência**
+- **LEO (Low Earth Orbit)** — órbita baixa (centenas de km), **latência muito menor**, mas exige **constelações de muitos satélites** trabalhando em conjunto (ex.: internet via satélite de nova geração)
+
+## VANETs — Vehicular Ad-hoc Networks
+
+- Redes formadas **entre veículos em movimento**, sem depender necessariamente de infraestrutura fixa
+- Dois tipos de comunicação:
+  - **V2V (Vehicle-to-Vehicle)** — carro conversa direto com carro
+  - **V2I (Vehicle-to-Infrastructure)** — carro conversa com semáforos, sensores de trânsito, ERBs
+- Tecnologia associada historicamente: **DSRC / IEEE 802.11p**, adaptação do Wi-Fi para alta mobilidade
+- Aplicações: **alerta de colisão, frenagem de emergência coordenada, otimização de trânsito, carros autônomos**
+
+::: {.callout-note}
+VANETs são um caso especial de rede ad-hoc: os "nós" (carros) entram e saem da rede constantemente e em alta velocidade, o que exige protocolos de roteamento muito mais dinâmicos que uma WLAN tradicional.
+:::
+
+---
+
+## Discussão rápida {background-color="#eaf5ec"}
+
+**Latência importa mais que velocidade?**
+
+::: {.fragment}
+Em duplas (5 min): um carro autônomo precisa decidir frear em milissegundos ao detectar um obstáculo via V2V. Qual pilar do 5G (eMBB, URLLC ou mMTC) é mais crítico para esse cenário? E por que GEO seria uma péssima escolha para esse tipo de comunicação?
+:::
+
+## Atividade da aula
+
+::: {.callout-lab}
+**Em duplas (10 min):**
+
+Montem uma linha do tempo simplificada de 3G → 4G → 5G, indicando para cada geração: 1 técnica de acesso ao meio e 1 aplicação que só se tornou possível com aquela geração.
+:::
+
+---
+
+## Síntese da aula
+
+- WWAN celular = **células + ERBs + backhaul + handoff**, em espectro licenciado
+- **3G** (CDMA) → **4G** (OFDMA, banda larga real) → **5G** (eMBB/URLLC/mMTC, mmWave, Massive MIMO)
+- **Satélite**: GEO (cobertura ampla, alta latência) x LEO (baixa latência, exige constelação)
+- **VANETs**: redes ad-hoc entre veículos (V2V/V2I), base para carros conectados e autônomos
+
+## Próxima aula
+
+**Princípios de radiofrequência** — propagação, reflexão e interferência
+
+---
+
+## Referências
+
+- RAPPAPORT, T. S. *Comunicações Sem Fio: Princípios e Práticas*. 2ª ed. Pearson Universidades, 2008.
+- ROCHOL, J. *Sistemas de Comunicação Sem Fio - Conceitos e Aplicações*. Bookman, 2018.

@@ -1,0 +1,32 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - aulas/*.qmd
+  pre-render: scripts/set_version.py
+
+website:
+  title: "Redes sem Fio"
+  page-navigation: false
+  repo-url: https://github.com/pontarolli/rsfi-aulas
+  page-footer:
+    left: "IFSP Boituva · Técnico em Redes de Computadores"
+    right: "Ricardo Pasquati Pontarolli"
+
+lang: pt
+
+format:
+  revealjs:
+    theme: [default, theme/ifsp.scss]
+    slide-number: c/t
+    transition: slide
+    background-transition: fade
+    incremental: false
+    center-title-slide: true
+    preview-links: auto
+    chalkboard: true
+    code-line-numbers: true
+    highlight-style: github
+    footer: "IFSP Boituva · Redes sem Fio"
+    toc: false
+    embed-resources: false
