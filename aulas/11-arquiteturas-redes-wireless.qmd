@@ -17,7 +17,12 @@ title: "Aula 11 — Arquiteturas de redes wireless: IBSS, BSS, ESS e roaming"
 
 ## IBSS — Independent Basic Service Set (rede ad-hoc)
 
-![Notebook, celular e tablet conectados diretamente entre si, sem AP central](../images/diagrama-ibss-adhoc.png){fig-alt="Três dispositivos — notebook, celular e tablet — conectados entre si por setas bidirecionais, representando comunicação direta sem equipamento central"}
+```{mermaid}
+flowchart LR
+  CEL((Celular)) --> NB((Notebook))
+  CEL --> TAB((Tablet))
+  TAB --> NB
+```
 
 - Dispositivos se conectam **diretamente entre si**, sem um AP central — comunicação direta, sem equipamento central
 - Cada dispositivo fala com os outros de igual para igual (*peer-to-peer*)
