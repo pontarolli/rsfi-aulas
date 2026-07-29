@@ -11,6 +11,7 @@ format:
 
 ## Aulas
 
+0. [Apresentação da disciplina e critérios de avaliação](aulas/00-apresentacao-avaliacao.html)
 1. [Introdução às redes sem fio](aulas/01-introducao-redes-sem-fio.html)
 2. [Categorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL](aulas/02-categorias-redes-sem-fio.html)
 3. [Tecnologias WPAN: Bluetooth, Zigbee, UWB, NFC e Infrared](aulas/03-tecnologias-wpan.html)

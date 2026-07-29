@@ -1,0 +1,81 @@
+---
+title: "Aula 00 — Apresentação da disciplina e critérios de avaliação"
+---
+
+## Sobre a disciplina
+
+- **Componente curricular:** Redes sem Fio (sigla BTVRSFI)
+- **Curso:** Técnico em Redes de Computadores Integrado ao Ensino Médio — 3º ano
+- **Câmpus:** IFSP Boituva
+- **Professor:** Ricardo Pasquati Pontarolli ([pasquati@ifsp.edu.br](mailto:pasquati@ifsp.edu.br))
+- **Carga horária:** 60h (2 aulas semanais)
+
+## Ementa
+
+O componente curricular conceitua e aplica os protocolos de redes sem fio e
+dos equipamentos de comunicação de dados. Estuda os sistemas de transmissão
+sem fio, terminologia, princípios de Radiofrequência e métodos de acesso em
+redes sem fio.
+
+---
+
+## O que vamos ver no curso
+
+::: {.incremental}
+- **Categorias e tecnologias** de redes sem fio (WPAN, WLAN, WMAN, WWAN, WLL)
+- **Evolução do Wi-Fi** e a família de padrões IEEE 802.11
+- **Princípios de radiofrequência**: propagação, reflexão, interferência e antenas
+- **Métodos de acesso ao meio** e arquiteturas de rede sem fio
+- **Segurança**: WEP, WPA, WPA2
+- **Projetos de redes sem fio**: site survey e link budget
+:::
+
+## Como as aulas funcionam
+
+- Slides no formato apresentação, disponíveis no site da disciplina
+- Aulas combinam teoria com discussões rápidas e atividades práticas em dupla
+- Use as setas do teclado para navegar, **S** para abrir as notas do professor e **O** para visão geral dos slides
+
+---
+
+## Como a nota é composta
+
+::: {.callout-note}
+Os pesos abaixo são uma **referência de trabalho** para este planejamento e
+precisam ser confirmados com o regimento didático oficial do câmpus antes de
+valerem oficialmente para a turma.
+:::
+
+| Instrumento | Peso |
+|---|---|
+| Prova 1 (Aulas 01-07) | 25% |
+| Prova 2 (Aulas 08-14) | 25% |
+| Atividade avaliativa 1 — Projeto de rede sem fio | 15% |
+| Atividade avaliativa 2 — Segurança em redes sem fio | 15% |
+| Projeto final / estudo de caso (Aula 15) | 20% |
+
+## Critério de aprovação
+
+- Média final: soma ponderada dos instrumentos acima
+- **Referência a confirmar:** média mínima de aprovação conforme regimento do câmpus (normalmente 6,0 em uma escala de 0 a 10)
+- Recuperação, prazos de entrega e critérios de frequência seguem o regimento didático institucional vigente
+
+## Conduta e prazos
+
+::: {.incremental}
+- Atividades avaliativas têm data de entrega definida em aula — combinar com antecedência qualquer necessidade de prazo estendido
+- Provas são individuais; atividades avaliativas podem ser em dupla, conforme indicado em cada enunciado
+- Dúvidas sobre correção devem ser levantadas em até 1 semana após a devolutiva
+:::
+
+---
+
+## Dúvidas?
+
+Qualquer dúvida sobre a composição da nota, calendário ou conteúdo pode ser
+trazida no início de qualquer aula.
+
+## Próxima aula
+
+**Introdução às redes sem fio** — o que são, por que existem e como se
+classificam

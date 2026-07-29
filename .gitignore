@@ -8,6 +8,10 @@
 /material-professor-anterior/
 /livros/
 
+# Provas e atividades avaliativas (contêm gabarito) — não publicar/
+# versionar no repositório público até o professor decidir o contrário.
+/avaliacoes/
+
 __pycache__/
 *.pyc
 
