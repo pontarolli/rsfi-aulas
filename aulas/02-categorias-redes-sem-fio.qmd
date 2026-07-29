@@ -23,7 +23,12 @@ Retomar a atividade da Aula 01 (dispositivos classificados por dupla) como ganch
 
 ## WPAN — Wireless Personal Area Network
 
-![Diagrama de rede WPAN: dispositivos pessoais conectados ao redor do usuário](../images/diagrama-wpan.png){fig-alt="Pessoa no centro conectada por raio de alcance a relógio, fone de ouvido e celular, representando uma WPAN"}
+```{mermaid}
+flowchart LR
+  P((Pessoa)) ---|Bluetooth| R[Relógio]
+  P ---|Bluetooth| F[Fone de ouvido]
+  P ---|Bluetooth/NFC| C[Celular]
+```
 
 - Cobertura: **curta (0 a 10 metros)** — diferente do Wi-Fi, que foca em dar internet para um ambiente, a WPAN foca em conectar você e seus objetos
 - Analogia: imagine uma **"bolha" invisível ao seu redor** — tudo o que entra nessa bolha (seu relógio, seu fone, seu celular) pode conversar entre si, com o objetivo principal de eliminar cabos
@@ -33,7 +38,13 @@ Retomar a atividade da Aula 01 (dispositivos classificados por dupla) como ganch
 
 ## WLAN — Wireless Local Area Network
 
-![Diagrama de rede WLAN: escritório coberto pelo sinal de um roteador Wi-Fi central](../images/diagrama-wlan.png){fig-alt="Planta baixa de um escritório com mesas e um roteador Wi-Fi central irradiando cobertura em formato oval sobre todos os ambientes"}
+```{mermaid}
+flowchart TB
+  AP((Access Point)) --- D1[Sala 1]
+  AP --- D2[Sala 2]
+  AP --- D3[Recepção]
+  AP --- D4[Copa]
+```
 
 - Cobertura: **100 a 300 metros**, comumente usada como alternativa ou extensão de redes cabeadas
 - Diferente da WPAN (focada em você e seus objetos), a WLAN foca em fornecer infraestrutura e banda larga para um ambiente inteiro
@@ -49,7 +60,10 @@ WLAN e Wi-Fi não são sinônimos: WLAN é o conceito técnico (qualquer rede lo
 
 ## WMAN — Wireless Metropolitan Area Network
 
-![Diagrama de rede WMAN: enlace de rádio entre dois prédios distantes cobrindo uma área metropolitana](../images/diagrama-wman.png){fig-alt="Skyline de cidade com dois prédios altos conectados por um enlace de rádio de 4 a 10 km, padrão IEEE 802.16 WiMAX"}
+```{mermaid}
+flowchart LR
+  A[Prédio A] <-->|"enlace de rádio\n4 a 10 km · WiMAX"| B[Prédio B]
+```
 
 - Cobertura: **4 a 10 km**, o "degrau" intermediário entre a rede local (Wi-Fi) e a rede de longa distância (celular)
 - Resolve o problema de levar internet de alta velocidade para casas ou empresas onde cabeamento de fibra óptica é caro ou difícil de instalar
@@ -61,7 +75,14 @@ WLAN e Wi-Fi não são sinônimos: WLAN é o conceito técnico (qualquer rede lo
 
 ## WWAN — Wireless Wide Area Network
 
-![Diagrama de rede WWAN: cobertura celular sobre o mapa do Brasil, conectando voz, dados e rádio-enlace](../images/diagrama-wwan.png){fig-alt="Mapa do Brasil com pontos e setas representando cobertura de rede celular nacional, ao lado de tabela com serviços de voz e dados e padrão IEEE 802.20"}
+```{mermaid}
+flowchart LR
+  ERB1((ERB)) --- NUC[Núcleo da operadora]
+  ERB2((ERB)) --- NUC
+  ERB3((ERB)) --- NUC
+  NUC --- SAT[Satélite]
+  NUC --- INT[Internet / voz]
+```
 
 - Cobertura: **nacional ou global** ("rede continental") — é o nível mais alto de abrangência em redes sem fio
 - Depende de uma infraestrutura massiva de operadoras de telecomunicações e satélites
@@ -86,8 +107,6 @@ WLL costuma ser confundido com WMAN porque ambos resolvem o problema de "last mi
 ---
 
 ## Comparativo geral
-
-![Tabela comparativa: WPAN, WLAN, WMAN e WWAN por alcance, padrão IEEE e foco](../images/comparativo-wpan-wlan-wman-wwan.png){fig-alt="Tabela comparando WPAN (10-100m, 802.15, pessoal/baixo consumo), WLAN (100-300m, 802.11, extensão de rede local), WMAN (4-10km, 802.16, conexão corporativa) e WWAN (continental, 802.20, voz e dados móveis)"}
 
 | Categoria | Sigla | Alcance | Exemplo | Padrão típico |
 |---|---|---|---|---|

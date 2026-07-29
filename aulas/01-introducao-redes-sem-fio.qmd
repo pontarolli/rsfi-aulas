@@ -24,15 +24,21 @@ Abrir perguntando: "quantas redes sem fio diferentes vocês já usaram hoje, sem
 
 ## Cabo x sem fio
 
-![Rede cabeada (limitação física) x rede sem fio (flexibilidade e mobilidade)](../images/cabo-vs-sem-fio.png){fig-alt="Comparação entre uma estação de trabalho com cabo estrutural, limitada fisicamente, e uma conexão sem fio, com flexibilidade e mobilidade"}
+```{mermaid}
+flowchart LR
+  subgraph Cabeada["Rede cabeada"]
+    direction TB
+    PC["PC de mesa"] --- CABO["Cabo estrutural\n(limitação física)"] --- TOM["Tomada de rede"]
+  end
+  subgraph SemFio["Rede sem fio"]
+    direction TB
+    NB["Notebook / celular"] -.->|"ondas eletromagnéticas"| AP["Access Point\n(flexibilidade e mobilidade)"]
+  end
+```
 
 - **Definição:** as redes sem fio utilizam o ar ou o espaço livre como meio físico para a propagação de sinais eletromagnéticos
 - **Propósito:** surgiram como redes complementares às cabeadas, para promover a mobilidade e a visualização rápida dos dados, independentemente da localização do usuário
 - **A grande diferença:** ao contrário das redes convencionais, a tecnologia sem fio oferece flexibilidade total na localização das estações de trabalho
-
-::: {.notes}
-Slide baseado no material do professor André Luyde (Aula 1 — Introdução às redes sem fio), reaproveitando a imagem original comparando cabo estrutural x conexão sem fio.
-:::
 
 ## Por que usar redes sem fio?
 
@@ -59,10 +65,19 @@ Slide baseado no material do professor André Luyde (Aula 1 — Introdução às
 
 As redes são padronizadas pelo IEEE, que divide as tecnologias em 4 grandes grupos baseados no seu perímetro geográfico:
 
-![Classificação das redes sem fio por raio de alcance: WPAN, WLAN, WMAN e WWAN](../images/raio-de-alcance-wpan-wlan-wman-wwan.png){fig-alt="Círculos concêntricos mostrando WPAN (10 a 100 metros), WLAN (100 a 300 metros), WMAN (4 a 10 km) e WWAN (rede de longa distância continental)"}
+```{mermaid}
+flowchart TB
+  subgraph WWAN["WWAN — rede de longa distância (continental)"]
+    subgraph WMAN["WMAN — rede metropolitana (4 a 10 km)"]
+      subgraph WLAN["WLAN — rede local (100 a 300 m)"]
+        WPAN["WPAN — rede pessoal (10 a 100 m)"]
+      end
+    end
+  end
+```
 
 ::: {.notes}
-Não aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora deste diagrama introdutório de propósito (o diagrama original também não cobre WLL). Imagem reaproveitada do material do professor André Luyde.
+Não aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora deste diagrama introdutório de propósito.
 :::
 
 ## Evolução do hardware sem fio
@@ -76,7 +91,14 @@ Não aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, i
 
 ## O que tem dentro de um roteador Wi-Fi?
 
-![Componentes de um roteador Wi-Fi doméstico: access point, roteador, switch, antenas e NIC](../images/evolucao-hardware-wifi.png){fig-alt="Diagrama explodido de um roteador Wi-Fi mostrando Access Point (o coração), Roteador (o cérebro), Switch (o controlador de tráfego), antenas onidirecionais ou direcionais, e a NIC do lado do cliente (o tradutor)"}
+```{mermaid}
+flowchart LR
+  INT["Internet"] --> ROT["Roteador\n(o cérebro: IP, DHCP, firewall)"]
+  ROT --> SW["Switch\n(o controlador de tráfego)"]
+  ROT --> AP["Access Point\n(o coração: sinais de rádio)"]
+  SW --> DEV1["Dispositivo cabeado"]
+  AP -.->|"antena onidirecional/direcional"| DEV2["NIC do cliente\n(o tradutor)"]
+```
 
 - **Access Point (AP)** — o "coração": transmite e recebe os sinais de rádio (o Wi-Fi propriamente dito)
 - **Roteador** — o "cérebro": direciona o tráfego, atribui IPs (DHCP) e gerencia a segurança (firewall)
