@@ -126,9 +126,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -144,7 +141,7 @@
 Ricardo Pasquati Pontarolli 
 </div>
         <p class="quarto-title-affiliation">
-            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v12
+            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v14
           </p>
     </div>
 </div>
@@ -174,22 +171,8 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="ibss-independent-basic-service-set-rede-ad-hoc" class="slide level2">
 <h2>IBSS — Independent Basic Service Set (rede ad-hoc)</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  CEL((Celular)) --&gt; NB((Notebook))
-  CEL --&gt; TAB((Tablet))
-  TAB --&gt; NB
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<ul>
+
+<img data-src="../images/diagrama-ibss-adhoc.png" alt="Três dispositivos — notebook, celular e tablet — conectados entre si por setas bidirecionais, representando comunicação direta sem equipamento central" class="r-stretch quarto-figure-center"><p class="caption">Notebook, celular e tablet conectados diretamente entre si, sem AP central</p><ul>
 <li>Dispositivos se conectam <strong>diretamente entre si</strong>, sem um AP central — comunicação direta, sem equipamento central</li>
 <li>Cada dispositivo fala com os outros de igual para igual (<em>peer-to-peer</em>)</li>
 <li>Cenários comuns: compartilhamento direto entre dispositivos, ambientes sem roteador ou AP disponível, redes temporárias para testes, campo ou emergência</li>

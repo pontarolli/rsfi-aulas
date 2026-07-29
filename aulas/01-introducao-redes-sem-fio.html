@@ -126,9 +126,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -144,7 +141,7 @@
 Ricardo Pasquati Pontarolli 
 </div>
         <p class="quarto-title-affiliation">
-            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v12
+            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v14
           </p>
     </div>
 </div>
@@ -184,31 +181,25 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="cabo-x-sem-fio" class="slide level2">
 <h2>Cabo x sem fio</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  subgraph Cabeada["Rede cabeada"]
-    direction TB
-    PC["PC de mesa"] --- CABO["Cabo estrutural\n(limitação física)"] --- TOM["Tomada de rede"]
-  end
-  subgraph SemFio["Rede sem fio"]
-    direction TB
-    NB["Notebook / celular"] -.-&gt;|"ondas eletromagnéticas"| AP["Access Point\n(flexibilidade e mobilidade)"]
-  end
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<ul>
+
+<img data-src="../images/cabo-vs-sem-fio.png" alt="Comparação entre uma estação de trabalho com cabo estrutural, limitada fisicamente, e uma conexão sem fio, com flexibilidade e mobilidade" class="r-stretch quarto-figure-center"><p class="caption">Rede cabeada (limitação física) x rede sem fio (flexibilidade e mobilidade)</p><ul>
 <li><strong>Definição:</strong> as redes sem fio utilizam o ar ou o espaço livre como meio físico para a propagação de sinais eletromagnéticos</li>
 <li><strong>Propósito:</strong> surgiram como redes complementares às cabeadas, para promover a mobilidade e a visualização rápida dos dados, independentemente da localização do usuário</li>
 <li><strong>A grande diferença:</strong> ao contrário das redes convencionais, a tecnologia sem fio oferece flexibilidade total na localização das estações de trabalho</li>
 </ul>
+<aside class="notes">
+<p>Slide baseado no material do professor André Luyde (Aula 1 — Introdução às redes sem fio), reaproveitando a imagem original comparando cabo estrutural x conexão sem fio.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="por-que-usar-redes-sem-fio" class="slide level2">
 <h2>Por que usar redes sem fio?</h2>
@@ -243,27 +234,9 @@ Ricardo Pasquati Pontarolli
 <section id="uma-primeira-classificação-alcance" class="slide level2">
 <h2>Uma primeira classificação: alcance</h2>
 <p>As redes são padronizadas pelo IEEE, que divide as tecnologias em 4 grandes grupos baseados no seu perímetro geográfico:</p>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-  subgraph WWAN["WWAN — rede de longa distância (continental)"]
-    subgraph WMAN["WMAN — rede metropolitana (4 a 10 km)"]
-      subgraph WLAN["WLAN — rede local (100 a 300 m)"]
-        WPAN["WPAN — rede pessoal (10 a 100 m)"]
-      end
-    end
-  end
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>Não aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora deste diagrama introdutório de propósito.</p>
+
+<img data-src="../images/raio-de-alcance-wpan-wlan-wman-wwan.png" alt="Círculos concêntricos mostrando WPAN (10 a 100 metros), WLAN (100 a 300 metros), WMAN (4 a 10 km) e WWAN (rede de longa distância continental)" class="r-stretch quarto-figure-center"><p class="caption">Classificação das redes sem fio por raio de alcance: WPAN, WLAN, WMAN e WWAN</p><aside class="notes">
+<p>Não aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora deste diagrama introdutório de propósito (o diagrama original também não cobre WLL). Imagem reaproveitada do material do professor André Luyde.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -287,24 +260,8 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="o-que-tem-dentro-de-um-roteador-wi-fi" class="slide level2">
 <h2>O que tem dentro de um roteador Wi-Fi?</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  INT["Internet"] --&gt; ROT["Roteador\n(o cérebro: IP, DHCP, firewall)"]
-  ROT --&gt; SW["Switch\n(o controlador de tráfego)"]
-  ROT --&gt; AP["Access Point\n(o coração: sinais de rádio)"]
-  SW --&gt; DEV1["Dispositivo cabeado"]
-  AP -.-&gt;|"antena onidirecional/direcional"| DEV2["NIC do cliente\n(o tradutor)"]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<ul>
+
+<img data-src="../images/evolucao-hardware-wifi.png" alt="Diagrama explodido de um roteador Wi-Fi mostrando Access Point (o coração), Roteador (o cérebro), Switch (o controlador de tráfego), antenas onidirecionais ou direcionais, e a NIC do lado do cliente (o tradutor)" class="r-stretch quarto-figure-center"><p class="caption">Componentes de um roteador Wi-Fi doméstico: access point, roteador, switch, antenas e NIC</p><ul>
 <li><strong>Access Point (AP)</strong> — o “coração”: transmite e recebe os sinais de rádio (o Wi-Fi propriamente dito)</li>
 <li><strong>Roteador</strong> — o “cérebro”: direciona o tráfego, atribui IPs (DHCP) e gerencia a segurança (firewall)</li>
 <li><strong>Switch</strong> — o “controlador de tráfego”: conecta dispositivos via cabo para estabilidade máxima</li>
