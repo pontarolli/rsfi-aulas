@@ -141,7 +141,7 @@
 Ricardo Pasquati Pontarolli 
 </div>
         <p class="quarto-title-affiliation">
-            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v1
+            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v3
           </p>
     </div>
 </div>
@@ -172,30 +172,34 @@ Ricardo Pasquati Pontarolli
 <section id="por-que-classificar-por-abrangência" class="slide level2">
 <h2>Por que classificar por abrangência?</h2>
 <ul>
-<li>Cada categoria de rede sem fio foi desenhada para um <strong>problema de escala diferente</strong></li>
+<li>A escala utilizada vai desde a conexão de dispositivos no seu bolso até a comunicação global via satélite</li>
+<li>Essa organização ajuda a determinar qual protocolo é mais adequado para cada situação, desde conectar um fone de ouvido até cobrir uma cidade inteira</li>
 <li>Abrangência influencia: <strong>potência de transmissão, frequência usada, protocolo de acesso ao meio e custo</strong></li>
-<li>Entender a categoria certa evita escolher a tecnologia errada para um projeto</li>
 </ul>
 </section>
 <section id="wpan-wireless-personal-area-network" class="slide level2">
 <h2>WPAN — Wireless Personal Area Network</h2>
-<ul>
-<li>Cobertura: <strong>poucos metros</strong> (tipicamente até ~10m)</li>
-<li>Conecta dispositivos <strong>pessoais próximos ao usuário</strong></li>
+
+<img data-src="../images/diagrama-wpan.png" alt="Pessoa no centro conectada por raio de alcance a relógio, fone de ouvido e celular, representando uma WPAN" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de rede WPAN: dispositivos pessoais conectados ao redor do usuário</p><ul>
+<li>Cobertura: <strong>curta (0 a 10 metros)</strong> — diferente do Wi-Fi, que foca em dar internet para um ambiente, a WPAN foca em conectar você e seus objetos</li>
+<li>Analogia: imagine uma <strong>“bolha” invisível ao seu redor</strong> — tudo o que entra nessa bolha (seu relógio, seu fone, seu celular) pode conversar entre si, com o objetivo principal de eliminar cabos</li>
 <li>Exemplos: <strong>Bluetooth</strong>, <strong>Zigbee</strong>, <strong>Z-Wave</strong>, <strong>NFC</strong></li>
-<li>Baixo consumo de energia, baixo custo, ideal para acessórios e IoT próximo</li>
+<li>Por que é classificada como “pessoal”? Se você se afastar 15 a 20 metros do seu celular, a música no fone Bluetooth trava — a rede é “pessoal” e limitada ao seu espaço imediato</li>
+<li>Consumo de energia muito baixo (ideal para dispositivos que usam bateria), velocidade moderada a baixa e custo de implementação baixo nos aparelhos</li>
 </ul>
 </section>
 <section id="wlan-wireless-local-area-network" class="slide level2">
 <h2>WLAN — Wireless Local Area Network</h2>
-<ul>
-<li>Cobertura: <strong>um cômodo, casa, prédio ou campus</strong></li>
-<li>Estrutura em torno de um <strong>Ponto de Acesso (AP)</strong> identificado por um <strong>SSID</strong></li>
-<li>Padrão dominante: <strong>IEEE 802.11 (Wi-Fi)</strong></li>
-<li>Pode operar em <strong>dual band</strong> (2,4 GHz e 5 GHz) e usar segurança WPA2/WPA3</li>
+
+<img data-src="../images/diagrama-wlan.png" alt="Planta baixa de um escritório com mesas e um roteador Wi-Fi central irradiando cobertura em formato oval sobre todos os ambientes" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de rede WLAN: escritório coberto pelo sinal de um roteador Wi-Fi central</p><ul>
+<li>Cobertura: <strong>100 a 300 metros</strong>, comumente usada como alternativa ou extensão de redes cabeadas</li>
+<li>Diferente da WPAN (focada em você e seus objetos), a WLAN foca em fornecer infraestrutura e banda larga para um ambiente inteiro</li>
+<li>Uso: escritórios, residências, aeroportos, shopping centers e instituições de ensino</li>
+<li>Tecnologia principal: <strong>Wi-Fi</strong>, padrão <strong>IEEE 802.11</strong>, frequências <strong>2,4 GHz e 5,0 GHz</strong></li>
+<li>A popularização do Wi-Fi reduziu custos de equipamentos, disseminando redes particulares por toda parte</li>
 </ul>
 <aside class="notes">
-<p>WLAN e Wi-Fi não são sinônimos: WLAN é a categoria (rede local sem fio), Wi-Fi é a marca/certificação da tecnologia mais comum que implementa essa categoria. Vale reforçar essa diferença.</p>
+<p>WLAN e Wi-Fi não são sinônimos: WLAN é o conceito técnico (qualquer rede local que use ondas de rádio), Wi-Fi é o selo comercial dado pela Wi-Fi Alliance a quem segue as regras do padrão 802.11. Vale reforçar essa diferença.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -210,11 +214,11 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="wman-wireless-metropolitan-area-network" class="slide level2">
 <h2>WMAN — Wireless Metropolitan Area Network</h2>
-<ul>
-<li>Cobertura: <strong>uma cidade ou região metropolitana</strong></li>
-<li>Conecta redes locais entre si, cobrindo distâncias que o Wi-Fi não alcança</li>
-<li>Tecnologia clássica: <strong>WiMAX (IEEE 802.16)</strong></li>
-<li>Usos: <strong>backhaul</strong> (conectar torres/APs entre si) e <strong>last mile</strong> (levar internet a áreas sem cabeamento)</li>
+
+<img data-src="../images/diagrama-wman.png" alt="Skyline de cidade com dois prédios altos conectados por um enlace de rádio de 4 a 10 km, padrão IEEE 802.16 WiMAX" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de rede WMAN: enlace de rádio entre dois prédios distantes cobrindo uma área metropolitana</p><ul>
+<li>Cobertura: <strong>4 a 10 km</strong>, o “degrau” intermediário entre a rede local (Wi-Fi) e a rede de longa distância (celular)</li>
+<li>Resolve o problema de levar internet de alta velocidade para casas ou empresas onde cabeamento de fibra óptica é caro ou difícil de instalar</li>
+<li>Tecnologia central: <strong>WiMAX</strong>, padrão <strong>IEEE 802.16</strong>, conexão entre pontos de distribuição de provedores de acesso</li>
 </ul>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -225,18 +229,20 @@ Ricardo Pasquati Pontarolli
 <p><strong>Nota</strong></p>
 </div>
 <div class="callout-content">
-<p>Hoje se fala pouco de WMAN dedicado porque o 4G/5G e a fibra óptica passaram a cobrir boa parte desses cenários — mas o conceito continua relevante para zonas rurais e projetos de conectividade alternativa.</p>
+<p><strong>Por que não ouvimos falar de WMAN hoje?</strong> Por dois motivos: o avanço do 4G/5G e a fibra óptica barata acabaram “engolindo” muitas das funções para as quais o WMAN foi criado — mas em cidades digitais, câmpus universitários extensos e conectividade rural, o conceito continua vivo (ex.: Wi-Fi público municipal, câmeras de monitoramento urbano conectadas via WMAN).</p>
 </div>
 </div>
 </div>
 </section>
 <section id="wwan-wireless-wide-area-network" class="slide level2">
 <h2>WWAN — Wireless Wide Area Network</h2>
-<ul>
-<li>Cobertura: <strong>regional, nacional ou global</strong></li>
-<li>Rede de <strong>Estações Rádio Base (ERBs)</strong>, com suporte a <strong>roaming</strong> e <strong>handover</strong> entre células</li>
-<li>Opera em <strong>espectro licenciado</strong>, controlado por operadoras</li>
-<li>Exemplos: <strong>redes celulares 3G, 4G, 5G</strong> e comunicação via <strong>satélite</strong></li>
+
+<img data-src="../images/diagrama-wwan.png" alt="Mapa do Brasil com pontos e setas representando cobertura de rede celular nacional, ao lado de tabela com serviços de voz e dados e padrão IEEE 802.20" class="r-stretch quarto-figure-center"><p class="caption">Diagrama de rede WWAN: cobertura celular sobre o mapa do Brasil, conectando voz, dados e rádio-enlace</p><ul>
+<li>Cobertura: <strong>nacional ou global</strong> (“rede continental”) — é o nível mais alto de abrangência em redes sem fio</li>
+<li>Depende de uma infraestrutura massiva de operadoras de telecomunicações e satélites</li>
+<li>Enquanto as outras categorias (WPAN, WLAN, WMAN) ficam limitadas a uma sala, um prédio ou uma cidade, a WWAN é projetada para cobrir países, continentes e até o globo</li>
+<li>A <strong>WWAN é a espinha dorsal da nossa vida móvel moderna</strong>: dados móveis (4G/5G) quando você usa WhatsApp ou Instagram na rua, sinal de torre de celular que acompanha você a quilômetros de distância, máquinas de cartão (PoS) que conectam via SIM card para autorizar uma transação em qualquer lugar</li>
+<li>Exemplos: <strong>redes celulares 3G, 4G, 5G</strong> e <strong>internet rural via satélite</strong> (como o Starlink, para fazendas onde nem fibra nem torre de celular chegam)</li>
 </ul>
 </section>
 <section id="wll-wireless-local-loop" class="slide level2">
@@ -264,7 +270,8 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="comparativo-geral" class="slide level2">
 <h2>Comparativo geral</h2>
-<table class="caption-top">
+
+<img data-src="../images/comparativo-wpan-wlan-wman-wwan.png" alt="Tabela comparando WPAN (10-100m, 802.15, pessoal/baixo consumo), WLAN (100-300m, 802.11, extensão de rede local), WMAN (4-10km, 802.16, conexão corporativa) e WWAN (continental, 802.20, voz e dados móveis)" class="r-stretch quarto-figure-center"><p class="caption">Tabela comparativa: WPAN, WLAN, WMAN e WWAN por alcance, padrão IEEE e foco</p><table class="caption-top">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 20%">
@@ -285,21 +292,21 @@ Ricardo Pasquati Pontarolli
 <tr class="odd">
 <td>Pessoal</td>
 <td>WPAN</td>
-<td>Poucos metros</td>
+<td>10-100 m</td>
 <td>Bluetooth, Zigbee, NFC</td>
 <td>IEEE 802.15</td>
 </tr>
 <tr class="even">
 <td>Local</td>
 <td>WLAN</td>
-<td>Prédio/campus</td>
+<td>100-300 m</td>
 <td>Wi-Fi</td>
 <td>IEEE 802.11</td>
 </tr>
 <tr class="odd">
 <td>Metropolitana</td>
 <td>WMAN</td>
-<td>Cidade/região</td>
+<td>4-10 km</td>
 <td>WiMAX</td>
 <td>IEEE 802.16</td>
 </tr>

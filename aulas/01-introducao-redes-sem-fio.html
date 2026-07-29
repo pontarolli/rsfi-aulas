@@ -141,7 +141,7 @@
 Ricardo Pasquati Pontarolli 
 </div>
         <p class="quarto-title-affiliation">
-            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v1
+            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v3
           </p>
     </div>
 </div>
@@ -179,6 +179,28 @@ Ricardo Pasquati Pontarolli
 <li>…a informação viaja <strong>pelo ar</strong>, como sinal de rádio</li>
 </ul>
 </section>
+<section id="cabo-x-sem-fio" class="slide level2">
+<h2>Cabo x sem fio</h2>
+
+<img data-src="../images/cabo-vs-sem-fio.png" alt="Comparação entre uma estação de trabalho com cabo estrutural, limitada fisicamente, e uma conexão sem fio, com flexibilidade e mobilidade" class="r-stretch quarto-figure-center"><p class="caption">Rede cabeada (limitação física) x rede sem fio (flexibilidade e mobilidade)</p><ul>
+<li><strong>Definição:</strong> as redes sem fio utilizam o ar ou o espaço livre como meio físico para a propagação de sinais eletromagnéticos</li>
+<li><strong>Propósito:</strong> surgiram como redes complementares às cabeadas, para promover a mobilidade e a visualização rápida dos dados, independentemente da localização do usuário</li>
+<li><strong>A grande diferença:</strong> ao contrário das redes convencionais, a tecnologia sem fio oferece flexibilidade total na localização das estações de trabalho</li>
+</ul>
+<aside class="notes">
+<p>Slide baseado no material do professor André Luyde (Aula 1 — Introdução às redes sem fio), reaproveitando a imagem original comparando cabo estrutural x conexão sem fio.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="por-que-usar-redes-sem-fio" class="slide level2">
 <h2>Por que usar redes sem fio?</h2>
 <ul>
@@ -211,51 +233,10 @@ Ricardo Pasquati Pontarolli
 </section>
 <section id="uma-primeira-classificação-alcance" class="slide level2">
 <h2>Uma primeira classificação: alcance</h2>
-<p>As redes sem fio costumam ser classificadas pela <strong>área de cobertura</strong>:</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Sigla</th>
-<th>Nome</th>
-<th>Alcance típico</th>
-<th>Exemplo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>WPAN</td>
-<td>Wireless Personal Area Network</td>
-<td>Poucos metros</td>
-<td>Bluetooth, NFC</td>
-</tr>
-<tr class="even">
-<td>WLAN</td>
-<td>Wireless Local Area Network</td>
-<td>Um prédio/casa</td>
-<td>Wi-Fi</td>
-</tr>
-<tr class="odd">
-<td>WMAN</td>
-<td>Wireless Metropolitan Area Network</td>
-<td>Uma cidade</td>
-<td>WiMAX</td>
-</tr>
-<tr class="even">
-<td>WWAN</td>
-<td>Wireless Wide Area Network</td>
-<td>Regional/global</td>
-<td>Redes celulares (3G/4G/5G)</td>
-</tr>
-</tbody>
-</table>
-<aside class="notes">
-<p>Não aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora desta tabela introdutória de propósito.</p>
+<p>As redes são padronizadas pelo IEEE, que divide as tecnologias em 4 grandes grupos baseados no seu perímetro geográfico:</p>
+
+<img data-src="../images/raio-de-alcance-wpan-wlan-wman-wwan.png" alt="Círculos concêntricos mostrando WPAN (10 a 100 metros), WLAN (100 a 300 metros), WMAN (4 a 10 km) e WWAN (rede de longa distância continental)" class="r-stretch quarto-figure-center"><p class="caption">Classificação das redes sem fio por raio de alcance: WPAN, WLAN, WMAN e WWAN</p><aside class="notes">
+<p>Não aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora deste diagrama introdutório de propósito (o diagrama original também não cobre WLL). Imagem reaproveitada do material do professor André Luyde.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -275,6 +256,17 @@ Ricardo Pasquati Pontarolli
 <li class="fragment"><strong>Anos 2000</strong> — popularização do Wi-Fi doméstico e do Bluetooth em celulares</li>
 <li class="fragment"><strong>Anos 2010</strong> — redes 3G/4G tornam a internet móvel de banda larga um padrão</li>
 <li class="fragment"><strong>Hoje</strong> — Wi-Fi 6/6E/7, 5G, bilhões de dispositivos IoT conectados sem fio simultaneamente</li>
+</ul>
+</section>
+<section id="o-que-tem-dentro-de-um-roteador-wi-fi" class="slide level2">
+<h2>O que tem dentro de um roteador Wi-Fi?</h2>
+
+<img data-src="../images/evolucao-hardware-wifi.png" alt="Diagrama explodido de um roteador Wi-Fi mostrando Access Point (o coração), Roteador (o cérebro), Switch (o controlador de tráfego), antenas onidirecionais ou direcionais, e a NIC do lado do cliente (o tradutor)" class="r-stretch quarto-figure-center"><p class="caption">Componentes de um roteador Wi-Fi doméstico: access point, roteador, switch, antenas e NIC</p><ul>
+<li><strong>Access Point (AP)</strong> — o “coração”: transmite e recebe os sinais de rádio (o Wi-Fi propriamente dito)</li>
+<li><strong>Roteador</strong> — o “cérebro”: direciona o tráfego, atribui IPs (DHCP) e gerencia a segurança (firewall)</li>
+<li><strong>Switch</strong> — o “controlador de tráfego”: conecta dispositivos via cabo para estabilidade máxima</li>
+<li><strong>Antenas</strong> — podem ser omnidirecionais (cobertura 360°) ou direcionais (foco em uma área) — voltamos a esse tema na Aula 09</li>
+<li><strong>NIC (Placa de Rede)</strong> — o “tradutor”: a peça dentro do celular ou PC que conversa com o AP</li>
 </ul>
 </section>
 <section id="vantagens-das-redes-sem-fio" class="slide level2">

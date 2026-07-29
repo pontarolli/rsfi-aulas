@@ -141,7 +141,7 @@
 Ricardo Pasquati Pontarolli 
 </div>
         <p class="quarto-title-affiliation">
-            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v1
+            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v3
           </p>
     </div>
 </div>
@@ -172,9 +172,10 @@ Ricardo Pasquati Pontarolli
 <section id="propagação-do-sinal-de-rádio" class="slide level2">
 <h2>Propagação do sinal de rádio</h2>
 <ul>
-<li>O sinal se propaga como uma onda eletromagnética que <strong>perde energia com a distância</strong> (atenuação)</li>
-<li><strong>LOS (Line of Sight / linha de visada)</strong> — quando não há obstáculo direto entre transmissor e receptor, a propagação é mais previsível e eficiente</li>
-<li>Obstáculos (paredes, móveis, corpos) <strong>absorvem e atenuam</strong> o sinal, reduzindo alcance e velocidade</li>
+<li>Propagação é a forma como a onda de RF sai da antena transmissora e chega à antena receptora</li>
+<li><strong>Analogia:</strong> imagine jogar uma pedra em um lago calmo — as ondas se espalham em todas as direções a partir do ponto de impacto; na RF, a antena transmissora faz o papel da “pedra” e o espaço ao redor funciona como o “lago”</li>
+<li><strong>LOS (Line of Sight / linha de visada)</strong> — em condições ideais, a onda tende a viajar em linha reta entre transmissor e receptor; quanto menos barreiras houver no caminho, melhor tende a ser a recepção</li>
+<li>No mundo real, atmosfera, distância, relevo e objetos no caminho alteram essa trajetória, e ao longo do percurso o sinal perde potência — fenômeno conhecido como <strong>atenuação</strong></li>
 <li>Quanto maior a frequência (ex.: 5 GHz vs 2,4 GHz), em geral <strong>menor a penetração</strong> em obstáculos — mas veremos no ganho de antena que isso pode ser compensado</li>
 </ul>
 </section>
@@ -189,9 +190,10 @@ Ricardo Pasquati Pontarolli
 <section id="reflexão-e-multipath" class="slide level2">
 <h2>Reflexão e multipath</h2>
 <ul>
-<li>O sinal de rádio <strong>reflete</strong> em superfícies (paredes, móveis, chão, teto)</li>
+<li>A reflexão acontece quando a onda de RF encontra uma superfície lisa e densa e muda de direção — comportamento semelhante ao de uma bola quicando em uma parede, ou à luz refletindo em um espelho</li>
+<li>Superfícies metálicas, espelhos, concreto e grandes áreas de vidro costumam provocar reflexão</li>
 <li>Isso faz com que o receptor receba <strong>várias cópias do mesmo sinal</strong>, chegando por caminhos diferentes e em instantes ligeiramente diferentes — fenômeno chamado <strong>multipath</strong></li>
-<li>Multipath pode causar <strong>distorção e perda de qualidade</strong> do sinal recebido</li>
+<li>Dependendo do ambiente, a reflexão pode ajudar ou atrapalhar a cobertura; multipath pode causar <strong>distorção e perda de qualidade</strong> do sinal recebido</li>
 <li><strong>Mitigação:</strong> tecnologias como <strong>OFDM</strong> (que dividem o sinal em subportadoras mais resistentes a essas variações) e <strong>MIMO</strong> (que usa múltiplas antenas para aproveitar as reflexões a favor, em vez de sofrer com elas) — ambas vistas na Aula 04</li>
 </ul>
 <div class="callout callout-note callout-titled callout-style-default">
@@ -211,9 +213,11 @@ Ricardo Pasquati Pontarolli
 <section id="interferência" class="slide level2">
 <h2>Interferência</h2>
 <ul>
+<li>A interferência ocorre quando sinais de rádio ou ruídos eletromagnéticos se misturam no mesmo ambiente</li>
+<li><strong>Analogia:</strong> é como tentar conversar em uma sala cheia de gente falando ao mesmo tempo — quanto maior a interferência, maior a chance de lentidão, falhas ou perda de conexão</li>
 <li><strong>Interferência co-canal</strong> — dois transmissores usando a <strong>mesma frequência</strong> na mesma área competem e degradam o sinal um do outro (ex.: dois roteadores vizinhos no mesmo canal Wi-Fi)</li>
-<li><strong>Ruído eletromagnético</strong> — fontes externas não relacionadas à rede (motores, micro-ondas, outros eletrônicos) que “poluem” a mesma faixa de frequência</li>
-<li>Redes em <strong>2,4 GHz</strong> sofrem mais interferência por ser uma faixa mais concorrida (Bluetooth, micro-ondas, outros Wi-Fis)</li>
+<li><strong>Ruído eletromagnético</strong> — fontes externas não relacionadas à rede (motores, micro-ondas, telefones sem fio antigos e alguns motores elétricos) que “poluem” a mesma faixa de frequência</li>
+<li>Na faixa de <strong>2,4 GHz</strong>, o Wi-Fi divide espaço com vários outros equipamentos — ao ligar um micro-ondas próximo ao roteador, a conexão pode ficar instável</li>
 </ul>
 </section>
 <section id="boas-práticas-de-projeto" class="slide level2">

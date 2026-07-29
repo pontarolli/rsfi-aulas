@@ -141,7 +141,7 @@
 Ricardo Pasquati Pontarolli 
 </div>
         <p class="quarto-title-affiliation">
-            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v1
+            Técnico em Redes de Computadores · IFSP Boituva · pasquati@ifsp.edu.br · v3
           </p>
     </div>
 </div>
@@ -172,11 +172,11 @@ Ricardo Pasquati Pontarolli
 <section id="bluetooth" class="slide level2">
 <h2>Bluetooth</h2>
 <ul>
-<li>Padrão <strong>IEEE 802.15.1</strong>, opera na faixa <strong>2,4 GHz (ISM)</strong></li>
-<li>Usa <strong>FHSS (Frequency Hopping Spread Spectrum)</strong> — salta entre 79 canais várias vezes por segundo para reduzir interferência</li>
-<li>Organiza dispositivos em <strong>piconets</strong> (até 8 dispositivos, 1 mestre + até 7 escravos)</li>
-<li>Várias piconets conectadas formam uma <strong>scatternet</strong></li>
-<li><strong>Bluetooth Low Energy (BLE)</strong> — variante de baixíssimo consumo, usada em wearables, sensores e IoT</li>
+<li>Padrão <strong>IEEE 802.15.1</strong>, a tecnologia WPAN mais difundida — opera na faixa <strong>2,4 GHz (ISM)</strong></li>
+<li>Usa <strong>FHSS (Frequency Hopping Spread Spectrum)</strong> — o Bluetooth “pula” entre 79 frequências diferentes na banda de 2,4 GHz, e faz isso cerca de <strong>1.600 vezes por segundo</strong>; isso evita que a interferência de um Wi-Fi ou micro-ondas próximo derrube a conexão</li>
+<li>Organiza dispositivos em <strong>piconets</strong> — um dispositivo mestre pode conectar até 7 escravos ativos, formando um <strong>piconet</strong></li>
+<li>Quando vários piconets se interligam, temos uma <strong>scatternet</strong></li>
+<li><strong>Bluetooth Low Energy (BLE)</strong> — introduzido no Bluetooth 4.0, é a base da IoT moderna: permite que dispositivos fiquem “dormindo” e acordem apenas para enviar pequenos pacotes de dados, fazendo pilhas de moedas durarem anos</li>
 </ul>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -195,28 +195,34 @@ Ricardo Pasquati Pontarolli
 <section id="zigbee" class="slide level2">
 <h2>Zigbee</h2>
 <ul>
-<li>Padrão <strong>IEEE 802.15.4</strong>, também na faixa de 2,4 GHz</li>
-<li>Focado em <strong>baixíssimo consumo de energia</strong> e <strong>baixa taxa de dados</strong></li>
-<li>Suporta topologia <strong>mesh</strong> — dispositivos retransmitem a mensagem uns dos outros, ampliando o alcance da rede sem precisar de mais potência</li>
-<li>Muito usado em <strong>automação residencial/industrial</strong> (lâmpadas, sensores, fechaduras inteligentes)</li>
+<li>Padrão <strong>IEEE 802.15.4</strong> — enquanto o Bluetooth é focado em voz e dados entre periféricos, o Zigbee foi pensado para automação industrial e residencial</li>
+<li><strong>Baixa taxa de dados</strong>: opera com taxas de 20 a 250 kbps — pouco para vídeo, mas perfeito para sensores de temperatura ou lâmpadas</li>
+<li><strong>Rede Mesh (malha)</strong> é sua principal característica técnica: cada dispositivo pode atuar como roteador, passando a mensagem adiante; se um dispositivo falhar, o sinal encontra outro caminho</li>
+<li><strong>Capacidade:</strong> uma única rede Zigbee pode suportar teoricamente mais de <strong>65.000 nós</strong></li>
+<li>Muito usado em <strong>automação residencial/industrial</strong> (lâmpadas, sensores, fechaduras inteligentes) — a “alma” da casa inteligente</li>
 <li>Concorrente direto: <strong>Z-Wave</strong> (proprietário, mesma ideia de mesh de baixo consumo)</li>
 </ul>
 </section>
 <section id="uwb-ultra-wideband" class="slide level2">
 <h2>UWB — Ultra-Wideband</h2>
 <ul>
-<li>Padrão <strong>IEEE 802.15.3</strong></li>
-<li>Transmite usando uma <strong>largura de banda muito ampla</strong> e potência muito baixa por Hz</li>
-<li>Permite medir distância com precisão usando <strong>ToF (Time of Flight)</strong> — o tempo que o sinal leva para ir e voltar</li>
+<li>Padrão <strong>IEEE 802.15.3</strong> — a “estrela em ascensão” das WPANs, presente hoje em smartphones modernos para localização de precisão</li>
+<li>Tecnologia de impulsos: ao contrário de outras tecnologias que usam ondas portadoras contínuas, o UWB envia pulsos ultracurtos em um espectro de frequência muito largo (acima de 500 MHz)</li>
+<li><strong>Precisão centimétrica:</strong> graças à natureza dos seus pulsos, o sistema consegue medir o “tempo de voo” (ToF) do sinal com precisão, permitindo que o celular calcule exatamente onde está uma tag de rastreamento ao se aproximar</li>
 <li>Aplicações: <strong>localização de precisão</strong> (chaveiros, AirTag-like), abertura de carros sem chave física, medição de proximidade em smartphones</li>
 </ul>
 </section>
 <section id="nfc-near-field-communication" class="slide level2">
 <h2>NFC — Near Field Communication</h2>
 <ul>
-<li>Alcance <strong>extremamente curto</strong> (poucos centímetros)</li>
-<li>Baseado em indução eletromagnética entre duas bobinas próximas</li>
-<li>Usos principais: <strong>pagamentos por aproximação, controle de acesso, emparelhamento rápido de dispositivos</strong></li>
+<li>Embora tenha um curtíssimo alcance (até 10 cm), é considerada uma tecnologia de rede pessoal — alcance <strong>extremamente curto</strong>, baseado em indução magnética (acoplamento entre duas bobinas de antena)</li>
+<li><strong>Modos de operação:</strong>
+<ul>
+<li><strong>Leitura/escrita</strong> — o celular lendo uma etiqueta ou cartão inteligente</li>
+<li><strong>Peer-to-peer</strong> — dois celulares trocando dados por aproximação</li>
+<li><strong>Emulação de cartão</strong> — o celular “vira” um cartão de pagamento nas carteiras digitais</li>
+</ul></li>
+<li>Usos principais: <strong>pagamentos por aproximação com o celular ou cartão na maquininha, controle de acesso, emparelhamento rápido de dispositivos</strong></li>
 <li>Segurança “por design”: o alcance mínimo dificulta interceptação a distância</li>
 </ul>
 </section>

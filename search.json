@@ -158,7 +158,7 @@
     "href": "aulas/11-arquiteturas-redes-wireless.html#ibss-independent-basic-service-set-rede-ad-hoc",
     "title": "Aula 11 — Arquiteturas de redes wireless: IBSS, BSS, ESS e roaming",
     "section": "IBSS — Independent Basic Service Set (rede ad-hoc)",
-    "text": "IBSS — Independent Basic Service Set (rede ad-hoc)\n\nDispositivos se conectam diretamente entre si, sem um AP central\nCada dispositivo fala com os outros de igual para igual (peer-to-peer)\nExemplos de uso: Wi-Fi Direct, conexões Bluetooth ponto a ponto, e — em um sentido mais amplo — a comunicação veicular direta das VANETs (Aula 07)\nVantagem: não depende de infraestrutura fixa · Desvantagem: mais difícil de escalar e gerenciar"
+    "text": "IBSS — Independent Basic Service Set (rede ad-hoc)\n\nNotebook, celular e tablet conectados diretamente entre si, sem AP central\nDispositivos se conectam diretamente entre si, sem um AP central — comunicação direta, sem equipamento central\nCada dispositivo fala com os outros de igual para igual (peer-to-peer)\nCenários comuns: compartilhamento direto entre dispositivos, ambientes sem roteador ou AP disponível, redes temporárias para testes, campo ou emergência\nExemplos de uso: Wi-Fi Direct, conexões Bluetooth ponto a ponto, e — em um sentido mais amplo — a comunicação veicular direta das VANETs (Aula 07)\n\n\n\n\n\n\n\nNota\n\n\nAtenção: em geral, redes ad-hoc são menos indicadas para ambientes grandes, pois o gerenciamento, a segurança e a estabilidade ficam mais difíceis conforme o número de dispositivos cresce."
   },
   {
     "objectID": "aulas/11-arquiteturas-redes-wireless.html#bss-basic-service-set",
@@ -242,14 +242,14 @@
     "href": "aulas/09-antenas-ganho-sinal.html#antenas-onidirecionais",
     "title": "Aula 09 — Tipos de antenas e ganho de sinal (dBi)",
     "section": "Antenas onidirecionais",
-    "text": "Antenas onidirecionais\n\nIrradiam o sinal igualmente em todas as direções no plano horizontal (formato de “rosca”/toro)\nVantagens: cobertura ampla e uniforme, simples de instalar, ideal quando os clientes estão espalhados ao redor\nDesvantagens: menor alcance em uma direção específica comparado a uma antena direcional de mesmo ganho — a energia é “diluída” em todas as direções\nExemplos de uso: AP central de uma casa ou escritório, hotspot em ambiente aberto"
+    "text": "Antenas onidirecionais\n\nA antena é o elemento responsável por irradiar ou receber energia eletromagnética\nIrradiam o sinal em várias direções ao redor da antena, geralmente 360° no plano horizontal\nAnalogia: imagine uma lâmpada no centro de uma sala, iluminando todos os lados de forma relativamente uniforme\nPontos positivos: cobertura ampla, instalação simples e bom atendimento para vários usuários ao redor — excelente escolha para casas, escritórios e salas de aula\nPontos negativos: o sinal é distribuído em muitas direções, o que reduz o alcance útil em uma direção específica e pode captar mais interferência do ambiente por cobrir uma área maior\nExemplos práticos: o roteador Wi-Fi de uma residência, posicionado no centro da casa para atender vários cômodos; um access point no centro de uma sala ou corredor"
   },
   {
     "objectID": "aulas/09-antenas-ganho-sinal.html#antenas-direcionais",
     "href": "aulas/09-antenas-ganho-sinal.html#antenas-direcionais",
     "title": "Aula 09 — Tipos de antenas e ganho de sinal (dBi)",
     "section": "Antenas direcionais",
-    "text": "Antenas direcionais\n\nConcentram o sinal em uma direção específica, formando um feixe mais estreito\nVantagens: maior alcance na direção apontada, menos interferência para os lados (útil em ambientes com muitas redes vizinhas)\nDesvantagens: exige apontamento preciso, cobertura muito ruim fora do feixe\nExemplos de uso: enlaces ponto a ponto (ex.: WLL, backhaul entre prédios), cobertura de um corredor longo, last mile rural"
+    "text": "Antenas direcionais\n\nConcentram a maior parte da energia em uma direção específica, formando um feixe mais estreito — em vez de espalhar o sinal para todos os lados, elas “apontam” a energia para um alvo ou setor\nAnalogia: a de uma lanterna — a luz é concentrada para iluminar uma região específica\nPontos positivos: maior alcance em uma direção, menor dispersão de energia e melhor resistência a interferências laterais — mas exigem alinhamento mais preciso entre transmissor e receptor\nPontos negativos: não são ideais quando os usuários estão espalhados ao redor da antena\nExemplos práticos: enlace Wi-Fi ponto a ponto entre dois prédios usando antenas tipo painel ou parabólicas; antenas setoriais em torres de operadoras cobrindo setores de 60°, 90° ou 120°; antenas usadas em links rurais para levar internet a locais distantes\nExemplos de uso: enlaces ponto a ponto (ex.: WLL, backhaul entre prédios), cobertura de um corredor longo, last mile rural"
   },
   {
     "objectID": "aulas/09-antenas-ganho-sinal.html#ganho-de-antena-dbi",
@@ -438,7 +438,7 @@
     "href": "aulas/05-evolucao-802-11.html#e-depois-disso",
     "title": "Aula 05 — Evolução do Wi-Fi: 802.11a, 802.11b e 802.11g",
     "section": "E depois disso?",
-    "text": "E depois disso?\n\n802.11n (2009) — introduz MIMO, opera em 2,4 GHz e 5 GHz simultaneamente, até ~600 Mbps\n802.11ac (2013) — foco em 5 GHz, MU-MIMO, até vários Gbps\n802.11ax / Wi-Fi 6 (2019) — OFDMA, mais eficiência com muitos dispositivos simultâneos\nWi-Fi 6E / 7 — expande para a faixa de 6 GHz, ainda mais canais livres"
+    "text": "E depois disso?\n\nLinha do tempo das gerações de Wi-Fi: Legacy, Wi-Fi 4, 5, 6 e 7\n802.11n / Wi-Fi 4 (2009) — introduz MIMO, opera em 2,4 GHz e 5 GHz simultaneamente, até ~600 Mbps\n802.11ac / Wi-Fi 5 (2013) — o padrão que virou referência para streaming, foco em 5 GHz, MU-MIMO, acima de 1 Gbps\n802.11ax / Wi-Fi 6 (2019) — OFDMA, feito para densidade (muitos aparelhos ao mesmo tempo), até 9,6 Gbps\n802.11be / Wi-Fi 7 — “o futuro”: uso da banda de 6 GHz, velocidades teóricas de até 46 Gbps"
   },
   {
     "objectID": "aulas/05-evolucao-802-11.html#discussão-rápida",
@@ -487,28 +487,28 @@
     "href": "aulas/03-tecnologias-wpan.html#bluetooth",
     "title": "Aula 03 — Tecnologias WPAN: Bluetooth, Zigbee, UWB, NFC e Infrared",
     "section": "Bluetooth",
-    "text": "Bluetooth\n\nPadrão IEEE 802.15.1, opera na faixa 2,4 GHz (ISM)\nUsa FHSS (Frequency Hopping Spread Spectrum) — salta entre 79 canais várias vezes por segundo para reduzir interferência\nOrganiza dispositivos em piconets (até 8 dispositivos, 1 mestre + até 7 escravos)\nVárias piconets conectadas formam uma scatternet\nBluetooth Low Energy (BLE) — variante de baixíssimo consumo, usada em wearables, sensores e IoT\n\n\n\n\n\n\n\nNota\n\n\nBLE não é “Bluetooth mais lento” — é um protocolo otimizado para transmitir pouca informação, raramente, gastando o mínimo de bateria possível (ex.: um sensor de batimento cardíaco)."
+    "text": "Bluetooth\n\nPadrão IEEE 802.15.1, a tecnologia WPAN mais difundida — opera na faixa 2,4 GHz (ISM)\nUsa FHSS (Frequency Hopping Spread Spectrum) — o Bluetooth “pula” entre 79 frequências diferentes na banda de 2,4 GHz, e faz isso cerca de 1.600 vezes por segundo; isso evita que a interferência de um Wi-Fi ou micro-ondas próximo derrube a conexão\nOrganiza dispositivos em piconets — um dispositivo mestre pode conectar até 7 escravos ativos, formando um piconet\nQuando vários piconets se interligam, temos uma scatternet\nBluetooth Low Energy (BLE) — introduzido no Bluetooth 4.0, é a base da IoT moderna: permite que dispositivos fiquem “dormindo” e acordem apenas para enviar pequenos pacotes de dados, fazendo pilhas de moedas durarem anos\n\n\n\n\n\n\n\nNota\n\n\nBLE não é “Bluetooth mais lento” — é um protocolo otimizado para transmitir pouca informação, raramente, gastando o mínimo de bateria possível (ex.: um sensor de batimento cardíaco)."
   },
   {
     "objectID": "aulas/03-tecnologias-wpan.html#zigbee",
     "href": "aulas/03-tecnologias-wpan.html#zigbee",
     "title": "Aula 03 — Tecnologias WPAN: Bluetooth, Zigbee, UWB, NFC e Infrared",
     "section": "Zigbee",
-    "text": "Zigbee\n\nPadrão IEEE 802.15.4, também na faixa de 2,4 GHz\nFocado em baixíssimo consumo de energia e baixa taxa de dados\nSuporta topologia mesh — dispositivos retransmitem a mensagem uns dos outros, ampliando o alcance da rede sem precisar de mais potência\nMuito usado em automação residencial/industrial (lâmpadas, sensores, fechaduras inteligentes)\nConcorrente direto: Z-Wave (proprietário, mesma ideia de mesh de baixo consumo)"
+    "text": "Zigbee\n\nPadrão IEEE 802.15.4 — enquanto o Bluetooth é focado em voz e dados entre periféricos, o Zigbee foi pensado para automação industrial e residencial\nBaixa taxa de dados: opera com taxas de 20 a 250 kbps — pouco para vídeo, mas perfeito para sensores de temperatura ou lâmpadas\nRede Mesh (malha) é sua principal característica técnica: cada dispositivo pode atuar como roteador, passando a mensagem adiante; se um dispositivo falhar, o sinal encontra outro caminho\nCapacidade: uma única rede Zigbee pode suportar teoricamente mais de 65.000 nós\nMuito usado em automação residencial/industrial (lâmpadas, sensores, fechaduras inteligentes) — a “alma” da casa inteligente\nConcorrente direto: Z-Wave (proprietário, mesma ideia de mesh de baixo consumo)"
   },
   {
     "objectID": "aulas/03-tecnologias-wpan.html#uwb-ultra-wideband",
     "href": "aulas/03-tecnologias-wpan.html#uwb-ultra-wideband",
     "title": "Aula 03 — Tecnologias WPAN: Bluetooth, Zigbee, UWB, NFC e Infrared",
     "section": "UWB — Ultra-Wideband",
-    "text": "UWB — Ultra-Wideband\n\nPadrão IEEE 802.15.3\nTransmite usando uma largura de banda muito ampla e potência muito baixa por Hz\nPermite medir distância com precisão usando ToF (Time of Flight) — o tempo que o sinal leva para ir e voltar\nAplicações: localização de precisão (chaveiros, AirTag-like), abertura de carros sem chave física, medição de proximidade em smartphones"
+    "text": "UWB — Ultra-Wideband\n\nPadrão IEEE 802.15.3 — a “estrela em ascensão” das WPANs, presente hoje em smartphones modernos para localização de precisão\nTecnologia de impulsos: ao contrário de outras tecnologias que usam ondas portadoras contínuas, o UWB envia pulsos ultracurtos em um espectro de frequência muito largo (acima de 500 MHz)\nPrecisão centimétrica: graças à natureza dos seus pulsos, o sistema consegue medir o “tempo de voo” (ToF) do sinal com precisão, permitindo que o celular calcule exatamente onde está uma tag de rastreamento ao se aproximar\nAplicações: localização de precisão (chaveiros, AirTag-like), abertura de carros sem chave física, medição de proximidade em smartphones"
   },
   {
     "objectID": "aulas/03-tecnologias-wpan.html#nfc-near-field-communication",
     "href": "aulas/03-tecnologias-wpan.html#nfc-near-field-communication",
     "title": "Aula 03 — Tecnologias WPAN: Bluetooth, Zigbee, UWB, NFC e Infrared",
     "section": "NFC — Near Field Communication",
-    "text": "NFC — Near Field Communication\n\nAlcance extremamente curto (poucos centímetros)\nBaseado em indução eletromagnética entre duas bobinas próximas\nUsos principais: pagamentos por aproximação, controle de acesso, emparelhamento rápido de dispositivos\nSegurança “por design”: o alcance mínimo dificulta interceptação a distância"
+    "text": "NFC — Near Field Communication\n\nEmbora tenha um curtíssimo alcance (até 10 cm), é considerada uma tecnologia de rede pessoal — alcance extremamente curto, baseado em indução magnética (acoplamento entre duas bobinas de antena)\nModos de operação:\n\nLeitura/escrita — o celular lendo uma etiqueta ou cartão inteligente\nPeer-to-peer — dois celulares trocando dados por aproximação\nEmulação de cartão — o celular “vira” um cartão de pagamento nas carteiras digitais\n\nUsos principais: pagamentos por aproximação com o celular ou cartão na maquininha, controle de acesso, emparelhamento rápido de dispositivos\nSegurança “por design”: o alcance mínimo dificulta interceptação a distância"
   },
   {
     "objectID": "aulas/03-tecnologias-wpan.html#infrared-infravermelho-irda",
@@ -574,6 +574,13 @@
     "text": "O que é uma rede sem fio?\n\nComunicação de dados entre dispositivos sem a necessidade de cabos físicos, usando ondas eletromagnéticas (rádio, infravermelho) como meio de transmissão.\n\n\nEm vez de um cabo de cobre ou fibra óptica ligando dois pontos…\n…a informação viaja pelo ar, como sinal de rádio"
   },
   {
+    "objectID": "aulas/01-introducao-redes-sem-fio.html#cabo-x-sem-fio",
+    "href": "aulas/01-introducao-redes-sem-fio.html#cabo-x-sem-fio",
+    "title": "Aula 01 — Introdução às redes sem fio",
+    "section": "Cabo x sem fio",
+    "text": "Cabo x sem fio\n\nRede cabeada (limitação física) x rede sem fio (flexibilidade e mobilidade)\nDefinição: as redes sem fio utilizam o ar ou o espaço livre como meio físico para a propagação de sinais eletromagnéticos\nPropósito: surgiram como redes complementares às cabeadas, para promover a mobilidade e a visualização rápida dos dados, independentemente da localização do usuário\nA grande diferença: ao contrário das redes convencionais, a tecnologia sem fio oferece flexibilidade total na localização das estações de trabalho\n\n\nSlide baseado no material do professor André Luyde (Aula 1 — Introdução às redes sem fio), reaproveitando a imagem original comparando cabo estrutural x conexão sem fio."
+  },
+  {
     "objectID": "aulas/01-introducao-redes-sem-fio.html#por-que-usar-redes-sem-fio",
     "href": "aulas/01-introducao-redes-sem-fio.html#por-que-usar-redes-sem-fio",
     "title": "Aula 01 — Introdução às redes sem fio",
@@ -592,7 +599,7 @@
     "href": "aulas/01-introducao-redes-sem-fio.html#uma-primeira-classificação-alcance",
     "title": "Aula 01 — Introdução às redes sem fio",
     "section": "Uma primeira classificação: alcance",
-    "text": "Uma primeira classificação: alcance\nAs redes sem fio costumam ser classificadas pela área de cobertura:\n\n\n\n\n\n\n\n\n\nSigla\nNome\nAlcance típico\nExemplo\n\n\n\n\nWPAN\nWireless Personal Area Network\nPoucos metros\nBluetooth, NFC\n\n\nWLAN\nWireless Local Area Network\nUm prédio/casa\nWi-Fi\n\n\nWMAN\nWireless Metropolitan Area Network\nUma cidade\nWiMAX\n\n\nWWAN\nWireless Wide Area Network\nRegional/global\nRedes celulares (3G/4G/5G)\n\n\n\n\nNão aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora desta tabela introdutória de propósito."
+    "text": "Uma primeira classificação: alcance\nAs redes são padronizadas pelo IEEE, que divide as tecnologias em 4 grandes grupos baseados no seu perímetro geográfico:\n\nClassificação das redes sem fio por raio de alcance: WPAN, WLAN, WMAN e WWAN\nNão aprofundar aqui — a Aula 02 é inteira dedicada a essa classificação, incluindo WLL, que fica de fora deste diagrama introdutório de propósito (o diagrama original também não cobre WLL). Imagem reaproveitada do material do professor André Luyde."
   },
   {
     "objectID": "aulas/01-introducao-redes-sem-fio.html#evolução-do-hardware-sem-fio",
@@ -600,6 +607,13 @@
     "title": "Aula 01 — Introdução às redes sem fio",
     "section": "Evolução do hardware sem fio",
     "text": "Evolução do hardware sem fio\n\nDécadas de 1980-90 — primeiros rádios digitais, alcance curto, velocidades baixas\nAnos 2000 — popularização do Wi-Fi doméstico e do Bluetooth em celulares\nAnos 2010 — redes 3G/4G tornam a internet móvel de banda larga um padrão\nHoje — Wi-Fi 6/6E/7, 5G, bilhões de dispositivos IoT conectados sem fio simultaneamente"
+  },
+  {
+    "objectID": "aulas/01-introducao-redes-sem-fio.html#o-que-tem-dentro-de-um-roteador-wi-fi",
+    "href": "aulas/01-introducao-redes-sem-fio.html#o-que-tem-dentro-de-um-roteador-wi-fi",
+    "title": "Aula 01 — Introdução às redes sem fio",
+    "section": "O que tem dentro de um roteador Wi-Fi?",
+    "text": "O que tem dentro de um roteador Wi-Fi?\n\nComponentes de um roteador Wi-Fi doméstico: access point, roteador, switch, antenas e NIC\nAccess Point (AP) — o “coração”: transmite e recebe os sinais de rádio (o Wi-Fi propriamente dito)\nRoteador — o “cérebro”: direciona o tráfego, atribui IPs (DHCP) e gerencia a segurança (firewall)\nSwitch — o “controlador de tráfego”: conecta dispositivos via cabo para estabilidade máxima\nAntenas — podem ser omnidirecionais (cobertura 360°) ou direcionais (foco em uma área) — voltamos a esse tema na Aula 09\nNIC (Placa de Rede) — o “tradutor”: a peça dentro do celular ou PC que conversa com o AP"
   },
   {
     "objectID": "aulas/01-introducao-redes-sem-fio.html#vantagens-das-redes-sem-fio",
@@ -676,35 +690,35 @@
     "href": "aulas/02-categorias-redes-sem-fio.html#por-que-classificar-por-abrangência",
     "title": "Aula 02 — Categorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL",
     "section": "Por que classificar por abrangência?",
-    "text": "Por que classificar por abrangência?\n\nCada categoria de rede sem fio foi desenhada para um problema de escala diferente\nAbrangência influencia: potência de transmissão, frequência usada, protocolo de acesso ao meio e custo\nEntender a categoria certa evita escolher a tecnologia errada para um projeto"
+    "text": "Por que classificar por abrangência?\n\nA escala utilizada vai desde a conexão de dispositivos no seu bolso até a comunicação global via satélite\nEssa organização ajuda a determinar qual protocolo é mais adequado para cada situação, desde conectar um fone de ouvido até cobrir uma cidade inteira\nAbrangência influencia: potência de transmissão, frequência usada, protocolo de acesso ao meio e custo"
   },
   {
     "objectID": "aulas/02-categorias-redes-sem-fio.html#wpan-wireless-personal-area-network",
     "href": "aulas/02-categorias-redes-sem-fio.html#wpan-wireless-personal-area-network",
     "title": "Aula 02 — Categorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL",
     "section": "WPAN — Wireless Personal Area Network",
-    "text": "WPAN — Wireless Personal Area Network\n\nCobertura: poucos metros (tipicamente até ~10m)\nConecta dispositivos pessoais próximos ao usuário\nExemplos: Bluetooth, Zigbee, Z-Wave, NFC\nBaixo consumo de energia, baixo custo, ideal para acessórios e IoT próximo"
+    "text": "WPAN — Wireless Personal Area Network\n\nDiagrama de rede WPAN: dispositivos pessoais conectados ao redor do usuário\nCobertura: curta (0 a 10 metros) — diferente do Wi-Fi, que foca em dar internet para um ambiente, a WPAN foca em conectar você e seus objetos\nAnalogia: imagine uma “bolha” invisível ao seu redor — tudo o que entra nessa bolha (seu relógio, seu fone, seu celular) pode conversar entre si, com o objetivo principal de eliminar cabos\nExemplos: Bluetooth, Zigbee, Z-Wave, NFC\nPor que é classificada como “pessoal”? Se você se afastar 15 a 20 metros do seu celular, a música no fone Bluetooth trava — a rede é “pessoal” e limitada ao seu espaço imediato\nConsumo de energia muito baixo (ideal para dispositivos que usam bateria), velocidade moderada a baixa e custo de implementação baixo nos aparelhos"
   },
   {
     "objectID": "aulas/02-categorias-redes-sem-fio.html#wlan-wireless-local-area-network",
     "href": "aulas/02-categorias-redes-sem-fio.html#wlan-wireless-local-area-network",
     "title": "Aula 02 — Categorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL",
     "section": "WLAN — Wireless Local Area Network",
-    "text": "WLAN — Wireless Local Area Network\n\nCobertura: um cômodo, casa, prédio ou campus\nEstrutura em torno de um Ponto de Acesso (AP) identificado por um SSID\nPadrão dominante: IEEE 802.11 (Wi-Fi)\nPode operar em dual band (2,4 GHz e 5 GHz) e usar segurança WPA2/WPA3\n\n\nWLAN e Wi-Fi não são sinônimos: WLAN é a categoria (rede local sem fio), Wi-Fi é a marca/certificação da tecnologia mais comum que implementa essa categoria. Vale reforçar essa diferença."
+    "text": "WLAN — Wireless Local Area Network\n\nDiagrama de rede WLAN: escritório coberto pelo sinal de um roteador Wi-Fi central\nCobertura: 100 a 300 metros, comumente usada como alternativa ou extensão de redes cabeadas\nDiferente da WPAN (focada em você e seus objetos), a WLAN foca em fornecer infraestrutura e banda larga para um ambiente inteiro\nUso: escritórios, residências, aeroportos, shopping centers e instituições de ensino\nTecnologia principal: Wi-Fi, padrão IEEE 802.11, frequências 2,4 GHz e 5,0 GHz\nA popularização do Wi-Fi reduziu custos de equipamentos, disseminando redes particulares por toda parte\n\n\nWLAN e Wi-Fi não são sinônimos: WLAN é o conceito técnico (qualquer rede local que use ondas de rádio), Wi-Fi é o selo comercial dado pela Wi-Fi Alliance a quem segue as regras do padrão 802.11. Vale reforçar essa diferença."
   },
   {
     "objectID": "aulas/02-categorias-redes-sem-fio.html#wman-wireless-metropolitan-area-network",
     "href": "aulas/02-categorias-redes-sem-fio.html#wman-wireless-metropolitan-area-network",
     "title": "Aula 02 — Categorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL",
     "section": "WMAN — Wireless Metropolitan Area Network",
-    "text": "WMAN — Wireless Metropolitan Area Network\n\nCobertura: uma cidade ou região metropolitana\nConecta redes locais entre si, cobrindo distâncias que o Wi-Fi não alcança\nTecnologia clássica: WiMAX (IEEE 802.16)\nUsos: backhaul (conectar torres/APs entre si) e last mile (levar internet a áreas sem cabeamento)\n\n\n\n\n\n\n\nNota\n\n\nHoje se fala pouco de WMAN dedicado porque o 4G/5G e a fibra óptica passaram a cobrir boa parte desses cenários — mas o conceito continua relevante para zonas rurais e projetos de conectividade alternativa."
+    "text": "WMAN — Wireless Metropolitan Area Network\n\nDiagrama de rede WMAN: enlace de rádio entre dois prédios distantes cobrindo uma área metropolitana\nCobertura: 4 a 10 km, o “degrau” intermediário entre a rede local (Wi-Fi) e a rede de longa distância (celular)\nResolve o problema de levar internet de alta velocidade para casas ou empresas onde cabeamento de fibra óptica é caro ou difícil de instalar\nTecnologia central: WiMAX, padrão IEEE 802.16, conexão entre pontos de distribuição de provedores de acesso\n\n\n\n\n\n\n\nNota\n\n\nPor que não ouvimos falar de WMAN hoje? Por dois motivos: o avanço do 4G/5G e a fibra óptica barata acabaram “engolindo” muitas das funções para as quais o WMAN foi criado — mas em cidades digitais, câmpus universitários extensos e conectividade rural, o conceito continua vivo (ex.: Wi-Fi público municipal, câmeras de monitoramento urbano conectadas via WMAN)."
   },
   {
     "objectID": "aulas/02-categorias-redes-sem-fio.html#wwan-wireless-wide-area-network",
     "href": "aulas/02-categorias-redes-sem-fio.html#wwan-wireless-wide-area-network",
     "title": "Aula 02 — Categorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL",
     "section": "WWAN — Wireless Wide Area Network",
-    "text": "WWAN — Wireless Wide Area Network\n\nCobertura: regional, nacional ou global\nRede de Estações Rádio Base (ERBs), com suporte a roaming e handover entre células\nOpera em espectro licenciado, controlado por operadoras\nExemplos: redes celulares 3G, 4G, 5G e comunicação via satélite"
+    "text": "WWAN — Wireless Wide Area Network\n\nDiagrama de rede WWAN: cobertura celular sobre o mapa do Brasil, conectando voz, dados e rádio-enlace\nCobertura: nacional ou global (“rede continental”) — é o nível mais alto de abrangência em redes sem fio\nDepende de uma infraestrutura massiva de operadoras de telecomunicações e satélites\nEnquanto as outras categorias (WPAN, WLAN, WMAN) ficam limitadas a uma sala, um prédio ou uma cidade, a WWAN é projetada para cobrir países, continentes e até o globo\nA WWAN é a espinha dorsal da nossa vida móvel moderna: dados móveis (4G/5G) quando você usa WhatsApp ou Instagram na rua, sinal de torre de celular que acompanha você a quilômetros de distância, máquinas de cartão (PoS) que conectam via SIM card para autorizar uma transação em qualquer lugar\nExemplos: redes celulares 3G, 4G, 5G e internet rural via satélite (como o Starlink, para fazendas onde nem fibra nem torre de celular chegam)"
   },
   {
     "objectID": "aulas/02-categorias-redes-sem-fio.html#wll-wireless-local-loop",
@@ -718,7 +732,7 @@
     "href": "aulas/02-categorias-redes-sem-fio.html#comparativo-geral",
     "title": "Aula 02 — Categorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL",
     "section": "Comparativo geral",
-    "text": "Comparativo geral\n\n\n\n\n\n\n\n\n\n\nCategoria\nSigla\nAlcance\nExemplo\nPadrão típico\n\n\n\n\nPessoal\nWPAN\nPoucos metros\nBluetooth, Zigbee, NFC\nIEEE 802.15\n\n\nLocal\nWLAN\nPrédio/campus\nWi-Fi\nIEEE 802.11\n\n\nMetropolitana\nWMAN\nCidade/região\nWiMAX\nIEEE 802.16\n\n\nRegional/Global\nWWAN\nNacional/global\n3G/4G/5G, satélite\n3GPP\n\n\nLaço local\nWLL\nÚltima milha (ponto a ponto/multiponto)\nInternet rural via rádio\nVariado (proprietário ou 802.16)"
+    "text": "Comparativo geral\n\nTabela comparativa: WPAN, WLAN, WMAN e WWAN por alcance, padrão IEEE e foco\n\n\n\n\n\n\n\n\n\nCategoria\nSigla\nAlcance\nExemplo\nPadrão típico\n\n\n\n\nPessoal\nWPAN\n10-100 m\nBluetooth, Zigbee, NFC\nIEEE 802.15\n\n\nLocal\nWLAN\n100-300 m\nWi-Fi\nIEEE 802.11\n\n\nMetropolitana\nWMAN\n4-10 km\nWiMAX\nIEEE 802.16\n\n\nRegional/Global\nWWAN\nNacional/global\n3G/4G/5G, satélite\n3GPP\n\n\nLaço local\nWLL\nÚltima milha (ponto a ponto/multiponto)\nInternet rural via rádio\nVariado (proprietário ou 802.16)"
   },
   {
     "objectID": "aulas/02-categorias-redes-sem-fio.html#discussão-rápida",
@@ -774,7 +788,7 @@
     "href": "aulas/04-tecnologias-wlan-wifi.html#onde-o-wi-fi-vive-banda-ism",
     "title": "Aula 04 — Tecnologias WLAN: Wi-Fi, OFDM, CSMA/CA e MIMO",
     "section": "Onde o Wi-Fi “vive”: banda ISM",
-    "text": "Onde o Wi-Fi “vive”: banda ISM\n\nOpera principalmente nas faixas 2,4 GHz e 5 GHz, parte do espectro ISM (Industrial, Scientific and Medical) — não licenciado\n2,4 GHz: maior alcance, atravessa obstáculos melhor, mas mais interferência (compartilhada com Bluetooth, micro-ondas, etc.) e só 3 canais não sobrepostos (1, 6, 11)\n5 GHz: menos alcance e penetração em paredes, porém muito menos interferência e mais canais disponíveis"
+    "text": "Onde o Wi-Fi “vive”: banda ISM\n\nOpera principalmente nas faixas 2,4 GHz e 5 GHz, parte do espectro ISM (Industrial, Scientific and Medical) — não licenciado\n2,4 GHz: maior alcance, atravessa obstáculos melhor, mas mais interferência (compartilhada com Bluetooth, micro-ondas, etc.) e só 3 canais não sobrepostos (1, 6, 11)\n\n - 5 GHz: menos alcance e penetração em paredes, porém muito menos interferência e mais canais disponíveis - 6 GHz (Wi-Fi 6E e 7): uma “autoestrada” recém-aberta, livre de dispositivos antigos, permitindo velocidades gigabit reais sem a disputa histórica das outras duas faixas"
   },
   {
     "objectID": "aulas/04-tecnologias-wlan-wifi.html#ofdm-orthogonal-frequency-division-multiplexing",
@@ -935,7 +949,7 @@
     "href": "aulas/08-principios-radiofrequencia.html#propagação-do-sinal-de-rádio",
     "title": "Aula 08 — Princípios de radiofrequência: propagação, reflexão e interferência",
     "section": "Propagação do sinal de rádio",
-    "text": "Propagação do sinal de rádio\n\nO sinal se propaga como uma onda eletromagnética que perde energia com a distância (atenuação)\nLOS (Line of Sight / linha de visada) — quando não há obstáculo direto entre transmissor e receptor, a propagação é mais previsível e eficiente\nObstáculos (paredes, móveis, corpos) absorvem e atenuam o sinal, reduzindo alcance e velocidade\nQuanto maior a frequência (ex.: 5 GHz vs 2,4 GHz), em geral menor a penetração em obstáculos — mas veremos no ganho de antena que isso pode ser compensado"
+    "text": "Propagação do sinal de rádio\n\nPropagação é a forma como a onda de RF sai da antena transmissora e chega à antena receptora\nAnalogia: imagine jogar uma pedra em um lago calmo — as ondas se espalham em todas as direções a partir do ponto de impacto; na RF, a antena transmissora faz o papel da “pedra” e o espaço ao redor funciona como o “lago”\nLOS (Line of Sight / linha de visada) — em condições ideais, a onda tende a viajar em linha reta entre transmissor e receptor; quanto menos barreiras houver no caminho, melhor tende a ser a recepção\nNo mundo real, atmosfera, distância, relevo e objetos no caminho alteram essa trajetória, e ao longo do percurso o sinal perde potência — fenômeno conhecido como atenuação\nQuanto maior a frequência (ex.: 5 GHz vs 2,4 GHz), em geral menor a penetração em obstáculos — mas veremos no ganho de antena que isso pode ser compensado"
   },
   {
     "objectID": "aulas/08-principios-radiofrequencia.html#atenuação",
@@ -949,14 +963,14 @@
     "href": "aulas/08-principios-radiofrequencia.html#reflexão-e-multipath",
     "title": "Aula 08 — Princípios de radiofrequência: propagação, reflexão e interferência",
     "section": "Reflexão e multipath",
-    "text": "Reflexão e multipath\n\nO sinal de rádio reflete em superfícies (paredes, móveis, chão, teto)\nIsso faz com que o receptor receba várias cópias do mesmo sinal, chegando por caminhos diferentes e em instantes ligeiramente diferentes — fenômeno chamado multipath\nMultipath pode causar distorção e perda de qualidade do sinal recebido\nMitigação: tecnologias como OFDM (que dividem o sinal em subportadoras mais resistentes a essas variações) e MIMO (que usa múltiplas antenas para aproveitar as reflexões a favor, em vez de sofrer com elas) — ambas vistas na Aula 04\n\n\n\n\n\n\n\nNota\n\n\nMultipath nem sempre é só um problema: o MIMO moderno usa deliberadamente as múltiplas reflexões para aumentar a capacidade do enlace, em vez de apenas tentar evitá-las."
+    "text": "Reflexão e multipath\n\nA reflexão acontece quando a onda de RF encontra uma superfície lisa e densa e muda de direção — comportamento semelhante ao de uma bola quicando em uma parede, ou à luz refletindo em um espelho\nSuperfícies metálicas, espelhos, concreto e grandes áreas de vidro costumam provocar reflexão\nIsso faz com que o receptor receba várias cópias do mesmo sinal, chegando por caminhos diferentes e em instantes ligeiramente diferentes — fenômeno chamado multipath\nDependendo do ambiente, a reflexão pode ajudar ou atrapalhar a cobertura; multipath pode causar distorção e perda de qualidade do sinal recebido\nMitigação: tecnologias como OFDM (que dividem o sinal em subportadoras mais resistentes a essas variações) e MIMO (que usa múltiplas antenas para aproveitar as reflexões a favor, em vez de sofrer com elas) — ambas vistas na Aula 04\n\n\n\n\n\n\n\nNota\n\n\nMultipath nem sempre é só um problema: o MIMO moderno usa deliberadamente as múltiplas reflexões para aumentar a capacidade do enlace, em vez de apenas tentar evitá-las."
   },
   {
     "objectID": "aulas/08-principios-radiofrequencia.html#interferência",
     "href": "aulas/08-principios-radiofrequencia.html#interferência",
     "title": "Aula 08 — Princípios de radiofrequência: propagação, reflexão e interferência",
     "section": "Interferência",
-    "text": "Interferência\n\nInterferência co-canal — dois transmissores usando a mesma frequência na mesma área competem e degradam o sinal um do outro (ex.: dois roteadores vizinhos no mesmo canal Wi-Fi)\nRuído eletromagnético — fontes externas não relacionadas à rede (motores, micro-ondas, outros eletrônicos) que “poluem” a mesma faixa de frequência\nRedes em 2,4 GHz sofrem mais interferência por ser uma faixa mais concorrida (Bluetooth, micro-ondas, outros Wi-Fis)"
+    "text": "Interferência\n\nA interferência ocorre quando sinais de rádio ou ruídos eletromagnéticos se misturam no mesmo ambiente\nAnalogia: é como tentar conversar em uma sala cheia de gente falando ao mesmo tempo — quanto maior a interferência, maior a chance de lentidão, falhas ou perda de conexão\nInterferência co-canal — dois transmissores usando a mesma frequência na mesma área competem e degradam o sinal um do outro (ex.: dois roteadores vizinhos no mesmo canal Wi-Fi)\nRuído eletromagnético — fontes externas não relacionadas à rede (motores, micro-ondas, telefones sem fio antigos e alguns motores elétricos) que “poluem” a mesma faixa de frequência\nNa faixa de 2,4 GHz, o Wi-Fi divide espaço com vários outros equipamentos — ao ligar um micro-ondas próximo ao roteador, a conexão pode ficar instável"
   },
   {
     "objectID": "aulas/08-principios-radiofrequencia.html#boas-práticas-de-projeto",
@@ -1012,35 +1026,35 @@
     "href": "aulas/10-metodos-acesso-meio.html#por-que-controlar-o-acesso-ao-meio",
     "title": "Aula 10 — Métodos de acesso ao meio: CSMA/CA, RTS/CTS, TDMA/FDMA/CDMA/OFDMA",
     "section": "Por que controlar o acesso ao meio?",
-    "text": "Por que controlar o acesso ao meio?\n\nO ar é um meio compartilhado: todos os dispositivos próximos disputam a mesma frequência\nSem regras, duas transmissões simultâneas colidem e os dados se perdem\nA camada MAC (Medium Access Control) define essas regras de “quem fala e quando”"
+    "text": "Por que controlar o acesso ao meio?\n\nDuas transmissões simultâneas colidindo em um Access Point compartilhado\nEm redes sem fio, o meio de transmissão é o ar\nO espectro de radiofrequência é compartilhado por vários dispositivos\nTransmissões simultâneas no mesmo canal podem causar colisões e perda de dados\nProtocolos MAC organizam quem transmite e em qual momento"
   },
   {
     "objectID": "aulas/10-metodos-acesso-meio.html#csmaca-x-csmacd",
     "href": "aulas/10-metodos-acesso-meio.html#csmaca-x-csmacd",
     "title": "Aula 10 — Métodos de acesso ao meio: CSMA/CA, RTS/CTS, TDMA/FDMA/CDMA/OFDMA",
     "section": "CSMA/CA x CSMA/CD",
-    "text": "CSMA/CA x CSMA/CD\n\nCSMA/CD (Ethernet cabeado): o dispositivo transmite e, se detectar colisão, para e tenta de novo\nCSMA/CA (Wi-Fi): como não é possível detectar colisão de forma confiável no ar enquanto se transmite, o foco é evitar a colisão antes que ela aconteça\nPassos do CSMA/CA no Wi-Fi:\n\nO dispositivo escuta o canal (carrier sense)\nSe livre, espera um tempo de backoff aleatório\nSe continuar livre após o backoff, transmite\nAguarda confirmação (ACK) do receptor"
+    "text": "CSMA/CA x CSMA/CD\n\nCSMA/CD detecta a colisão e retransmite; CSMA/CA evita a colisão com escuta e espera aleatória\nCSMA/CD (Ethernet cabeado): escuta o canal e, se detectar colisão, reage — detecta o erro e retransmite\nCSMA/CA (Wi-Fi): como um rádio não consegue “ouvir” e “falar” ao mesmo tempo com confiabilidade, a estratégia é evitar a colisão antes que ela aconteça\nPassos do CSMA/CA no Wi-Fi:\n\nCarrier sense — o dispositivo escuta o canal\nMultiple access — vários dispositivos disputam o mesmo meio\nCollision avoidance — se livre, espera um tempo aleatório de backoff antes de transmitir\nConfirmação — aguarda um ACK do receptor quando o pacote chega corretamente\n\n\n\n\n\n\n\n\nNota\n\n\nDiferença essencial: CSMA/CD reage à colisão; CSMA/CA tenta impedir que ela aconteça — por isso é mais adequado ao meio sem fio, onde detectar colisão em tempo real não é confiável."
   },
   {
     "objectID": "aulas/10-metodos-acesso-meio.html#ofdma-dividindo-o-canal-em-resource-units",
     "href": "aulas/10-metodos-acesso-meio.html#ofdma-dividindo-o-canal-em-resource-units",
     "title": "Aula 10 — Métodos de acesso ao meio: CSMA/CA, RTS/CTS, TDMA/FDMA/CDMA/OFDMA",
     "section": "OFDMA — dividindo o canal em Resource Units",
-    "text": "OFDMA — dividindo o canal em Resource Units\n\nUsado no Wi-Fi 6 (802.11ax) e nas redes 4G/5G\nDiferente do OFDM “puro” (que usa todas as subportadoras para 1 usuário por vez), o OFDMA divide o canal em Resource Units (RUs) menores\nVários dispositivos podem ser atendidos simultaneamente, cada um em sua RU, em vez de esperar a vez um do outro\nReduz a espera e melhora a eficiência em cenários com muitos dispositivos conectados ao mesmo tempo"
+    "text": "OFDMA — dividindo o canal em Resource Units\n\nCanal Wi-Fi dividido em Resource Units, atendendo 4 clientes em paralelo\nPresente no Wi-Fi 6 (IEEE 802.11ax) e aprimorado no Wi-Fi 7, além de usado em 4G/5G\nO canal é dividido em partes menores chamadas RUs (Resource Units)\nCada RU pode atender um cliente diferente — o AP transmite para vários dispositivos no mesmo intervalo\nResultado: menor espera e maior eficiência em redes lotadas (salas, auditórios, empresas)"
   },
   {
     "objectID": "aulas/10-metodos-acesso-meio.html#rtscts-resolvendo-o-problema-do-nó-oculto",
     "href": "aulas/10-metodos-acesso-meio.html#rtscts-resolvendo-o-problema-do-nó-oculto",
     "title": "Aula 10 — Métodos de acesso ao meio: CSMA/CA, RTS/CTS, TDMA/FDMA/CDMA/OFDMA",
     "section": "RTS/CTS — resolvendo o problema do nó oculto",
-    "text": "RTS/CTS — resolvendo o problema do nó oculto\n\nNó oculto: dois dispositivos (A e C) não conseguem se “ouvir” diretamente, mas ambos enxergam o mesmo AP (B) — A não sabe que C está transmitindo, e pode colidir sem perceber\nSolução: troca de mensagens de controle antes da transmissão de dados\n\nRTS (Request to Send) — o transmissor pede permissão ao AP\nCTS (Clear to Send) — o AP responde autorizando, e todos os dispositivos ao alcance do AP (inclusive o nó oculto) ouvem esse CTS e sabem que devem aguardar\n\n\n\n\n\n\n\n\nNota\n\n\nRTS/CTS tem um custo: adiciona overhead (mensagens extras antes de cada transmissão). Por isso costuma ser ativado só em redes com muitos dispositivos ou histórico de colisões, não em todo cenário."
+    "text": "RTS/CTS — resolvendo o problema do nó oculto\n\nDois clientes que não se enxergam diretamente, mas ambos alcançam o mesmo AP\nNó oculto: dois clientes podem não se enxergar, mas ambos alcançam o mesmo AP\nO cliente envia RTS (Request to Send)\nO AP responde CTS (Clear to Send)\nOs demais aguardam o tempo reservado, reduzindo colisões — A e B não se escutam diretamente, mas o CTS do AP alcança os dois\n\n\n\n\n\n\n\nNota\n\n\nRTS/CTS tem um custo: adiciona overhead (mensagens extras antes de cada transmissão). Por isso costuma ser ativado só em redes com muitos dispositivos ou histórico de colisões, não em todo cenário."
   },
   {
     "objectID": "aulas/10-metodos-acesso-meio.html#tdma-fdma-e-cdma-três-formas-de-dividir-o-meio",
     "href": "aulas/10-metodos-acesso-meio.html#tdma-fdma-e-cdma-três-formas-de-dividir-o-meio",
     "title": "Aula 10 — Métodos de acesso ao meio: CSMA/CA, RTS/CTS, TDMA/FDMA/CDMA/OFDMA",
     "section": "TDMA, FDMA e CDMA: três formas de dividir o meio",
-    "text": "TDMA, FDMA e CDMA: três formas de dividir o meio\n\n\n\n\n\n\n\n\nTécnica\nComo divide o meio\nAnalogia\n\n\n\n\nTDMA (Time Division)\nCada usuário fala em um intervalo de tempo diferente, na mesma frequência\nFila de pessoas revezando o microfone\n\n\nFDMA (Frequency Division)\nCada usuário recebe uma fatia de frequência exclusiva, ao mesmo tempo\nRádios em estações diferentes tocando ao mesmo tempo\n\n\nCDMA (Code Division)\nTodos transmitem ao mesmo tempo, na mesma frequência, mas cada um usa um código único para “filtrar” sua própria mensagem\nVárias conversas simultâneas na mesma sala, cada dupla em um idioma diferente que só ela entende\n\n\n\n\nEssas três técnicas são a base histórica das gerações celulares mais antigas (2G/3G), antes da adoção do OFDMA no 4G/5G"
+    "text": "TDMA, FDMA e CDMA: três formas de dividir o meio\nAlém do CSMA/CA e do OFDMA, existem métodos clássicos para organizar usuários no mesmo sistema de comunicação — a ideia geral é sempre a mesma: permitir que vários usuários compartilhem um recurso limitado sem misturar suas transmissões.\nTDMA — acesso por divisão de tempo\n\n\n\nCanal dividido em slots de tempo, um usuário por slot\n\n\nCada usuário transmite apenas no seu horário; enquanto um fala, os outros aguardam. Exemplos: redes celulares legadas, rádio digital e redes industriais sem fio.\nFDMA — acesso por divisão de frequência\n\n\n\nEspectro dividido em faixas paralelas de frequência, uma por usuário\n\n\nCada usuário recebe uma frequência própria; vários usuários transmitem ao mesmo tempo, cada um na sua faixa. Exemplos: rádio FM, TV aberta, telefonia celular analógica e enlaces de rádio.\nCDMA — acesso por divisão de código\n\n\n\nTrês usuários transmitindo com códigos diferentes na mesma faixa e ao mesmo tempo\n\n\nUsuários compartilham tempo e frequência, mas cada transmissão usa um código diferente; o receptor usa o código correto para separar o sinal desejado — os demais sinais aparecem como interferência controlada. Exemplos: redes 3G, GPS e sistemas com espalhamento espectral.\n\nEssas três técnicas são a base histórica das gerações celulares mais antigas (2G/3G), antes da adoção do OFDMA no 4G/5G"
   },
   {
     "objectID": "aulas/10-metodos-acesso-meio.html#discussão-rápida",
