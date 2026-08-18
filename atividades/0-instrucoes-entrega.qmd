@@ -1,0 +1,53 @@
+---
+title: "Instruções e Regras de Entrega"
+subtitle: "Leia antes de entregar qualquer uma das 7 atividades avaliativas"
+lang: pt
+resources:
+  - README.md
+format:
+  html:
+    toc: false
+    embed-resources: true
+---
+
+## Repositório (fazer uma única vez)
+
+1. Crie um repositório **privado** no GitHub, na sua conta pessoal, com o nome **exatamente** `rsfi-atividades` (todos os alunos devem usar esse mesmo nome, para facilitar a conferência).
+2. Baixe o arquivo [`README.md`](README.md), salve-o na raiz do repositório e preencha o campo com seu nome completo.
+3. Em **Settings → Collaborators → Add people**, adicione o professor como colaborador: [github.com/pontarolli](https://github.com/pontarolli).
+
+Esse repositório é único para a disciplina e será reaproveitado nas 7 atividades.
+
+## Estrutura final do repositório
+
+Ao final das 7 atividades, seu repositório `rsfi-atividades` deve ficar assim:
+
+```text
+rsfi-atividades/
+├── README.md
+├── atividade-1.md
+├── atividade-2.md
+├── atividade-3.md
+├── atividade-4.md
+├── atividade-5.md
+├── atividade-6.md
+└── atividade-7.md
+```
+
+Todos os arquivos direto na raiz do repositório, sem subpastas e sem mudar os nomes.
+
+## Entrega de cada atividade
+
+Para cada uma das 7 atividades:
+
+1. Baixe o arquivo `atividade-N.md` correspondente (o link fica na página de cada atividade).
+2. Salve-o na raiz do repositório, sem mudar o nome do arquivo.
+3. Marque a alternativa correta de cada questão com um `x` dentro do checkbox (`- [x]`).
+4. Preencha o campo de justificativa de cada questão.
+5. Faça o commit e o `push`.
+
+## Regra de prazo
+
+::: {.callout-warning}
+**Só vale a entrega feita no mesmo dia em que a atividade for aplicada.** O professor confere a data pelo histórico de commits do repositório no GitHub, entregas com commit em outro dia não serão consideradas.
+:::

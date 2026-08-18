@@ -31,3 +31,16 @@ format:
 ::: {.callout-note}
 Nos slides, use as setas do teclado para navegar, **S** para abrir as notas do professor e **O** para visão geral dos slides.
 :::
+
+## Atividades Avaliativas
+
+Entrega individual via GitHub. Comece pelas instruções abaixo.
+
+0. [Instruções e Regras de Entrega](atividades/0-instrucoes-entrega.html)
+1. [Introdução às Redes sem Fio](atividades/atividade-1-introducao-redes-sem-fio.html)
+2. [Categorias de Redes sem Fio: WPAN, WLAN, WMAN, WWAN, WLL](atividades/atividade-2-categorias-redes-sem-fio.html)
+3. [Tecnologias: Wifi, Infrared, Wimax, Wimesh, Bluetooth e VANETs](atividades/atividade-3-tecnologias-wireless.html)
+4. [Evolução da Família IEEE 802.11: 802.11a, 802.11b e 802.11g](atividades/atividade-4-evolucao-802-11.html)
+5. [Protocolos de Segurança: WEP, WPA e WPA2 (PSK e EAP)](atividades/atividade-5-seguranca-wep-wpa.html)
+6. [Tipos de Antenas de Comunicação](atividades/atividade-6-antenas-comunicacao.html)
+7. [Projetos de Redes sem Fio](atividades/atividade-7-projetos-redes-sem-fio.html)
