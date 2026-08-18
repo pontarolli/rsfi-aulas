@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://pontarolli.github.io/rsfi-aulas/atividades/atividade-7-projetos-redes-sem-fio.html</loc>
+    <lastmod>2026-08-18T18:13:18.780Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pontarolli.github.io/rsfi-aulas/atividades/atividade-5-seguranca-wep-wpa.html</loc>
+    <lastmod>2026-08-18T18:12:44.402Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pontarolli.github.io/rsfi-aulas/atividades/atividade-3-tecnologias-wireless.html</loc>
+    <lastmod>2026-08-18T18:12:08.971Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pontarolli.github.io/rsfi-aulas/atividades/atividade-1-introducao-redes-sem-fio.html</loc>
+    <lastmod>2026-08-18T18:11:34.471Z</lastmod>
+  </url>
+  <url>
     <loc>https://pontarolli.github.io/rsfi-aulas/aulas/15-revisao-geral.html</loc>
     <lastmod>2026-07-29T08:07:12.054Z</lastmod>
   </url>
@@ -34,7 +50,7 @@
   </url>
   <url>
     <loc>https://pontarolli.github.io/rsfi-aulas/index.html</loc>
-    <lastmod>2026-07-29T12:32:37.164Z</lastmod>
+    <lastmod>2026-08-18T18:13:42.070Z</lastmod>
   </url>
   <url>
     <loc>https://pontarolli.github.io/rsfi-aulas/aulas/00-apresentacao-avaliacao.html</loc>
@@ -46,7 +62,7 @@
   </url>
   <url>
     <loc>https://pontarolli.github.io/rsfi-aulas/aulas/04-tecnologias-wlan-wifi.html</loc>
-    <lastmod>2026-07-29T13:18:36.359Z</lastmod>
+    <lastmod>2026-07-30T15:03:45.264Z</lastmod>
   </url>
   <url>
     <loc>https://pontarolli.github.io/rsfi-aulas/aulas/06-wman-wimax-wimesh.html</loc>
@@ -67,5 +83,21 @@
   <url>
     <loc>https://pontarolli.github.io/rsfi-aulas/aulas/14-projetos-redes-sem-fio.html</loc>
     <lastmod>2026-07-29T08:06:46.693Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pontarolli.github.io/rsfi-aulas/atividades/0-instrucoes-entrega.html</loc>
+    <lastmod>2026-08-18T18:11:17.244Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pontarolli.github.io/rsfi-aulas/atividades/atividade-2-categorias-redes-sem-fio.html</loc>
+    <lastmod>2026-08-18T18:11:51.452Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pontarolli.github.io/rsfi-aulas/atividades/atividade-4-evolucao-802-11.html</loc>
+    <lastmod>2026-08-18T18:12:26.089Z</lastmod>
+  </url>
+  <url>
+    <loc>https://pontarolli.github.io/rsfi-aulas/atividades/atividade-6-antenas-comunicacao.html</loc>
+    <lastmod>2026-08-18T18:13:01.990Z</lastmod>
   </url>
 </urlset>

@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "atividades/atividade-7-projetos-redes-sem-fio.html",
+    "href": "atividades/atividade-7-projetos-redes-sem-fio.html",
+    "title": "Atividade Avaliativa 7, Projetos de Redes sem Fio",
+    "section": "",
+    "text": "Dica\n\n\n\nComo entregar: use o mesmo repositório da Atividade 1 (veja as instruções e regras completas de entrega). Baixe o arquivo atividade-7.md, marque a alternativa correta no checkbox, preencha a justificativa de cada questão e faça o commit no mesmo dia em que a atividade for aplicada.\n\n\nInstruções: Cada questão vale 5,0 pontos. Marque a alternativa correta no checkbox e preencha o campo de justificativa.\n\n1. Antes de instalar os pontos de acesso em um prédio grande, a equipe técnica precisa identificar áreas de sombra de sinal, fontes de interferência e a melhor posição para cada equipamento. Qual etapa do projeto de rede sem fio corresponde a essa atividade?\n\na) Comprar o maior número possível de pontos de acesso, sem qualquer planejamento prévio\nb) Realizar um site survey prévio, mapeando cobertura, interferência e obstáculos, para definir a posição ideal dos pontos de acesso\nc) Instalar todos os pontos de acesso no mesmo cômodo, para simplificar a instalação\nd) O site survey é uma etapa desnecessária em qualquer projeto de rede sem fio\ne) Usar apenas um ponto de acesso, independentemente do tamanho do prédio\n\nJustificativa: \n2. Para saber se um enlace ponto a ponto entre duas antenas vai funcionar, a equipe soma a potência de transmissão e os ganhos das antenas, e subtrai as perdas de cabo e de espaço livre no percurso, para verificar se o sinal chega acima da sensibilidade do receptor. Qual é o nome desse cálculo?\n\na) Link budget é apenas o custo financeiro do projeto, sem relação com o sinal de rádio\nb) Link budget é o cálculo que soma ganhos (potência de transmissão, ganho de antenas) e subtrai perdas (cabos, espaço livre, obstáculos) para verificar se o sinal chega acima da sensibilidade do receptor\nc) Link budget não é necessário quando as antenas envolvidas são omnidirecionais\nd) Link budget serve apenas para o planejamento de redes cabeadas\ne) Basta instalar o equipamento mais caro disponível, sem nenhum cálculo prévio\n\nJustificativa:"
+  },
+  {
+    "objectID": "atividades/atividade-5-seguranca-wep-wpa.html",
+    "href": "atividades/atividade-5-seguranca-wep-wpa.html",
+    "title": "Atividade Avaliativa 5, Protocolos de Segurança: WEP, WPA e WPA2 (PSK e EAP)",
+    "section": "",
+    "text": "Dica\n\n\n\nComo entregar: use o mesmo repositório da Atividade 1 (veja as instruções e regras completas de entrega). Baixe o arquivo atividade-5.md, marque a alternativa correta no checkbox, preencha a justificativa de cada questão e faça o commit no mesmo dia em que a atividade for aplicada.\n\n\nInstruções: Cada questão vale 5,0 pontos. Marque a alternativa correta no checkbox e preencha o campo de justificativa.\n\n1. Uma empresa quer proteger sua rede Wi-Fi corporativa e evitar qualquer protocolo de criptografia com vulnerabilidades já conhecidas, capaz de ser quebrado em poucos minutos com ferramentas disponíveis publicamente. Qual protocolo deve ser evitado, e qual deve ser usado no lugar?\n\na) Evitar o WEP e usar o WPA2, pois o WPA2 corrige as fraquezas criptográficas conhecidas do WEP\nb) Evitar o WPA2 e usar o WEP, pois o WEP é o protocolo mais moderno disponível\nc) Nenhuma proteção é necessária em redes Wi-Fi corporativas\nd) Usar o WEP, pois ele utiliza chaves mais longas que o WPA2\ne) O WPA2 é mais fraco que o WEP, por isso deve ser evitado\n\nJustificativa: \n2. Uma empresa de médio porte quer que cada funcionário tenha uma credencial própria de acesso à rede Wi-Fi, autenticada por um servidor central, permitindo revogar o acesso de uma pessoa específica sem afetar as demais. Qual modo do WPA2 atende a esse requisito?\n\na) WPA2-Personal (PSK), pois usa uma única chave pré-compartilhada para todos os usuários\nb) WPA2-Enterprise (EAP), pois autentica cada usuário individualmente via um servidor (ex.: RADIUS), permitindo credenciais e revogação por pessoa\nc) WEP, pois já oferece autenticação individual por padrão\nd) Nenhum dos modos do WPA2 permite autenticação individual por usuário\ne) WPA2-Personal e WPA2-Enterprise são exatamente o mesmo mecanismo de autenticação\n\nJustificativa:"
+  },
+  {
+    "objectID": "atividades/atividade-3-tecnologias-wireless.html",
+    "href": "atividades/atividade-3-tecnologias-wireless.html",
+    "title": "Atividade Avaliativa 3, Tecnologias: Wifi, Infrared, Wimax, Wimesh, Bluetooth e VANETs",
+    "section": "",
+    "text": "Dica\n\n\n\nComo entregar: use o mesmo repositório da Atividade 1 (veja as instruções e regras completas de entrega). Baixe o arquivo atividade-3.md, marque a alternativa correta no checkbox, preencha a justificativa de cada questão e faça o commit no mesmo dia em que a atividade for aplicada.\n\n\nInstruções: Cada questão vale 5,0 pontos. Marque a alternativa correta no checkbox e preencha o campo de justificativa.\n\n1. Um controle remoto de TV precisa ser barato, simples e de curtíssimo alcance, funcionando apenas quando apontado diretamente para o aparelho, sem obstáculos no caminho. Qual tecnologia sem fio é tipicamente usada nesse caso?\n\na) Wi-Fi, pois é a tecnologia mais barata disponível\nb) Infravermelho (IR), pois exige linha de visada direta e é usado tipicamente em controles remotos de curto alcance\nc) WiMAX, pois é ideal para controles remotos domésticos\nd) Bluetooth, pois também exige linha de visada direta\ne) VANETs, pois é o padrão para dispositivos domésticos\n\nJustificativa: \n2. Um sistema de trânsito inteligente quer que os veículos troquem informações entre si e com sensores instalados na rodovia, em tempo real, para alertar sobre frenagens bruscas e congestionamentos à frente. Qual tecnologia sem fio foi desenvolvida especificamente para esse tipo de comunicação?\n\na) Wimesh, pois é exclusivo para redes internas de escritório\nb) VANETs (Vehicular Ad-hoc Networks), tecnologia voltada à comunicação entre veículos e com a infraestrutura viária\nc) Bluetooth, pois tem alcance suficiente para cobrir rodovias inteiras\nd) Infravermelho, pois funciona bem mesmo sem linha de visada em alta velocidade\ne) WiMAX, pois foi criado especificamente para uso veicular\n\nJustificativa:"
+  },
+  {
+    "objectID": "atividades/atividade-1-introducao-redes-sem-fio.html",
+    "href": "atividades/atividade-1-introducao-redes-sem-fio.html",
+    "title": "Atividade Avaliativa 1, Introdução às Redes sem Fio",
+    "section": "",
+    "text": "Dica\n\n\n\nComo entregar: veja as instruções e regras completas de entrega antes de começar. Baixe o arquivo atividade-1.md, marque a alternativa correta no checkbox, preencha a justificativa de cada questão e faça o commit no mesmo dia em que a atividade for aplicada.\n\n\nInstruções: Cada questão vale 5,0 pontos. Marque a alternativa correta no checkbox e preencha o campo de justificativa.\n\n1. Uma empresa precisa levar rede até um galpão onde passar cabos pelas paredes é inviável (estrutura tombada, sem dutos disponíveis), e os equipamentos dentro do galpão mudam de posição com frequência. Qual solução é mais coerente com esse cenário?\n\na) Rede cabeada, pois rede sem fio nunca é confiável o suficiente para uso profissional\nb) Rede sem fio, pois permite mobilidade dos dispositivos e evita obras de cabeamento na estrutura existente\nc) Não instalar rede alguma nesse ambiente\nd) Rede cabeada, mesmo com alto custo de obra, por ser a única opção tecnicamente viável\ne) Rede sem fio, mas apenas se for para uso doméstico, nunca corporativo\n\nJustificativa: \n2. Em um escritório aberto, vários notebooks conectados ao mesmo ponto de acesso apresentam quedas de desempenho e colisões de transmissão quando todos tentam enviar dados ao mesmo tempo. Qual característica fundamental das redes sem fio explica essa situação?\n\na) Redes sem fio não sofrem interferência, ao contrário das redes cabeadas\nb) O meio de transmissão sem fio é compartilhado e half-duplex por natureza, sujeito a interferência e exigindo métodos específicos de controle de acesso ao meio\nc) Redes sem fio sempre têm taxa de transmissão maior que redes cabeadas\nd) Cabos de rede nunca sofrem atenuação, diferente das redes sem fio\ne) Não existe diferença relevante entre meios cabeados e sem fio\n\nJustificativa:"
+  },
+  {
     "objectID": "aulas/15-revisao-geral.html#objetivos-da-aula",
     "href": "aulas/15-revisao-geral.html#objetivos-da-aula",
     "title": "Aula 15 — Revisão geral e estudo de caso de projeto de rede sem fio",
@@ -679,6 +707,13 @@
     "text": "Aulas\n\nApresentação da disciplina e critérios de avaliação\nIntrodução às redes sem fio\nCategorias de redes sem fio: WPAN, WLAN, WMAN, WWAN e WLL\nTecnologias WPAN: Bluetooth, Zigbee, UWB, NFC e Infrared\nTecnologias WLAN: Wi-Fi, OFDM, CSMA/CA e MIMO\nEvolução do Wi-Fi: 802.11a, 802.11b e 802.11g\nWMAN: WiMAX e Wimesh\nWWAN: redes celulares (3G/4G/5G) e VANETs\nPrincípios de radiofrequência: propagação, reflexão e interferência\nTipos de antenas e ganho de sinal (dBi)\nMétodos de acesso ao meio: CSMA/CA, RTS/CTS, TDMA/FDMA/CDMA/OFDMA\nArquiteturas de redes wireless: IBSS, BSS, ESS e roaming\nSegurança em redes sem fio I: WEP e suas fraquezas\nSegurança em redes sem fio II: WPA, WPA2, PSK e EAP\nProjetos de redes sem fio: site survey e link budget\nRevisão geral e estudo de caso de projeto de rede sem fio\n\n\n\n\n\n\n\nNota\n\n\n\nNos slides, use as setas do teclado para navegar, S para abrir as notas do professor e O para visão geral dos slides."
   },
   {
+    "objectID": "index.html#atividades-avaliativas",
+    "href": "index.html#atividades-avaliativas",
+    "title": "Redes sem Fio",
+    "section": "Atividades Avaliativas",
+    "text": "Atividades Avaliativas\nEntrega individual via GitHub. Comece pelas instruções abaixo.\n\nInstruções e Regras de Entrega\nIntrodução às Redes sem Fio\nCategorias de Redes sem Fio: WPAN, WLAN, WMAN, WWAN, WLL\nTecnologias: Wifi, Infrared, Wimax, Wimesh, Bluetooth e VANETs\nEvolução da Família IEEE 802.11: 802.11a, 802.11b e 802.11g\nProtocolos de Segurança: WEP, WPA e WPA2 (PSK e EAP)\nTipos de Antenas de Comunicação\nProjetos de Redes sem Fio"
+  },
+  {
     "objectID": "aulas/00-apresentacao-avaliacao.html#sobre-a-disciplina",
     "href": "aulas/00-apresentacao-avaliacao.html#sobre-a-disciplina",
     "title": "Aula 00 — Apresentação da disciplina e critérios de avaliação",
@@ -851,7 +886,7 @@
     "href": "aulas/04-tecnologias-wlan-wifi.html#onde-o-wi-fi-vive-banda-ism",
     "title": "Aula 04 — Tecnologias WLAN: Wi-Fi, OFDM, CSMA/CA e MIMO",
     "section": "Onde o Wi-Fi “vive”: banda ISM",
-    "text": "Onde o Wi-Fi “vive”: banda ISM\n\nOpera principalmente nas faixas 2,4 GHz e 5 GHz, parte do espectro ISM (Industrial, Scientific and Medical) — não licenciado\n2,4 GHz: maior alcance, atravessa obstáculos melhor, mas mais interferência (compartilhada com Bluetooth, micro-ondas, etc.) e só 3 canais não sobrepostos (1, 6, 11)\n\n - 5 GHz: menos alcance e penetração em paredes, porém muito menos interferência e mais canais disponíveis - 6 GHz (Wi-Fi 6E e 7): uma “autoestrada” recém-aberta, livre de dispositivos antigos, permitindo velocidades gigabit reais sem a disputa histórica das outras duas faixas"
+    "text": "Onde o Wi-Fi “vive”: banda ISM\n\nOpera principalmente nas faixas 2,4 GHz e 5 GHz, parte do espectro ISM (Industrial, Scientific and Medical) — não licenciado\n2,4 GHz: maior alcance, atravessa obstáculos melhor, mas mais interferência (Bluetooth, micro-ondas) e só 3 canais não sobrepostos (1, 6, 11)\n5 GHz: menos alcance e penetração em paredes, porém muito menos interferência e mais canais disponíveis\n\n\nComparação 2,4 GHz x 5 GHz: alcance/interferência x velocidade\n6 GHz (Wi-Fi 6E e 7): uma “autoestrada” recém-aberta, livre de dispositivos antigos, permitindo velocidades gigabit reais sem a disputa histórica das outras duas faixas"
   },
   {
     "objectID": "aulas/04-tecnologias-wlan-wifi.html#ofdm-orthogonal-frequency-division-multiplexing",
@@ -1307,5 +1342,61 @@
     "title": "Aula 14 — Projetos de redes sem fio: site survey e link budget",
     "section": "Referências",
     "text": "Referências\n\nRAPPAPORT, T. S. Comunicações Sem Fio: Princípios e Práticas. 2ª ed. Pearson Universidades, 2008.\nMORAES, A. F. Redes Sem Fio - Instalação, Configuração e Segurança. Érica, 2010."
+  },
+  {
+    "objectID": "atividades/0-instrucoes-entrega.html",
+    "href": "atividades/0-instrucoes-entrega.html",
+    "title": "Instruções e Regras de Entrega",
+    "section": "",
+    "text": "Crie um repositório privado no GitHub, na sua conta pessoal, com o nome exatamente rsfi-atividades (todos os alunos devem usar esse mesmo nome, para facilitar a conferência).\nBaixe o arquivo README.md, salve-o na raiz do repositório e preencha o campo com seu nome completo.\nEm Settings → Collaborators → Add people, adicione o professor como colaborador: github.com/pontarolli.\n\nEsse repositório é único para a disciplina e será reaproveitado nas 7 atividades."
+  },
+  {
+    "objectID": "atividades/0-instrucoes-entrega.html#repositório-fazer-uma-única-vez",
+    "href": "atividades/0-instrucoes-entrega.html#repositório-fazer-uma-única-vez",
+    "title": "Instruções e Regras de Entrega",
+    "section": "",
+    "text": "Crie um repositório privado no GitHub, na sua conta pessoal, com o nome exatamente rsfi-atividades (todos os alunos devem usar esse mesmo nome, para facilitar a conferência).\nBaixe o arquivo README.md, salve-o na raiz do repositório e preencha o campo com seu nome completo.\nEm Settings → Collaborators → Add people, adicione o professor como colaborador: github.com/pontarolli.\n\nEsse repositório é único para a disciplina e será reaproveitado nas 7 atividades."
+  },
+  {
+    "objectID": "atividades/0-instrucoes-entrega.html#estrutura-final-do-repositório",
+    "href": "atividades/0-instrucoes-entrega.html#estrutura-final-do-repositório",
+    "title": "Instruções e Regras de Entrega",
+    "section": "Estrutura final do repositório",
+    "text": "Estrutura final do repositório\nAo final das 7 atividades, seu repositório rsfi-atividades deve ficar assim:\nrsfi-atividades/\n├── README.md\n├── atividade-1.md\n├── atividade-2.md\n├── atividade-3.md\n├── atividade-4.md\n├── atividade-5.md\n├── atividade-6.md\n└── atividade-7.md\nTodos os arquivos direto na raiz do repositório, sem subpastas e sem mudar os nomes."
+  },
+  {
+    "objectID": "atividades/0-instrucoes-entrega.html#entrega-de-cada-atividade",
+    "href": "atividades/0-instrucoes-entrega.html#entrega-de-cada-atividade",
+    "title": "Instruções e Regras de Entrega",
+    "section": "Entrega de cada atividade",
+    "text": "Entrega de cada atividade\nPara cada uma das 7 atividades:\n\nBaixe o arquivo atividade-N.md correspondente (o link fica na página de cada atividade).\nSalve-o na raiz do repositório, sem mudar o nome do arquivo.\nMarque a alternativa correta de cada questão com um x dentro do checkbox (- [x]).\nPreencha o campo de justificativa de cada questão.\nFaça o commit e o push."
+  },
+  {
+    "objectID": "atividades/0-instrucoes-entrega.html#regra-de-prazo",
+    "href": "atividades/0-instrucoes-entrega.html#regra-de-prazo",
+    "title": "Instruções e Regras de Entrega",
+    "section": "Regra de prazo",
+    "text": "Regra de prazo\n\n\n\n\n\n\nAviso\n\n\n\nSó vale a entrega feita no mesmo dia em que a atividade for aplicada. O professor confere a data pelo histórico de commits do repositório no GitHub, entregas com commit em outro dia não serão consideradas."
+  },
+  {
+    "objectID": "atividades/atividade-2-categorias-redes-sem-fio.html",
+    "href": "atividades/atividade-2-categorias-redes-sem-fio.html",
+    "title": "Atividade Avaliativa 2, Categorias de Redes sem Fio: WPAN, WLAN, WMAN, WWAN, WLL",
+    "section": "",
+    "text": "Dica\n\n\n\nComo entregar: use o mesmo repositório da Atividade 1 (veja as instruções e regras completas de entrega). Baixe o arquivo atividade-2.md, marque a alternativa correta no checkbox, preencha a justificativa de cada questão e faça o commit no mesmo dia em que a atividade for aplicada.\n\n\nInstruções: Cada questão vale 5,0 pontos. Marque a alternativa correta no checkbox e preencha o campo de justificativa.\n\n1. Uma empresa quer cobrir toda a área de um prédio de escritórios, com dezenas a poucas centenas de metros de alcance, usando múltiplos pontos de acesso para que os funcionários se conectem com notebooks e celulares. Qual categoria de rede sem fio descreve esse cenário?\n\na) WPAN, pois cobre apenas poucos metros ao redor de uma pessoa\nb) WLAN, pois cobre a área de um prédio ou campus, com alcance de dezenas a centenas de metros via pontos de acesso\nc) WWAN, pois cobre uma cidade inteira usando torres de celular\nd) WMAN, pois é exclusiva para conectar prédios de universidades\ne) WLL, pois substitui totalmente a rede elétrica do prédio\n\nJustificativa: \n2. Uma pessoa conecta seu smartwatch a um fone de ouvido sem fio, ambos a poucos centímetros ou metros de distância do celular, com baixíssimo consumo de energia. Qual categoria de rede sem fio descreve essa comunicação?\n\na) WWAN, por causa da mobilidade do usuário\nb) WMAN, pois conecta múltiplos prédios da mesma empresa\nc) WPAN, pois é uma rede de curtíssimo alcance ao redor de uma pessoa, tipicamente poucos metros\nd) WLL, pois substitui o loop local da operadora telefônica\ne) WLAN, pois sempre usa ponto de acesso dedicado\n\nJustificativa:"
+  },
+  {
+    "objectID": "atividades/atividade-4-evolucao-802-11.html",
+    "href": "atividades/atividade-4-evolucao-802-11.html",
+    "title": "Atividade Avaliativa 4, Evolução da Família IEEE 802.11: 802.11a, 802.11b e 802.11g",
+    "section": "",
+    "text": "Dica\n\n\n\nComo entregar: use o mesmo repositório da Atividade 1 (veja as instruções e regras completas de entrega). Baixe o arquivo atividade-4.md, marque a alternativa correta no checkbox, preencha a justificativa de cada questão e faça o commit no mesmo dia em que a atividade for aplicada.\n\n\nInstruções: Cada questão vale 5,0 pontos. Marque a alternativa correta no checkbox e preencha o campo de justificativa.\n\n1. Comparando os padrões 802.11a e 802.11b, um técnico precisa explicar por que o 802.11a alcança taxas de transmissão maiores, mas costuma ter alcance menor e mais sensibilidade a obstáculos dentro do mesmo ambiente. Qual explicação está correta?\n\na) 802.11b opera em 5 GHz com taxas de até 54 Mbps\nb) 802.11a opera em 5 GHz, com taxas mais altas (até 54 Mbps), mas maior sensibilidade a obstáculos e menor alcance que sinais em 2,4 GHz\nc) 802.11g foi o primeiro padrão da família 802.11, anterior ao 802.11a e ao 802.11b\nd) 802.11b e 802.11a operam exatamente na mesma frequência e com a mesma taxa\ne) Nenhum desses padrões suporta taxas de transmissão acima de 11 Mbps\n\nJustificativa: \n2. Uma rede antiga, toda equipada com dispositivos 802.11b, precisa ser modernizada para taxas de transmissão mais altas, mas sem descartar de imediato os equipamentos já instalados. Qual padrão da família 802.11 resolve esse problema de compatibilidade?\n\na) 802.11g opera em 5 GHz e é incompatível com dispositivos 802.11b\nb) 802.11g opera em 2,4 GHz, mantendo compatibilidade com o 802.11b, mas alcançando taxas de até 54 Mbps, como o 802.11a\nc) 802.11g é anterior ao 802.11b na linha do tempo dos padrões\nd) 802.11g não consegue ultrapassar 11 Mbps de taxa de transmissão\ne) 802.11g exige hardware idêntico ao 802.11a, sem nenhuma compatibilidade com o 802.11b\n\nJustificativa:"
+  },
+  {
+    "objectID": "atividades/atividade-6-antenas-comunicacao.html",
+    "href": "atividades/atividade-6-antenas-comunicacao.html",
+    "title": "Atividade Avaliativa 6, Tipos de Antenas de Comunicação",
+    "section": "",
+    "text": "Dica\n\n\n\nComo entregar: use o mesmo repositório da Atividade 1 (veja as instruções e regras completas de entrega). Baixe o arquivo atividade-6.md, marque a alternativa correta no checkbox, preencha a justificativa de cada questão e faça o commit no mesmo dia em que a atividade for aplicada.\n\n\nInstruções: Cada questão vale 5,0 pontos. Marque a alternativa correta no checkbox e preencha o campo de justificativa.\n\n1. Um ponto de acesso será instalado no centro de um escritório aberto, e a intenção é distribuir o sinal igualmente em todas as direções ao redor do equipamento, cobrindo 360°. Qual tipo de antena é o mais adequado?\n\na) Antena direcional, pois concentra o sinal em uma única direção\nb) Antena omnidirecional, pois distribui o sinal em todas as direções ao redor do ponto de instalação, cobrindo 360°\nc) Antena parabólica, pois é exclusiva para enlaces de rádio ponto a ponto de longuíssima distância\nd) Nenhum tipo de antena consegue cobrir mais de 90° de área\ne) Antena setorial, pois cobre exatamente 360° por padrão\n\nJustificativa: \n2. Um enlace ponto a ponto precisa ligar dois prédios distantes um do outro, e é necessário concentrar a energia do sinal em uma direção específica para alcançar maior distância com a mesma potência de transmissão. Qual tipo de antena, e qual característica de ganho, atende esse cenário?\n\na) Antena omnidirecional, pois tem maior ganho em qualquer direção específica\nb) Antena direcional (ex.: Yagi ou parabólica), pois concentra a energia em uma direção específica, aumentando o alcance efetivo (maior ganho em dBi) para aquele enlace\nc) Nenhuma antena influencia o alcance do sinal, apenas a potência do transmissor importa\nd) Antena omnidirecional é sempre a melhor escolha, inclusive para enlaces ponto a ponto\ne) Ganho em dBi não tem relação com o tipo de antena usada\n\nJustificativa:"
   }
 ]
