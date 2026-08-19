@@ -1,25 +1,25 @@
-# Atividade Avaliativa 6, Tipos de Antenas de Comunicação
+# Atividade Avaliativa 6, Projetos de Redes sem Fio
 
 **Instruções:** cada questão vale 5,0 pontos. Marque a alternativa correta com um `x` dentro do checkbox (`- [x]`) e escreva sua justificativa no campo indicado.
 
 ---
 
-**1.** Um ponto de acesso será instalado no centro de um escritório aberto, e a intenção é distribuir o sinal igualmente em todas as direções ao redor do equipamento, cobrindo 360°. Qual tipo de antena é o mais adequado?
+**1.** Antes de instalar os pontos de acesso em um prédio grande, a equipe técnica precisa identificar áreas de sombra de sinal, fontes de interferência e a melhor posição para cada equipamento. Qual etapa do projeto de rede sem fio corresponde a essa atividade?
 
-- [ ] a) Antena direcional, pois concentra o sinal em uma única direção
-- [ ] b) Antena omnidirecional, pois distribui o sinal em todas as direções ao redor do ponto de instalação, cobrindo 360°
-- [ ] c) Antena parabólica, pois é exclusiva para enlaces de rádio ponto a ponto de longuíssima distância
-- [ ] d) Nenhum tipo de antena consegue cobrir mais de 90° de área
-- [ ] e) Antena setorial, pois cobre exatamente 360° por padrão
+- [ ] a) Comprar o maior número possível de pontos de acesso, sem nenhum planejamento prévio do ambiente
+- [ ] b) Instalar todos os pontos de acesso em um único cômodo, para simplificar a instalação
+- [ ] c) Realizar um site survey prévio, mapeando cobertura, interferência e obstáculos, para definir a posição ideal dos pontos de acesso
+- [ ] d) O site survey seria uma etapa desnecessária em qualquer projeto de rede sem fio
+- [ ] e) Usar apenas um ponto de acesso, independentemente do tamanho e do layout do prédio
 
 **Justificativa:** <escreva aqui sua justificativa>
 
-**2.** Um enlace ponto a ponto precisa ligar dois prédios distantes um do outro, e é necessário concentrar a energia do sinal em uma direção específica para alcançar maior distância com a mesma potência de transmissão. Qual tipo de antena, e qual característica de ganho, atende esse cenário?
+**2.** Para saber se um enlace ponto a ponto entre duas antenas vai funcionar, a equipe soma a potência de transmissão e os ganhos das antenas, e subtrai as perdas de cabo e de espaço livre no percurso, para verificar se o sinal chega acima da sensibilidade do receptor. Qual é o nome desse cálculo?
 
-- [ ] a) Antena omnidirecional, pois tem maior ganho em qualquer direção específica
-- [ ] b) Antena direcional (ex.: Yagi ou parabólica), pois concentra a energia em uma direção específica, aumentando o alcance efetivo (maior ganho em dBi) para aquele enlace
-- [ ] c) Nenhuma antena influencia o alcance do sinal, apenas a potência do transmissor importa
-- [ ] d) Antena omnidirecional é sempre a melhor escolha, inclusive para enlaces ponto a ponto
-- [ ] e) Ganho em dBi não tem relação com o tipo de antena usada
+- [ ] a) Link budget é o cálculo que soma ganhos (potência de transmissão, ganho de antenas) e subtrai perdas (cabos, espaço livre) para verificar o sinal recebido
+- [ ] b) Link budget seria apenas o custo financeiro do projeto, sem relação com o sinal de rádio
+- [ ] c) Link budget não seria necessário quando as antenas envolvidas fossem omnidirecionais
+- [ ] d) Link budget serviria apenas para o planejamento de redes cabeadas, não sem fio
+- [ ] e) Bastaria instalar o equipamento mais caro disponível, sem nenhum cálculo prévio de enlace
 
 **Justificativa:** <escreva aqui sua justificativa>

@@ -1,25 +1,25 @@
-# Atividade Avaliativa 5, Protocolos de Segurança: WEP, WPA e WPA2 (PSK e EAP)
+# Atividade Avaliativa 5, Tipos de Antenas de Comunicação
 
 **Instruções:** cada questão vale 5,0 pontos. Marque a alternativa correta com um `x` dentro do checkbox (`- [x]`) e escreva sua justificativa no campo indicado.
 
 ---
 
-**1.** Uma empresa quer proteger sua rede Wi-Fi corporativa e evitar qualquer protocolo de criptografia com vulnerabilidades já conhecidas, capaz de ser quebrado em poucos minutos com ferramentas disponíveis publicamente. Qual protocolo deve ser evitado, e qual deve ser usado no lugar?
+**1.** Um ponto de acesso será instalado no centro de um escritório aberto, e a intenção é distribuir o sinal igualmente em todas as direções ao redor do equipamento, cobrindo 360°. Qual tipo de antena é o mais adequado?
 
-- [ ] a) Evitar o WEP e usar o WPA2, pois o WPA2 corrige as fraquezas criptográficas conhecidas do WEP
-- [ ] b) Evitar o WPA2 e usar o WEP, pois o WEP é o protocolo mais moderno disponível
-- [ ] c) Nenhuma proteção é necessária em redes Wi-Fi corporativas
-- [ ] d) Usar o WEP, pois ele utiliza chaves mais longas que o WPA2
-- [ ] e) O WPA2 é mais fraco que o WEP, por isso deve ser evitado
+- [ ] a) Antena direcional, pois concentraria o sinal em uma única direção específica do ambiente
+- [ ] b) Antena omnidirecional, pois distribui o sinal em todas as direções ao redor do ponto de instalação, cobrindo 360°
+- [ ] c) Antena parabólica, pois seria exclusiva para enlaces de rádio ponto a ponto de longa distância
+- [ ] d) Antena setorial, pois cobriria uma única direção de até 120° ao redor do ponto
+- [ ] e) Nenhum tipo de antena conseguiria cobrir mais de 90° de área ao redor
 
 **Justificativa:** <escreva aqui sua justificativa>
 
-**2.** Uma empresa de médio porte quer que cada funcionário tenha uma credencial própria de acesso à rede Wi-Fi, autenticada por um servidor central, permitindo revogar o acesso de uma pessoa específica sem afetar as demais. Qual modo do WPA2 atende a esse requisito?
+**2.** Um enlace ponto a ponto precisa ligar dois prédios distantes um do outro, e é necessário concentrar a energia do sinal em uma direção específica para alcançar maior distância com a mesma potência de transmissão. Qual tipo de antena, e qual característica de ganho, atende esse cenário?
 
-- [ ] a) WPA2-Personal (PSK), pois usa uma única chave pré-compartilhada para todos os usuários
-- [ ] b) WPA2-Enterprise (EAP), pois autentica cada usuário individualmente via um servidor (ex.: RADIUS), permitindo credenciais e revogação por pessoa
-- [ ] c) WEP, pois já oferece autenticação individual por padrão
-- [ ] d) Nenhum dos modos do WPA2 permite autenticação individual por usuário
-- [ ] e) WPA2-Personal e WPA2-Enterprise são exatamente o mesmo mecanismo de autenticação
+- [ ] a) Antena omnidirecional, pois teria maior ganho em qualquer direção específica do enlace
+- [ ] b) Nenhuma antena influenciaria o alcance do sinal, apenas a potência do transmissor importaria
+- [ ] c) Antena omnidirecional seria sempre a melhor escolha, inclusive para enlaces ponto a ponto
+- [ ] d) Ganho em dBi não teria relação alguma com o tipo de antena utilizada
+- [ ] e) Antena direcional (ex.: Yagi ou parabólica), pois concentra a energia em uma direção específica, aumentando o alcance efetivo do enlace
 
 **Justificativa:** <escreva aqui sua justificativa>
