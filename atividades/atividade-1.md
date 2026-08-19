@@ -1,4 +1,4 @@
-# Atividade Avaliativa 1, Introdução às Redes sem Fio
+# Atividade Avaliativa 1, Introdução às Redes sem Fio e Categorias: WPAN, WLAN, WMAN, WWAN, WLL
 
 **Instruções:** cada questão vale 5,0 pontos. Marque a alternativa correta com um `x` dentro do checkbox (`- [x]`) e escreva sua justificativa no campo indicado.
 
@@ -6,20 +6,20 @@
 
 **1.** Uma empresa precisa levar rede até um galpão onde passar cabos pelas paredes é inviável (estrutura tombada, sem dutos disponíveis), e os equipamentos dentro do galpão mudam de posição com frequência. Qual solução é mais coerente com esse cenário?
 
-- [ ] a) Rede cabeada, pois rede sem fio nunca é confiável o suficiente para uso profissional
-- [ ] b) Rede sem fio, pois permite mobilidade dos dispositivos e evita obras de cabeamento na estrutura existente
-- [ ] c) Não instalar rede alguma nesse ambiente
-- [ ] d) Rede cabeada, mesmo com alto custo de obra, por ser a única opção tecnicamente viável
-- [ ] e) Rede sem fio, mas apenas se for para uso doméstico, nunca corporativo
+- [ ] a) Rede cabeada, pois passar os cabos pelas paredes tombadas seria simples e barato
+- [ ] b) Nenhuma rede deve ser instalada, pois o ambiente tombado impede qualquer solução de conectividade
+- [ ] c) Rede sem fio, pois evita obras de cabeamento na estrutura tombada e acompanha a mudança de posição dos equipamentos
+- [ ] d) Rede cabeada, aceitando o alto custo da obra, por ser a única opção tecnicamente viável nesse caso
+- [ ] e) Rede sem fio, mas apenas seria indicada para uso doméstico, nunca em ambientes corporativos como esse
 
 **Justificativa:** <escreva aqui sua justificativa>
 
-**2.** Em um escritório aberto, vários notebooks conectados ao mesmo ponto de acesso apresentam quedas de desempenho e colisões de transmissão quando todos tentam enviar dados ao mesmo tempo. Qual característica fundamental das redes sem fio explica essa situação?
+**2.** Uma empresa quer cobrir toda a área de um prédio de escritórios, com dezenas a poucas centenas de metros de alcance, usando múltiplos pontos de acesso para que os funcionários se conectem com notebooks e celulares. Qual categoria de rede sem fio descreve esse cenário?
 
-- [ ] a) Redes sem fio não sofrem interferência, ao contrário das redes cabeadas
-- [ ] b) O meio de transmissão sem fio é compartilhado e half-duplex por natureza, sujeito a interferência e exigindo métodos específicos de controle de acesso ao meio
-- [ ] c) Redes sem fio sempre têm taxa de transmissão maior que redes cabeadas
-- [ ] d) Cabos de rede nunca sofrem atenuação, diferente das redes sem fio
-- [ ] e) Não existe diferença relevante entre meios cabeados e sem fio
+- [ ] a) WLAN, pois cobre a área de um prédio ou campus com alcance de dezenas a centenas de metros
+- [ ] b) WPAN, pois esse alcance de dezenas a centenas de metros seria típico de redes pessoais de curto alcance
+- [ ] c) WWAN, pois cobrir um único prédio exigiria torres de celular espalhadas pela cidade inteira
+- [ ] d) WMAN, pois essa categoria seria reservada exclusivamente para conectar prédios de campi universitários
+- [ ] e) WLL, pois essa tecnologia teria a função de substituir a fiação elétrica do prédio
 
 **Justificativa:** <escreva aqui sua justificativa>

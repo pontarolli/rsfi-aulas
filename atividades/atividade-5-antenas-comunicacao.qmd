@@ -1,6 +1,20 @@
-# Atividade Avaliativa 5, Tipos de Antenas de Comunicação
+---
+title: "Atividade Avaliativa 5, Tipos de Antenas de Comunicação"
+subtitle: "Individual · Entrega via GitHub · Valor: 10,0 pontos"
+lang: pt
+resources:
+  - atividade-5.md
+format:
+  html:
+    toc: false
+    embed-resources: true
+---
 
-**Instruções:** cada questão vale 5,0 pontos. Marque a alternativa correta com um `x` dentro do checkbox (`- [x]`) e escreva sua justificativa no campo indicado.
+::: {.callout-tip}
+**Como entregar:** use o mesmo repositório da Atividade 1 (veja as [instruções e regras completas de entrega](0-instrucoes-entrega.html)). Baixe o arquivo [`atividade-5.md`](atividade-5.md), marque a alternativa correta no checkbox, preencha a justificativa de cada questão e faça o commit **no mesmo dia** em que a atividade for aplicada.
+:::
+
+**Instruções:** Cada questão vale 5,0 pontos. Marque a alternativa correta no checkbox e preencha o campo de justificativa.
 
 ---
 

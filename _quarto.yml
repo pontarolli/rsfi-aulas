@@ -5,6 +5,8 @@ project:
     - aulas/*.qmd
     - /atividades/*.qmd
   pre-render: scripts/set_version.py
+  preview:
+    port: 3891
 
 website:
   title: "Redes sem Fio"

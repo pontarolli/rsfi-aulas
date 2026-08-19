@@ -1,6 +1,6 @@
 ---
 title: "Instruções e Regras de Entrega"
-subtitle: "Leia antes de entregar qualquer uma das 7 atividades avaliativas"
+subtitle: "Leia antes de entregar qualquer uma das 6 atividades avaliativas"
 lang: pt
 resources:
   - README.md
@@ -16,11 +16,11 @@ format:
 2. Baixe o arquivo [`README.md`](README.md), salve-o na raiz do repositório e preencha o campo com seu nome completo.
 3. Em **Settings → Collaborators → Add people**, adicione o professor como colaborador: [github.com/pontarolli](https://github.com/pontarolli).
 
-Esse repositório é único para a disciplina e será reaproveitado nas 7 atividades.
+Esse repositório é único para a disciplina e será reaproveitado nas 6 atividades.
 
 ## Estrutura final do repositório
 
-Ao final das 7 atividades, seu repositório `rsfi-atividades` deve ficar assim:
+Ao final das 6 atividades, seu repositório `rsfi-atividades` deve ficar assim:
 
 ```text
 rsfi-atividades/
@@ -30,15 +30,14 @@ rsfi-atividades/
 ├── atividade-3.md
 ├── atividade-4.md
 ├── atividade-5.md
-├── atividade-6.md
-└── atividade-7.md
+└── atividade-6.md
 ```
 
 Todos os arquivos direto na raiz do repositório, sem subpastas e sem mudar os nomes.
 
 ## Entrega de cada atividade
 
-Para cada uma das 7 atividades:
+Para cada uma das 6 atividades:
 
 1. Baixe o arquivo `atividade-N.md` correspondente (o link fica na página de cada atividade).
 2. Salve-o na raiz do repositório, sem mudar o nome do arquivo.
