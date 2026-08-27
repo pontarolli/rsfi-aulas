@@ -38,8 +38,8 @@ Entrega individual via GitHub. Comece pelas instruções abaixo.
 
 0. [Instruções e Regras de Entrega](atividades/0-instrucoes-entrega.html)
 1. [Introdução às Redes sem Fio e Categorias: WPAN, WLAN, WMAN, WWAN, WLL](atividades/atividade-1-introducao-redes-sem-fio.html) (Entrega 20/08, das 8h00 às 12h00)
-2. Tecnologias: Wifi, Infrared, Wimax, Wimesh, Bluetooth e VANETs *(em breve)*
-3. Evolução da Família IEEE 802.11: 802.11a, 802.11b e 802.11g *(em breve)*
+2. [Tecnologias: Wifi, Infrared, Wimax, Wimesh, Bluetooth e VANETs](atividades/atividade-2-tecnologias-wireless.html) (Entrega 27/08, das 8h00 às 12h00)
+3. [Evolução da Família IEEE 802.11: 802.11a, 802.11b e 802.11g](atividades/atividade-3-evolucao-802-11.html) (Entrega 27/08, das 8h00 às 12h00)
 4. Protocolos de Segurança: WEP, WPA e WPA2 (PSK e EAP) *(em breve)*
 5. Tipos de Antenas de Comunicação *(em breve)*
 6. Projetos de Redes sem Fio *(em breve)*
